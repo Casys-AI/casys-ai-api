@@ -1,0 +1,1070 @@
+2024-07-26 17:29:49,247 - __main__ - INFO - Starting the application...
+2024-07-26 17:30:06,156 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:30:06,520 - watchfiles.main - INFO - 2 changes detected
+2024-07-26 17:30:06,882 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:30:53,910 - __main__ - INFO - Starting the application...
+2024-07-26 17:30:53,911 - __main__ - ERROR - Application failed to start: 'warn'
+2024-07-26 17:33:46,035 - __main__ - INFO - Starting the application...
+2024-07-26 17:33:50,184 - watchfiles.main - INFO - 2 changes detected
+2024-07-26 17:33:50,843 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:33:55,540 - watchfiles.main - INFO - 4 changes detected
+2024-07-26 17:33:55,909 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:33:56,264 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:33:56,624 - watchfiles.main - INFO - 2 changes detected
+2024-07-26 17:33:56,982 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:33:57,342 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:33:57,700 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:33:58,059 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:33:58,417 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:33:58,777 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:33:59,135 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:33:59,492 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:33:59,847 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:00,200 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:00,557 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:00,947 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:01,305 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:01,663 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:02,016 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:02,371 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:02,731 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:03,087 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:03,448 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:03,808 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:04,165 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:04,524 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:04,897 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:05,254 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:05,611 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:05,971 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:06,326 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:06,680 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:07,036 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:07,396 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:07,755 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:08,112 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:08,470 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:08,829 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:09,186 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:09,544 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:09,902 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:10,260 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:10,621 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:10,978 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:11,334 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:11,693 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:12,055 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:12,413 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:12,767 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:13,128 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:13,489 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:13,849 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:14,207 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:14,563 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:14,918 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:15,278 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:15,637 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:15,994 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:16,354 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:16,712 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:17,072 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:17,429 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:17,785 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:18,144 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:18,501 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:18,860 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:19,220 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:19,577 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:19,935 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:20,292 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:20,648 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:21,007 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:21,371 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:21,731 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:22,088 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:22,448 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:22,808 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:23,166 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:23,523 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:23,881 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:24,239 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:24,599 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:24,959 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:25,314 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:25,675 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:26,036 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:26,398 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:26,756 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:27,113 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:27,469 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:27,828 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:28,184 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:28,544 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:28,904 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:29,262 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:29,616 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:29,976 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:30,335 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:30,695 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:31,053 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:31,409 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:31,768 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:32,127 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:32,484 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:32,843 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:33,199 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:33,554 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:33,912 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:34,270 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:34,627 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:34,985 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:35,342 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:35,697 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:36,057 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:36,415 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:36,772 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:37,131 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:37,492 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:37,847 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:38,204 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:38,563 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:38,922 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:39,278 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:39,640 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:39,998 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:40,351 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:40,711 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:41,069 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:41,424 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:41,784 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:42,141 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:42,500 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:42,858 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:43,213 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:43,571 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:43,929 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:44,285 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:44,638 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:44,998 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:45,354 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:45,711 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:46,068 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:34:46,431 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:35:12,944 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:35:17,844 - watchfiles.main - INFO - 3 changes detected
+2024-07-26 17:35:45,583 - watchfiles.main - INFO - 8 changes detected
+2024-07-26 17:35:45,944 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:35:46,303 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:35:46,664 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:35:47,022 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:35:47,383 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:35:47,744 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:35:48,101 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:35:48,458 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:35:48,815 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:35:49,174 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:35:49,533 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:35:49,892 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:35:50,251 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:35:50,608 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:35:50,965 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:35:51,324 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:35:51,679 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:35:52,038 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:35:52,397 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:35:52,754 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:35:53,113 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:35:53,469 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:35:53,827 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:40:32,660 - __main__ - INFO - Starting the application...
+2024-07-26 17:40:32,661 - uvicorn.error - WARNING - You must pass the application as an import string to enable 'reload' or 'workers'.
+2024-07-26 17:40:32,661 - uvicorn.error - WARNING - You must pass the application as an import string to enable 'reload' or 'workers'.
+2024-07-26 17:42:12,865 - __main__ - INFO - Starting the application...
+2024-07-26 17:42:12,866 - uvicorn.error - WARNING - You must pass the application as an import string to enable 'reload' or 'workers'.
+2024-07-26 17:42:12,866 - uvicorn.error - WARNING - You must pass the application as an import string to enable 'reload' or 'workers'.
+2024-07-26 17:42:44,288 - __main__ - INFO - Starting the application...
+2024-07-26 17:42:44,289 - uvicorn.error - WARNING - You must pass the application as an import string to enable 'reload' or 'workers'.
+2024-07-26 17:42:44,289 - uvicorn.error - WARNING - You must pass the application as an import string to enable 'reload' or 'workers'.
+2024-07-26 17:43:12,740 - __main__ - INFO - Starting the application...
+2024-07-26 17:43:12,740 - uvicorn.error - WARNING - You must pass the application as an import string to enable 'reload' or 'workers'.
+2024-07-26 17:43:12,740 - uvicorn.error - WARNING - You must pass the application as an import string to enable 'reload' or 'workers'.
+2024-07-26 17:45:39,986 - __main__ - INFO - Starting the application...
+2024-07-26 17:45:40,078 - uvicorn.error - INFO - Will watch for changes in these directories: ['C:\\Users\\erpes\\PycharmProjects\\SysML_PLM']
+2024-07-26 17:45:40,078 - uvicorn.error - INFO - Will watch for changes in these directories: ['C:\\Users\\erpes\\PycharmProjects\\SysML_PLM']
+2024-07-26 17:45:40,078 - uvicorn.error - INFO - Will watch for changes in these directories: ['C:\\Users\\erpes\\PycharmProjects\\SysML_PLM']
+2024-07-26 17:45:40,078 - uvicorn.error - INFO - Uvicorn running on [1mhttp://0.0.0.0:8000[0m (Press CTRL+C to quit)
+2024-07-26 17:45:40,078 - uvicorn.error - INFO - Uvicorn running on [1mhttp://0.0.0.0:8000[0m (Press CTRL+C to quit)
+2024-07-26 17:45:40,078 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2024-07-26 17:45:40,080 - uvicorn.error - INFO - Started reloader process [[36m[1m8088[0m] using [36m[1mWatchFiles[0m
+2024-07-26 17:45:40,080 - uvicorn.error - INFO - Started reloader process [[36m[1m8088[0m] using [36m[1mWatchFiles[0m
+2024-07-26 17:45:40,080 - uvicorn.error - INFO - Started reloader process [8088] using WatchFiles
+2024-07-26 17:45:41,121 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:42,293 - uvicorn.error - INFO - Started server process [[36m14268[0m]
+2024-07-26 17:45:42,293 - uvicorn.error - INFO - Started server process [[36m14268[0m]
+2024-07-26 17:45:42,294 - uvicorn.error - INFO - Waiting for application startup.
+2024-07-26 17:45:42,294 - uvicorn.error - INFO - Waiting for application startup.
+2024-07-26 17:45:42,297 - uvicorn.error - INFO - Application startup complete.
+2024-07-26 17:45:42,297 - uvicorn.error - INFO - Application startup complete.
+2024-07-26 17:45:42,382 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:42,739 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:43,101 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:43,464 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:43,823 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:44,184 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:44,544 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:44,903 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:45,260 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:45,617 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:45,976 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:46,382 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:46,739 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:47,099 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:47,457 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:47,815 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:48,173 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:48,534 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:48,894 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:49,253 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:49,608 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:49,967 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:50,325 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:50,683 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:51,041 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:51,398 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:51,759 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:52,117 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:52,477 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:52,836 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:53,193 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:53,550 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:53,909 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:54,266 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:54,623 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:54,981 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:55,339 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:45:55,613 - uvicorn.error - INFO - Shutting down
+2024-07-26 17:45:55,613 - uvicorn.error - INFO - Shutting down
+2024-07-26 17:45:55,721 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-07-26 17:45:55,721 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-07-26 17:45:55,721 - uvicorn.error - INFO - Application shutdown complete.
+2024-07-26 17:45:55,721 - uvicorn.error - INFO - Application shutdown complete.
+2024-07-26 17:45:55,722 - uvicorn.error - INFO - Finished server process [[36m14268[0m]
+2024-07-26 17:45:55,722 - uvicorn.error - INFO - Finished server process [[36m14268[0m]
+2024-07-26 17:45:55,962 - uvicorn.error - INFO - Stopping reloader process [[36m[1m8088[0m]
+2024-07-26 17:45:55,962 - uvicorn.error - INFO - Stopping reloader process [[36m[1m8088[0m]
+2024-07-26 17:45:55,962 - uvicorn.error - INFO - Stopping reloader process [8088]
+2024-07-26 17:47:04,863 - __main__ - INFO - Starting the application...
+2024-07-26 17:47:04,864 - uvicorn.error - INFO - Will watch for changes in these directories: ['C:\\Users\\erpes\\PycharmProjects\\SysML_PLM']
+2024-07-26 17:47:04,865 - uvicorn.error - INFO - Uvicorn running on [1mhttp://0.0.0.0:8000[0m (Press CTRL+C to quit)
+2024-07-26 17:47:04,865 - uvicorn.error - INFO - Started reloader process [[36m[1m22912[0m] using [36m[1mWatchFiles[0m
+2024-07-26 17:47:05,536 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:47:06,936 - uvicorn.error - INFO - Started server process [[36m24888[0m]
+2024-07-26 17:47:06,937 - uvicorn.error - INFO - Waiting for application startup.
+2024-07-26 17:47:06,940 - uvicorn.error - INFO - Application startup complete.
+2024-07-26 17:47:06,999 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:47:07,362 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:47:07,723 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:47:08,083 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:47:08,437 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:47:11,265 - watchfiles.main - INFO - 4 changes detected
+2024-07-26 17:47:11,265 - uvicorn.error - WARNING - WatchFiles detected changes in 'src\adapters\web\api.py'. Reloading...
+2024-07-26 17:48:05,414 - uvicorn.error - INFO - Shutting down
+2024-07-26 17:48:05,523 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-07-26 17:48:05,524 - uvicorn.error - INFO - Application shutdown complete.
+2024-07-26 17:48:05,524 - uvicorn.error - INFO - Finished server process [[36m24888[0m]
+2024-07-26 17:48:06,218 - watchfiles.main - INFO - 23 changes detected
+2024-07-26 17:48:08,355 - uvicorn.error - INFO - Started server process [[36m14268[0m]
+2024-07-26 17:48:08,355 - uvicorn.error - INFO - Waiting for application startup.
+2024-07-26 17:48:08,357 - uvicorn.error - INFO - Application startup complete.
+2024-07-26 17:48:08,442 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:08,805 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:09,162 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:09,515 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:09,869 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:10,227 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:10,583 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:10,936 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:11,292 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:11,647 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:12,001 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:12,358 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:12,716 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:13,073 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:13,431 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:13,789 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:14,146 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:14,501 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:14,857 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:15,211 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:15,569 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:15,925 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:16,283 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:16,636 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:16,992 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:17,347 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:17,703 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:18,058 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:18,412 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:18,767 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:19,123 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:19,478 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:19,833 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:20,187 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:20,539 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:20,896 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:21,250 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:21,605 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:21,966 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:22,320 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:22,676 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:23,060 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:23,413 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:23,769 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:24,124 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:24,477 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:24,833 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:25,186 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:25,539 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:25,896 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:33,280 - __main__ - INFO - Starting the application...
+2024-07-26 17:48:33,281 - uvicorn.error - INFO - Will watch for changes in these directories: ['C:\\Users\\erpes\\PycharmProjects\\SysML_PLM']
+2024-07-26 17:48:33,281 - uvicorn.error - INFO - Uvicorn running on [1mhttp://0.0.0.0:8000[0m (Press CTRL+C to quit)
+2024-07-26 17:48:33,282 - uvicorn.error - INFO - Started reloader process [[36m[1m17488[0m] using [36m[1mWatchFiles[0m
+2024-07-26 17:48:34,167 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:34,534 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:35,765 - uvicorn.error - INFO - Started server process [[36m2412[0m]
+2024-07-26 17:48:35,765 - uvicorn.error - INFO - Waiting for application startup.
+2024-07-26 17:48:35,770 - uvicorn.error - INFO - Application startup complete.
+2024-07-26 17:48:35,855 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:36,212 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:36,571 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:36,932 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:37,290 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:37,644 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:38,003 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:38,360 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:38,715 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:39,072 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:39,431 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:39,788 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:40,144 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:40,503 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:40,855 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:41,213 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:41,573 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:41,932 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:42,290 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:42,645 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:43,003 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:43,359 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:43,718 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:44,081 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:44,442 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:44,801 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:45,163 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:45,523 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:45,882 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:46,239 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:46,600 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:46,960 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:47,320 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:47,677 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:48,035 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:48,397 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:48,757 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:49,120 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:49,481 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:49,848 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:50,208 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:50,563 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:50,923 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:51,281 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:51,639 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:51,997 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:52,354 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:52,713 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:53,074 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:53,430 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:53,788 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:54,148 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:54,505 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:54,864 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:55,222 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:55,577 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:55,934 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:56,293 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:56,649 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:57,008 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:57,363 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:57,726 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:58,085 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:48:58,440 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:03,131 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:10,145 - watchfiles.main - INFO - 10 changes detected
+2024-07-26 17:49:10,146 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2024-07-26 17:49:14,906 - uvicorn.error - INFO - Shutting down
+2024-07-26 17:49:15,017 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-07-26 17:49:15,018 - uvicorn.error - INFO - Application shutdown complete.
+2024-07-26 17:49:15,018 - uvicorn.error - INFO - Finished server process [[36m2412[0m]
+2024-07-26 17:49:15,636 - watchfiles.main - INFO - 2 changes detected
+2024-07-26 17:49:17,172 - uvicorn.error - INFO - Started server process [[36m3840[0m]
+2024-07-26 17:49:17,172 - uvicorn.error - INFO - Waiting for application startup.
+2024-07-26 17:49:17,175 - uvicorn.error - INFO - Application startup complete.
+2024-07-26 17:49:17,257 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:17,612 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:17,972 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:18,329 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:18,687 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:19,049 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:19,408 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:19,766 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:20,123 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:20,481 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:20,842 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:21,206 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:21,566 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:21,924 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:22,280 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:22,639 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:22,995 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:23,353 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:23,714 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:24,070 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:24,430 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:24,788 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:25,143 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:25,503 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:25,864 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:26,222 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:26,581 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:26,941 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:27,299 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:27,658 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:30,234 - watchfiles.main - INFO - 7 changes detected
+2024-07-26 17:49:30,588 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:30,946 - watchfiles.main - INFO - 2 changes detected
+2024-07-26 17:49:31,303 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:31,662 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:32,022 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:32,383 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:32,742 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:33,098 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:33,458 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:33,818 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:34,177 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:34,538 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:34,895 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:35,253 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:35,611 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:35,970 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:36,332 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:36,695 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:37,061 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:37,421 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:37,780 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:38,142 - watchfiles.main - INFO - 1 change detected
+2024-07-26 17:49:45,101 - __main__ - INFO - Starting the application...
+2024-07-26 17:49:45,102 - uvicorn.error - INFO - Will watch for changes in these directories: ['C:\\Users\\erpes\\PycharmProjects\\SysML_PLM']
+2024-07-26 17:49:45,103 - uvicorn.error - INFO - Uvicorn running on [1mhttp://0.0.0.0:8000[0m (Press CTRL+C to quit)
+2024-07-26 17:49:45,103 - uvicorn.error - INFO - Started reloader process [[36m[1m21048[0m] using [36m[1mWatchFiles[0m
+2024-07-26 17:49:46,994 - uvicorn.error - INFO - Started server process [[36m16832[0m]
+2024-07-26 17:49:46,994 - uvicorn.error - INFO - Waiting for application startup.
+2024-07-26 17:49:46,997 - uvicorn.error - INFO - Application startup complete.
+2024-07-26 17:50:37,430 - uvicorn.error - INFO - Shutting down
+2024-07-26 17:50:37,539 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-07-26 17:50:37,540 - uvicorn.error - INFO - Application shutdown complete.
+2024-07-26 17:50:37,541 - uvicorn.error - INFO - Finished server process [[36m16832[0m]
+2024-07-26 17:50:37,853 - uvicorn.error - INFO - Stopping reloader process [[36m[1m21048[0m]
+2024-07-26 17:50:40,824 - __main__ - INFO - Starting the application...
+2024-07-26 17:50:40,825 - uvicorn.error - INFO - Will watch for changes in these directories: ['C:\\Users\\erpes\\PycharmProjects\\SysML_PLM']
+2024-07-26 17:50:40,826 - uvicorn.error - INFO - Uvicorn running on [1mhttp://0.0.0.0:8000[0m (Press CTRL+C to quit)
+2024-07-26 17:50:40,826 - uvicorn.error - INFO - Started reloader process [[36m[1m23576[0m] using [36m[1mWatchFiles[0m
+2024-07-26 17:50:42,724 - uvicorn.error - INFO - Started server process [[36m25156[0m]
+2024-07-26 17:50:42,724 - uvicorn.error - INFO - Waiting for application startup.
+2024-07-26 17:50:42,727 - uvicorn.error - INFO - Application startup complete.
+2024-07-26 17:50:52,170 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2024-07-26 17:51:29,845 - uvicorn.error - INFO - Shutting down
+2024-07-26 17:51:29,955 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-07-26 17:51:29,956 - uvicorn.error - INFO - Application shutdown complete.
+2024-07-26 17:51:29,957 - uvicorn.error - INFO - Finished server process [[36m25156[0m]
+2024-07-26 17:51:30,572 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2024-07-26 17:51:34,213 - uvicorn.error - INFO - Started server process [[36m23628[0m]
+2024-07-26 17:51:34,214 - uvicorn.error - INFO - Waiting for application startup.
+2024-07-26 17:51:34,216 - uvicorn.error - INFO - Application startup complete.
+2024-07-26 17:52:08,453 - __main__ - INFO - Starting the application...
+2024-07-26 17:52:08,454 - uvicorn.error - INFO - Will watch for changes in these directories: ['C:\\Users\\erpes\\PycharmProjects\\SysML_PLM']
+2024-07-26 17:52:08,454 - uvicorn.error - INFO - Uvicorn running on [1mhttp://0.0.0.0:8000[0m (Press CTRL+C to quit)
+2024-07-26 17:52:08,454 - uvicorn.error - INFO - Started reloader process [[36m[1m19672[0m] using [36m[1mWatchFiles[0m
+2024-07-26 17:52:13,111 - uvicorn.error - INFO - Started server process [[36m20208[0m]
+2024-07-26 17:52:13,112 - uvicorn.error - INFO - Waiting for application startup.
+2024-07-26 17:52:13,114 - uvicorn.error - INFO - Application startup complete.
+2024-07-26 17:52:41,411 - uvicorn.error - INFO - Shutting down
+2024-07-26 17:52:41,520 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-07-26 17:52:41,521 - uvicorn.error - INFO - Application shutdown complete.
+2024-07-26 17:52:41,521 - uvicorn.error - INFO - Finished server process [[36m20208[0m]
+2024-07-26 17:52:41,747 - uvicorn.error - INFO - Stopping reloader process [[36m[1m19672[0m]
+2024-07-26 17:52:44,056 - __main__ - INFO - Starting the application...
+2024-07-26 17:52:44,056 - uvicorn.error - INFO - Will watch for changes in these directories: ['C:\\Users\\erpes\\PycharmProjects\\SysML_PLM']
+2024-07-26 17:52:44,057 - uvicorn.error - INFO - Uvicorn running on [1mhttp://0.0.0.0:8000[0m (Press CTRL+C to quit)
+2024-07-26 17:52:44,057 - uvicorn.error - INFO - Started reloader process [[36m[1m13432[0m] using [36m[1mWatchFiles[0m
+2024-07-26 17:52:46,210 - uvicorn.error - INFO - Started server process [[36m10940[0m]
+2024-07-26 17:52:46,211 - uvicorn.error - INFO - Waiting for application startup.
+2024-07-26 17:52:46,213 - uvicorn.error - INFO - Application startup complete.
+2024-07-26 17:53:53,396 - uvicorn.error - INFO - Shutting down
+2024-07-26 17:53:53,504 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-07-26 17:53:53,505 - uvicorn.error - INFO - Application shutdown complete.
+2024-07-26 17:53:53,505 - uvicorn.error - INFO - Finished server process [[36m10940[0m]
+2024-07-26 17:53:53,734 - uvicorn.error - INFO - Stopping reloader process [[36m[1m13432[0m]
+2024-07-26 17:53:56,255 - __main__ - INFO - Starting the application...
+2024-07-26 17:53:56,256 - uvicorn.error - INFO - Will watch for changes in these directories: ['C:\\Users\\erpes\\PycharmProjects\\SysML_PLM']
+2024-07-26 17:53:56,257 - uvicorn.error - INFO - Uvicorn running on [1mhttp://0.0.0.0:8000[0m (Press CTRL+C to quit)
+2024-07-26 17:53:56,257 - uvicorn.error - INFO - Started reloader process [[36m[1m11168[0m] using [36m[1mWatchFiles[0m
+2024-07-26 17:53:58,509 - uvicorn.error - INFO - Started server process [[36m17908[0m]
+2024-07-26 17:53:58,509 - uvicorn.error - INFO - Waiting for application startup.
+2024-07-26 17:53:58,512 - uvicorn.error - INFO - Application startup complete.
+2024-07-26 17:57:23,243 - uvicorn.error - WARNING - WatchFiles detected changes in 'src\adapters\web\api.py'. Reloading...
+2024-07-26 17:58:07,797 - uvicorn.error - INFO - Shutting down
+2024-07-26 17:58:07,944 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-07-26 17:58:07,965 - uvicorn.error - INFO - Application shutdown complete.
+2024-07-26 17:58:07,966 - uvicorn.error - INFO - Finished server process [[36m17908[0m]
+2024-07-26 17:58:08,979 - uvicorn.error - WARNING - WatchFiles detected changes in 'src\adapters\web\api.py', 'main.py'. Reloading...
+2024-07-26 17:58:18,408 - uvicorn.error - INFO - Started server process [[36m24236[0m]
+2024-07-26 17:58:18,408 - uvicorn.error - INFO - Waiting for application startup.
+2024-07-26 17:58:18,411 - uvicorn.error - INFO - Application startup complete.
+2024-07-26 18:00:36,610 - __main__ - INFO - Starting the application...
+2024-07-26 18:00:36,612 - uvicorn.error - INFO - Will watch for changes in these directories: ['C:\\Users\\erpes\\PycharmProjects\\SysML_PLM']
+2024-07-26 18:00:36,613 - uvicorn.error - INFO - Uvicorn running on [1mhttp://0.0.0.0:8000[0m (Press CTRL+C to quit)
+2024-07-26 18:00:36,613 - uvicorn.error - INFO - Started reloader process [[36m[1m20168[0m] using [36m[1mWatchFiles[0m
+2024-07-26 18:00:38,847 - uvicorn.error - INFO - Started server process [[36m21888[0m]
+2024-07-26 18:00:38,847 - uvicorn.error - INFO - Waiting for application startup.
+2024-07-26 18:00:38,849 - uvicorn.error - INFO - Application startup complete.
+2024-07-26 18:00:52,200 - uvicorn.error - INFO - Shutting down
+2024-07-26 18:00:52,306 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-07-26 18:00:52,307 - uvicorn.error - INFO - Application shutdown complete.
+2024-07-26 18:00:52,307 - uvicorn.error - INFO - Finished server process [[36m21888[0m]
+2024-07-26 18:01:00,752 - __main__ - INFO - Starting the application...
+2024-07-26 18:01:00,753 - uvicorn.error - INFO - Will watch for changes in these directories: ['C:\\Users\\erpes\\PycharmProjects\\SysML_PLM']
+2024-07-26 18:01:00,754 - uvicorn.error - INFO - Uvicorn running on [1mhttp://0.0.0.0:8000[0m (Press CTRL+C to quit)
+2024-07-26 18:01:00,754 - uvicorn.error - INFO - Started reloader process [[36m[1m23704[0m] using [36m[1mWatchFiles[0m
+2024-07-26 18:01:02,680 - uvicorn.error - INFO - Started server process [[36m24776[0m]
+2024-07-26 18:01:02,680 - uvicorn.error - INFO - Waiting for application startup.
+2024-07-26 18:01:02,683 - uvicorn.error - INFO - Application startup complete.
+2024-07-26 18:01:07,699 - uvicorn.error - INFO - Shutting down
+2024-07-26 18:01:27,520 - __main__ - INFO - Starting the application...
+2024-07-26 18:01:27,522 - uvicorn.error - INFO - Will watch for changes in these directories: ['C:\\Users\\erpes\\PycharmProjects\\SysML_PLM']
+2024-07-26 18:01:27,522 - uvicorn.error - INFO - Uvicorn running on [1mhttp://0.0.0.0:8000[0m (Press CTRL+C to quit)
+2024-07-26 18:01:27,523 - uvicorn.error - INFO - Started reloader process [[36m[1m11740[0m] using [36m[1mWatchFiles[0m
+2024-07-26 18:01:29,544 - uvicorn.error - INFO - Started server process [[36m17080[0m]
+2024-07-26 18:01:29,544 - uvicorn.error - INFO - Waiting for application startup.
+2024-07-26 18:01:29,547 - uvicorn.error - INFO - Application startup complete.
+2024-07-26 18:03:13,868 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2024-07-26 18:03:13,957 - uvicorn.error - INFO - Shutting down
+2024-07-26 18:03:14,069 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-07-26 18:03:14,070 - uvicorn.error - INFO - Application shutdown complete.
+2024-07-26 18:03:14,071 - uvicorn.error - INFO - Finished server process [[36m17080[0m]
+2024-07-26 18:03:18,564 - uvicorn.error - INFO - Started server process [[36m21708[0m]
+2024-07-26 18:03:18,565 - uvicorn.error - INFO - Waiting for application startup.
+2024-07-26 18:03:18,570 - uvicorn.error - INFO - Application startup complete.
+2024-07-26 18:03:25,653 - uvicorn.error - WARNING - WatchFiles detected changes in 'src\adapters\web\api.py'. Reloading...
+2024-07-26 18:03:25,784 - uvicorn.error - INFO - Shutting down
+2024-07-26 18:03:25,894 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-07-26 18:03:25,918 - uvicorn.error - INFO - Application shutdown complete.
+2024-07-26 18:03:25,919 - uvicorn.error - INFO - Finished server process [[36m21708[0m]
+2024-07-26 18:03:33,754 - uvicorn.error - INFO - Started server process [[36m13180[0m]
+2024-07-26 18:03:33,755 - uvicorn.error - INFO - Waiting for application startup.
+2024-07-26 18:03:33,758 - uvicorn.error - INFO - Application startup complete.
+2024-07-26 18:03:46,589 - __main__ - INFO - Starting the application...
+2024-07-26 18:03:46,590 - uvicorn.error - INFO - Will watch for changes in these directories: ['C:\\Users\\erpes\\PycharmProjects\\SysML_PLM']
+2024-07-26 18:03:46,590 - uvicorn.error - INFO - Uvicorn running on [1mhttp://0.0.0.0:8000[0m (Press CTRL+C to quit)
+2024-07-26 18:03:46,591 - uvicorn.error - INFO - Started reloader process [[36m[1m2764[0m] using [36m[1mWatchFiles[0m
+2024-07-26 18:03:48,543 - uvicorn.error - INFO - Started server process [[36m12964[0m]
+2024-07-26 18:03:48,544 - uvicorn.error - INFO - Waiting for application startup.
+2024-07-26 18:03:48,544 - fastapi - INFO - Initializing services...
+2024-07-26 18:03:48,547 - fastapi - INFO - Services initialized successfully.
+2024-07-26 18:03:48,547 - uvicorn.error - INFO - Application startup complete.
+2024-07-26 18:05:58,051 - uvicorn.error - INFO - Shutting down
+2024-07-26 18:05:58,209 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-07-26 18:05:58,216 - fastapi - INFO - Shutting down...
+2024-07-26 18:05:58,222 - uvicorn.error - INFO - Application shutdown complete.
+2024-07-26 18:05:58,222 - uvicorn.error - INFO - Finished server process [[36m12964[0m]
+2024-07-26 18:12:02,285 - __main__ - INFO - Starting the application...
+2024-07-26 18:12:02,286 - uvicorn.error - INFO - Will watch for changes in these directories: ['C:\\Users\\erpes\\PycharmProjects\\SysML_PLM']
+2024-07-26 18:12:02,287 - uvicorn.error - INFO - Uvicorn running on [1mhttp://0.0.0.0:8000[0m (Press CTRL+C to quit)
+2024-07-26 18:12:02,287 - uvicorn.error - INFO - Started reloader process [[36m[1m5640[0m] using [36m[1mWatchFiles[0m
+2024-07-26 18:12:05,084 - uvicorn.error - INFO - Started server process [[36m5348[0m]
+2024-07-26 18:12:05,084 - uvicorn.error - INFO - Waiting for application startup.
+2024-07-26 18:12:05,085 - fastapi - INFO - Initializing services...
+2024-07-26 18:12:05,087 - fastapi - INFO - Services initialized successfully.
+2024-07-26 18:12:05,087 - uvicorn.error - INFO - Application startup complete.
+2024-07-26 18:12:09,679 - uvicorn.error - INFO - Shutting down
+2024-07-26 18:12:09,789 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-07-26 18:12:09,789 - fastapi - INFO - Shutting down...
+2024-07-26 18:12:09,789 - uvicorn.error - INFO - Application shutdown complete.
+2024-07-26 18:12:09,790 - uvicorn.error - INFO - Finished server process [[36m5348[0m]
+2024-07-26 18:40:02,312 - __main__ - INFO - Starting the application...
+2024-07-26 18:40:02,313 - uvicorn.error - INFO - Will watch for changes in these directories: ['C:\\Users\\erpes\\PycharmProjects\\SysML_PLM']
+2024-07-26 18:40:02,313 - uvicorn.error - INFO - Uvicorn running on [1mhttp://0.0.0.0:8000[0m (Press CTRL+C to quit)
+2024-07-26 18:40:02,314 - uvicorn.error - INFO - Started reloader process [[36m[1m9688[0m] using [36m[1mWatchFiles[0m
+2024-07-26 18:40:04,207 - uvicorn.error - INFO - Started server process [[36m12716[0m]
+2024-07-26 18:40:04,207 - uvicorn.error - INFO - Waiting for application startup.
+2024-07-26 18:40:04,208 - fastapi - INFO - Initializing services...
+2024-07-26 18:40:04,210 - fastapi - INFO - Services initialized successfully.
+2024-07-26 18:40:04,210 - uvicorn.error - INFO - Application startup complete.
+2024-07-26 18:40:13,140 - fastapi - INFO - Root endpoint accessed
+2024-07-26 18:40:13,141 - uvicorn.access - INFO - 127.0.0.1:50758 - "GET / HTTP/1.1" 200
+2024-07-26 18:40:15,016 - fastapi - INFO - Root endpoint accessed
+2024-07-26 18:40:15,017 - uvicorn.access - INFO - 127.0.0.1:50759 - "GET / HTTP/1.1" 200
+2024-07-26 18:40:19,791 - fastapi - INFO - Received request to process diagrams
+2024-07-26 18:40:19,791 - fastapi - INFO - Starting diagram processing in background
+2024-07-26 18:40:19,791 - fastapi - INFO - Background task added successfully
+2024-07-26 18:40:19,791 - uvicorn.access - INFO - 127.0.0.1:50761 - "POST /process/ HTTP/1.1" 200
+2024-07-26 18:40:42,929 - uvicorn.error - INFO - Shutting down
+2024-07-26 18:40:43,040 - uvicorn.error - INFO - Waiting for background tasks to complete. (CTRL+C to force quit)
+2024-07-26 18:43:37,412 - __main__ - INFO - Starting the application...
+2024-07-26 18:43:37,413 - uvicorn.error - INFO - Will watch for changes in these directories: ['C:\\Users\\erpes\\PycharmProjects\\SysML_PLM']
+2024-07-26 18:43:37,414 - uvicorn.error - INFO - Uvicorn running on [1mhttp://0.0.0.0:8000[0m (Press CTRL+C to quit)
+2024-07-26 18:43:37,414 - uvicorn.error - INFO - Started reloader process [[36m[1m20776[0m] using [36m[1mWatchFiles[0m
+2024-07-26 18:43:39,282 - uvicorn.error - INFO - Started server process [[36m8600[0m]
+2024-07-26 18:43:39,283 - uvicorn.error - INFO - Waiting for application startup.
+2024-07-26 18:43:39,283 - fastapi - INFO - Initializing services...
+2024-07-26 18:43:39,286 - fastapi - INFO - Services initialized successfully.
+2024-07-26 18:43:39,286 - uvicorn.error - INFO - Application startup complete.
+2024-07-26 18:43:46,699 - fastapi - INFO - Root endpoint accessed
+2024-07-26 18:43:46,699 - uvicorn.access - INFO - 127.0.0.1:50811 - "GET / HTTP/1.1" 200
+2024-07-26 18:43:50,446 - fastapi - INFO - Received request to process diagrams
+2024-07-26 18:43:50,456 - fastapi - INFO - Starting diagram processing in background
+2024-07-26 18:43:50,457 - fastapi - INFO - Background task added successfully
+2024-07-26 18:43:50,458 - uvicorn.access - INFO - 127.0.0.1:50812 - "POST /process/ HTTP/1.1" 200
+2024-07-26 18:45:41,775 - uvicorn.error - INFO - Shutting down
+2024-07-26 18:45:41,887 - uvicorn.error - INFO - Waiting for background tasks to complete. (CTRL+C to force quit)
+2024-07-26 18:49:46,289 - __main__ - INFO - Starting the application...
+2024-07-26 18:49:52,018 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:49:52,376 - watchfiles.main - INFO - 2 changes detected
+2024-07-26 18:49:52,737 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:49:53,099 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:49:56,936 - watchfiles.main - INFO - 4 changes detected
+2024-07-26 18:49:57,289 - watchfiles.main - INFO - 6 changes detected
+2024-07-26 18:49:57,649 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:49:58,004 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:50:02,099 - watchfiles.main - INFO - 7 changes detected
+2024-07-26 18:50:02,452 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:50:02,814 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:50:03,175 - watchfiles.main - INFO - 2 changes detected
+2024-07-26 18:50:03,538 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:50:03,900 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:50:04,261 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:50:04,621 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:50:04,981 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:50:05,344 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:50:05,707 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:56:34,484 - __main__ - INFO - Starting the application...
+2024-07-26 18:56:41,620 - watchfiles.main - INFO - 7 changes detected
+2024-07-26 18:56:42,634 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:56:42,997 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:56:43,361 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:56:47,900 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:57:08,147 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:57:08,512 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:57:08,875 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:57:09,241 - watchfiles.main - INFO - 2 changes detected
+2024-07-26 18:57:09,604 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:57:09,968 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:57:10,327 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:57:10,687 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:57:11,049 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:57:11,410 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:57:11,776 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:57:12,139 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:57:12,501 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:59:19,843 - __main__ - INFO - Starting the application...
+2024-07-26 18:59:23,894 - watchfiles.main - INFO - 3 changes detected
+2024-07-26 18:59:24,814 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:59:28,905 - watchfiles.main - INFO - 6 changes detected
+2024-07-26 18:59:29,257 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:59:29,619 - watchfiles.main - INFO - 1 change detected
+2024-07-26 18:59:29,982 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:01:07,523 - __main__ - INFO - Starting the application...
+2024-07-26 19:01:07,524 - uvicorn.error - INFO - Will watch for changes in these directories: ['C:\\Users\\erpes\\PycharmProjects\\SysML_PLM']
+2024-07-26 19:01:07,525 - uvicorn.error - INFO - Uvicorn running on [1mhttp://0.0.0.0:8000[0m (Press CTRL+C to quit)
+2024-07-26 19:01:07,525 - uvicorn.error - INFO - Started reloader process [[36m[1m1240[0m] using [36m[1mWatchFiles[0m
+2024-07-26 19:01:09,507 - uvicorn.error - INFO - Started server process [[36m3728[0m]
+2024-07-26 19:01:09,508 - uvicorn.error - INFO - Waiting for application startup.
+2024-07-26 19:01:09,508 - fastapi - INFO - Initializing services...
+2024-07-26 19:01:09,511 - fastapi - INFO - Services initialized successfully.
+2024-07-26 19:01:09,511 - uvicorn.error - INFO - Application startup complete.
+2024-07-26 19:01:14,558 - fastapi - INFO - Root endpoint accessed
+2024-07-26 19:01:14,560 - uvicorn.access - INFO - 127.0.0.1:51299 - "GET / HTTP/1.1" 200
+2024-07-26 19:01:22,172 - uvicorn.access - INFO - 127.0.0.1:51300 - "GET /docs HTTP/1.1" 200
+2024-07-26 19:01:22,577 - uvicorn.access - INFO - 127.0.0.1:51300 - "GET /openapi.json HTTP/1.1" 200
+2024-07-26 19:01:26,322 - fastapi - INFO - Received request to process diagrams
+2024-07-26 19:01:26,323 - fastapi - INFO - Starting diagram processing in background
+2024-07-26 19:01:26,323 - fastapi - INFO - Background task added successfully
+2024-07-26 19:01:26,324 - uvicorn.access - INFO - 127.0.0.1:51302 - "POST /process/ HTTP/1.1" 200
+2024-07-26 19:11:38,873 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2024-07-26 19:16:27,344 - uvicorn.error - INFO - Shutting down
+2024-07-26 19:16:27,498 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-07-26 19:16:27,508 - fastapi - INFO - Shutting down...
+2024-07-26 19:16:27,513 - uvicorn.error - INFO - Application shutdown complete.
+2024-07-26 19:16:27,514 - uvicorn.error - INFO - Finished server process [[36m3728[0m]
+2024-07-26 19:16:28,862 - uvicorn.error - WARNING - WatchFiles detected changes in 'src\adapters\web\api.py', 'main.py'. Reloading...
+2024-07-26 19:16:31,381 - uvicorn.error - INFO - Started server process [[36m10392[0m]
+2024-07-26 19:16:31,381 - uvicorn.error - INFO - Waiting for application startup.
+2024-07-26 19:16:31,384 - uvicorn.error - INFO - Application startup complete.
+2024-07-26 19:16:31,388 - uvicorn.error - ERROR - Traceback (most recent call last):
+  File "C:\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\asyncio\base_events.py", line 664, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\erpes\PycharmProjects\SysML_PLM\venv\Lib\site-packages\starlette\routing.py", line 741, in lifespan
+    await receive()
+  File "C:\Users\erpes\PycharmProjects\SysML_PLM\venv\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\asyncio\queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+2024-07-26 19:16:33,495 - uvicorn.error - INFO - Started server process [[36m14032[0m]
+2024-07-26 19:16:33,496 - uvicorn.error - INFO - Waiting for application startup.
+2024-07-26 19:16:33,498 - uvicorn.error - INFO - Application startup complete.
+2024-07-26 19:20:46,068 - uvicorn.error - INFO - Shutting down
+2024-07-26 19:20:46,177 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-07-26 19:20:46,180 - uvicorn.error - INFO - Application shutdown complete.
+2024-07-26 19:20:46,180 - uvicorn.error - INFO - Finished server process [[36m14032[0m]
+2024-07-26 19:33:27,134 - __main__ - INFO - Starting the application...
+2024-07-26 19:33:35,315 - watchfiles.main - INFO - 3 changes detected
+2024-07-26 19:33:36,228 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:43,893 - watchfiles.main - INFO - 4 changes detected
+2024-07-26 19:33:44,246 - watchfiles.main - INFO - 8 changes detected
+2024-07-26 19:33:44,606 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:44,965 - watchfiles.main - INFO - 3 changes detected
+2024-07-26 19:33:45,328 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:45,689 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:46,049 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:46,410 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:46,774 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:47,134 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:47,492 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:47,849 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:48,210 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:48,571 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:48,935 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:49,295 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:49,656 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:50,019 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:50,385 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:50,744 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:51,102 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:51,463 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:51,824 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:52,184 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:52,541 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:52,900 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:53,261 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:53,623 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:53,985 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:54,347 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:54,710 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:55,069 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:55,428 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:55,791 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:56,153 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:56,515 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:33:56,876 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:34:09,183 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:34:20,443 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:34:20,799 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:34:21,156 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:34:21,519 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:34:21,884 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:34:22,246 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:34:22,608 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:34:22,968 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:34:23,331 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:34:23,696 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:34:24,059 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:34:24,421 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:34:24,785 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:34:25,148 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:34:25,512 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:34:25,872 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:34:26,237 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:34:26,600 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:34:26,961 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:34:27,321 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:34:27,681 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:34:28,043 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:34:28,403 - watchfiles.main - INFO - 1 change detected
+2024-07-26 19:34:28,767 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:12:03,918 - __main__ - INFO - Starting the application...
+2024-07-26 22:13:10,798 - __main__ - INFO - Starting the application...
+2024-07-26 22:15:38,856 - __main__ - INFO - Starting the application...
+2024-07-26 22:15:51,891 - watchfiles.main - INFO - 7 changes detected
+2024-07-26 22:15:52,310 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:15:52,677 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:15:53,036 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:15:53,422 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:16:23,811 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:16:40,882 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:17:01,622 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:17:01,986 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:17:02,347 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:17:02,712 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:17:03,075 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:17:03,439 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:17:03,799 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:17:04,162 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:17:04,522 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:17:04,901 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:17:05,258 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:17:05,619 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:17:05,979 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:17:06,337 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:17:06,698 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:17:07,059 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:17:07,419 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:17:07,777 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:17:08,134 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:17:08,494 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:17:08,853 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:17:09,213 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:17:09,575 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:17:09,935 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:17:10,293 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:19:05,332 - __main__ - INFO - Starting the application...
+2024-07-26 22:19:17,973 - watchfiles.main - INFO - 7 changes detected
+2024-07-26 22:19:19,028 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:19:19,380 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:19:19,743 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:19:20,104 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:19:20,464 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:19:20,827 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:19:21,185 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:19:21,541 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:22:06,930 - __main__ - INFO - Starting the application...
+2024-07-26 22:22:07,348 - watchfiles.main - INFO - 5 changes detected
+2024-07-26 22:22:07,854 - watchfiles.main - INFO - 5 changes detected
+2024-07-26 22:22:08,207 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:22:08,564 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:22:08,926 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:22:09,287 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:22:09,651 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:22:10,014 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:22:10,383 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:22:10,749 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:22:11,110 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:22:11,470 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:22:11,829 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:22:12,187 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:22:12,548 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:22:12,909 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:22:13,267 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:22:13,629 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:22:13,987 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:22:14,350 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:22:14,714 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:22:15,072 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:22:15,439 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:23:32,077 - __main__ - INFO - Starting the application...
+2024-07-26 22:24:09,062 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:24:22,296 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:24:22,666 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:24:23,022 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:24:23,381 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:24:23,742 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:24:24,104 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:24:24,461 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:24:24,822 - watchfiles.main - INFO - 1 change detected
+2024-07-26 22:26:51,372 - __main__ - INFO - Starting the application...
+2024-07-26 22:26:52,453 - watchfiles.main - DEBUG - 5 changes detected: {(<Change.added: 1>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\src\\adapters\\web\\__pycache__\\process_projects.cpython-312.pyc'), (<Change.deleted: 3>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\src\\adapters\\web\\__pycache__\\process_projects.cpython-312.pyc.1973369281328'), (<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\src\\adapters\\web\\__pycache__'), (<Change.deleted: 3>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\src\\adapters\\web\\__pycache__\\process_projects.cpython-312.pyc'), (<Change.added: 1>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\src\\adapters\\web\\__pycache__\\process_projects.cpython-312.pyc.1973369281328')}
+2024-07-26 22:26:52,807 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:27:08,973 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:27:25,494 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\diagrams\\cdcs\\cdc_1\\REQ_diagram.md')}
+2024-07-26 22:27:25,858 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:27:26,219 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:27:26,576 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:27:26,936 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:27:27,293 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:27:27,652 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:27:28,011 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:29:49,484 - __main__ - INFO - Starting the application...
+2024-07-26 22:30:33,584 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\diagrams\\cdcs\\cdc_1\\REQ_diagram.md')}
+2024-07-26 22:30:49,174 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:30:49,738 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\diagrams\\cdcs\\cdc_1\\REQ_entities.json')}
+2024-07-26 22:30:50,101 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:05,960 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\diagrams\\cdcs\\cdc_1\\UC_diagram.md')}
+2024-07-26 22:31:06,325 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:06,689 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:07,044 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:07,406 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:07,766 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:08,126 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:08,485 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:08,844 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:09,206 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:09,567 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:09,925 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:10,282 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:10,643 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:11,004 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:11,362 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:11,725 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:12,084 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:12,444 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:12,806 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:13,168 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:13,525 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:13,893 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:14,249 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:14,604 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:14,963 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:15,324 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:15,686 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:16,044 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:16,405 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:16,767 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:17,128 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:17,488 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:17,847 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:18,205 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:18,562 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:18,922 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:19,282 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:19,643 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:20,021 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:20,379 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:20,739 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:21,096 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:21,453 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:21,813 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:22,175 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:22,537 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:22,899 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:23,260 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:23,622 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:23,981 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:24,340 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:24,700 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:25,059 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:25,420 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:25,779 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:26,139 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:26,501 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:26,858 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:27,220 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:29,294 - watchfiles.main - DEBUG - 1 change detected: {(<Change.added: 1>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\diagrams\\cdcs\\cdc_1\\UC_entities.json')}
+2024-07-26 22:31:29,653 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:30,013 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:30,375 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\diagrams\\cdcs\\cdc_1'), (<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:30,734 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:31,095 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:31,455 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:31,815 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:32,186 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:32,539 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:32,900 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:33,261 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:33,680 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:34,032 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:34,394 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:34,756 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:35,110 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:35,471 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:35,831 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:36,189 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:36,550 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:36,909 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:37,267 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:37,629 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:37,991 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:38,355 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:38,714 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:39,072 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:39,431 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.added: 1>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\diagrams\\cdcs\\cdc_1\\BDD_diagram.md'), (<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:39,789 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:40,149 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:40,518 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\diagrams\\cdcs\\cdc_1'), (<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:40,883 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:41,245 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:41,605 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:41,965 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:42,327 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:42,682 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:43,042 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:43,401 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:43,759 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:44,118 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:44,479 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:44,838 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:45,197 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:45,555 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:45,918 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:46,279 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:46,639 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:46,999 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:47,358 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:47,720 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:48,086 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:48,450 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:48,811 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:49,174 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:49,531 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:49,892 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:50,254 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:50,610 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:50,971 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:51,333 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:51,694 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:52,056 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:52,411 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:52,771 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:53,129 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:53,489 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:53,897 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.added: 1>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\diagrams\\cdcs\\cdc_1\\BDD_entities.json'), (<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:54,258 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:54,619 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:54,979 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\diagrams\\cdcs\\cdc_1'), (<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:55,335 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:55,695 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:56,062 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:56,429 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:56,790 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:57,161 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:57,523 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:57,884 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:58,242 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:58,598 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:58,957 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:59,317 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:31:59,676 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:32:00,038 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:32:00,395 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:32:00,754 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:32:01,112 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:32:01,471 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:32:01,834 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:32:02,195 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:33:59,716 - __main__ - INFO - Starting the application...
+2024-07-26 22:35:09,173 - __main__ - INFO - Starting the application...
+2024-07-26 22:37:31,337 - __main__ - INFO - Starting the application...
+2024-07-26 22:37:32,163 - watchfiles.main - DEBUG - 5 changes detected: {(<Change.deleted: 3>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\src\\adapters\\web\\__pycache__\\process_projects.cpython-312.pyc.1903446826208'), (<Change.deleted: 3>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\src\\adapters\\web\\__pycache__\\process_projects.cpython-312.pyc'), (<Change.added: 1>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\src\\adapters\\web\\__pycache__\\process_projects.cpython-312.pyc.1903446826208'), (<Change.added: 1>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\src\\adapters\\web\\__pycache__\\process_projects.cpython-312.pyc'), (<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\src\\adapters\\web\\__pycache__')}
+2024-07-26 22:37:49,359 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:38:48,146 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, 'C:\\Users\\erpes\\PycharmProjects\\SysML_PLM\\app.log')}
+2024-07-26 22:49:57,894 - __main__ - INFO - Starting the application...

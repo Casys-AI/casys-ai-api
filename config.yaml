@@ -1,0 +1,48 @@
+# Configuration générale
+openai:
+  model: "gpt-4o"
+  temperature: 0
+  api_key: "sk-proj-Qfza5YLxdd9cBnJN9ZGRT3BlbkFJmB1Oaq2KCwobafvbQJnj"
+
+neo4j:
+  uri: "bolt://localhost:7687"
+  user: "neo4j"
+  password: "password123"
+
+text_splitter:
+  chunk_size: 4000
+  chunk_overlap: 200
+
+similarity:
+  embedding_weight: 0.7
+  keyword_weight: 0.3
+  threshold: 0.8
+
+# Configuration des types de diagrammes
+diagram_types:
+  - REQ
+  - UC
+  - BDD
+
+# Templates pour les chemins de fichiers
+file_templates:
+  cdc:
+    prompt: "diagrams/cdcs/{cdc_name}/{diagram_type}.txt"
+    output: "diagrams/cdcs/{cdc_name}/{diagram_type}_diagram.md"
+    entities: "diagrams/cdcs/{cdc_name}/{diagram_type}_entities.json"
+  part:
+    prompt: "diagrams/parts/{part_name}/{diagram_type}.txt"
+    output: "diagrams/parts/{part_name}/{part_name}_{diagram_type}_diagram.md"
+    entities: "diagrams/parts/{part_name}/{part_name}_{diagram_type}_entities.json"
+
+# Définition des projets
+projects:
+  cdcs:
+    - name: cdc_1
+      label: "CDC_1"
+      path: "diagrams/cdcs/cdc_1/cahier_des_charges.docx"
+  parts:
+    - name: crushing_mill
+      label: "CRUSHING_MILL"
+      path: "diagrams/parts/crushing_mill/Crushing mill.docx"
+

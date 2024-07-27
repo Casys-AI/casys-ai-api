@@ -1,0 +1,186 @@
+{
+  "entities": [
+    {
+      "name": "SimcenterAmesim",
+      "type": "Platform",
+      "description": "A system simulation platform used to develop a Digital Twin of products, closely mimicking real-world behavior.",
+      "keywords": [
+        "system simulation",
+        "Digital Twin",
+        "real-world behavior"
+      ]
+    },
+    {
+      "name": "DigitalTwin",
+      "type": "Model",
+      "description": "A digital representation of a coffee machine, detailing its complex mechatronic components and control algorithms.",
+      "keywords": [
+        "digital representation",
+        "coffee machine",
+        "mechatronic components",
+        "control algorithms"
+      ]
+    },
+    {
+      "name": "CoffeeMachine",
+      "type": "Component",
+      "description": "A coffee machine with complex mechatronic components and control algorithms.",
+      "keywords": [
+        "coffee machine",
+        "mechatronic components",
+        "control algorithms"
+      ]
+    },
+    {
+      "name": "Components",
+      "type": "Subcomponent",
+      "description": "Individual components of the coffee machine modeled at an intermediate detail level.",
+      "keywords": [
+        "individual components",
+        "coffee machine",
+        "intermediate detail level"
+      ]
+    },
+    {
+      "name": "ControlModule",
+      "type": "Subcomponent",
+      "description": "A module to control the coffee machine, incorporating interactive elements and state chart programming.",
+      "keywords": [
+        "control module",
+        "coffee machine",
+        "interactive elements",
+        "state chart programming"
+      ]
+    },
+    {
+      "name": "Libraries",
+      "type": "Resource",
+      "description": "Required libraries for modeling and simulation.",
+      "keywords": [
+        "libraries",
+        "modeling",
+        "simulation"
+      ]
+    },
+    {
+      "name": "SignalAndControl",
+      "type": "Library",
+      "description": "Library for signal and control systems.",
+      "keywords": [
+        "signal",
+        "control systems"
+      ]
+    },
+    {
+      "name": "Mechanical1D",
+      "type": "Library",
+      "description": "Library for 1D mechanical systems.",
+      "keywords": [
+        "1D mechanical systems"
+      ]
+    },
+    {
+      "name": "Thermal",
+      "type": "Library",
+      "description": "Library for thermal systems.",
+      "keywords": [
+        "thermal systems"
+      ]
+    },
+    {
+      "name": "ThermalHydraulic",
+      "type": "Library",
+      "description": "Library for thermal hydraulic systems.",
+      "keywords": [
+        "thermal hydraulic systems"
+      ]
+    },
+    {
+      "name": "TwoPhaseFlow",
+      "type": "Library",
+      "description": "Library for two-phase flow systems.",
+      "keywords": [
+        "two-phase flow systems"
+      ]
+    },
+    {
+      "name": "ElectricalBasics",
+      "type": "Library",
+      "description": "Library for basic electrical systems.",
+      "keywords": [
+        "basic electrical systems"
+      ]
+    },
+    {
+      "name": "ElectricalMotorsAndDrives",
+      "type": "Library",
+      "description": "Library for electrical motors and drives.",
+      "keywords": [
+        "electrical motors",
+        "drives"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SimcenterAmesim",
+      "target": "DigitalTwin",
+      "type": "contains"
+    },
+    {
+      "source": "DigitalTwin",
+      "target": "CoffeeMachine",
+      "type": "contains"
+    },
+    {
+      "source": "CoffeeMachine",
+      "target": "Components",
+      "type": "contains"
+    },
+    {
+      "source": "CoffeeMachine",
+      "target": "ControlModule",
+      "type": "contains"
+    },
+    {
+      "source": "SimcenterAmesim",
+      "target": "Libraries",
+      "type": "contains"
+    },
+    {
+      "source": "Libraries",
+      "target": "SignalAndControl",
+      "type": "contains"
+    },
+    {
+      "source": "Libraries",
+      "target": "Mechanical1D",
+      "type": "contains"
+    },
+    {
+      "source": "Libraries",
+      "target": "Thermal",
+      "type": "contains"
+    },
+    {
+      "source": "Libraries",
+      "target": "ThermalHydraulic",
+      "type": "contains"
+    },
+    {
+      "source": "Libraries",
+      "target": "TwoPhaseFlow",
+      "type": "contains"
+    },
+    {
+      "source": "Libraries",
+      "target": "ElectricalBasics",
+      "type": "contains"
+    },
+    {
+      "source": "Libraries",
+      "target": "ElectricalMotorsAndDrives",
+      "type": "contains"
+    }
+  ]
+}

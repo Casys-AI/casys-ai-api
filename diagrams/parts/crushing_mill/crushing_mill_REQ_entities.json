@@ -1,0 +1,206 @@
+{
+  "entities": [
+    {
+      "name": "mainReq",
+      "type": "requirement",
+      "description": "The crushing mill transforms coffee beans into powder",
+      "keywords": [
+        "crushing mill",
+        "coffee beans",
+        "powder",
+        "High risk",
+        "analysis"
+      ]
+    },
+    {
+      "name": "energyConsumptionAnalysis",
+      "type": "functionalRequirement",
+      "description": "Simplified model for energy consumption analysis",
+      "keywords": [
+        "energy consumption",
+        "analysis",
+        "Medium risk"
+      ]
+    },
+    {
+      "name": "constantRotarySpeed",
+      "type": "performanceRequirement",
+      "description": "Control for constant rotary speed",
+      "keywords": [
+        "rotary speed",
+        "control",
+        "Medium risk",
+        "test"
+      ]
+    },
+    {
+      "name": "firstOrderLag",
+      "type": "performanceRequirement",
+      "description": "First-order lag to prevent torque peaks",
+      "keywords": [
+        "first-order lag",
+        "torque peaks",
+        "Low risk",
+        "analysis"
+      ]
+    },
+    {
+      "name": "motorIcon",
+      "type": "functionalRequirement",
+      "description": "Motor icon for signal conversion",
+      "keywords": [
+        "motor icon",
+        "signal conversion",
+        "Low risk",
+        "inspection"
+      ]
+    },
+    {
+      "name": "speedReducingGear",
+      "type": "functionalRequirement",
+      "description": "Speed-reducing gear",
+      "keywords": [
+        "speed-reducing gear",
+        "Low risk",
+        "inspection"
+      ]
+    },
+    {
+      "name": "rotationalSpringDamper",
+      "type": "functionalRequirement",
+      "description": "Rotational spring/damper",
+      "keywords": [
+        "rotational spring",
+        "damper",
+        "Low risk",
+        "inspection"
+      ]
+    },
+    {
+      "name": "frictionElements",
+      "type": "functionalRequirement",
+      "description": "Friction elements",
+      "keywords": [
+        "friction elements",
+        "Low risk",
+        "inspection"
+      ]
+    },
+    {
+      "name": "energySensor",
+      "type": "functionalRequirement",
+      "description": "Energy sensor",
+      "keywords": [
+        "energy sensor",
+        "Low risk",
+        "inspection"
+      ]
+    },
+    {
+      "name": "enhancedModel",
+      "type": "functionalRequirement",
+      "description": "Enhanced model with electrical motor and speed control",
+      "keywords": [
+        "enhanced model",
+        "electrical motor",
+        "speed control",
+        "Medium risk",
+        "analysis"
+      ]
+    },
+    {
+      "name": "motorDynamics",
+      "type": "performanceRequirement",
+      "description": "Account for motor dynamics and heat generation",
+      "keywords": [
+        "motor dynamics",
+        "heat generation",
+        "Medium risk",
+        "analysis"
+      ]
+    },
+    {
+      "name": "temperatureParameter",
+      "type": "performanceRequirement",
+      "description": "Temperature as a key parameter",
+      "keywords": [
+        "temperature",
+        "key parameter",
+        "Medium risk",
+        "test"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "source": "mainReq",
+      "target": "energyConsumptionAnalysis",
+      "type": "depends on"
+    },
+    {
+      "source": "energyConsumptionAnalysis",
+      "target": "constantRotarySpeed",
+      "type": "depends on"
+    },
+    {
+      "source": "energyConsumptionAnalysis",
+      "target": "firstOrderLag",
+      "type": "depends on"
+    },
+    {
+      "source": "energyConsumptionAnalysis",
+      "target": "motorIcon",
+      "type": "depends on"
+    },
+    {
+      "source": "energyConsumptionAnalysis",
+      "target": "speedReducingGear",
+      "type": "depends on"
+    },
+    {
+      "source": "energyConsumptionAnalysis",
+      "target": "rotationalSpringDamper",
+      "type": "depends on"
+    },
+    {
+      "source": "energyConsumptionAnalysis",
+      "target": "frictionElements",
+      "type": "depends on"
+    },
+    {
+      "source": "energyConsumptionAnalysis",
+      "target": "energySensor",
+      "type": "depends on"
+    },
+    {
+      "source": "energyConsumptionAnalysis",
+      "target": "enhancedModel",
+      "type": "depends on"
+    },
+    {
+      "source": "enhancedModel",
+      "target": "motorDynamics",
+      "type": "depends on"
+    },
+    {
+      "source": "enhancedModel",
+      "target": "temperatureParameter",
+      "type": "depends on"
+    },
+    {
+      "source": "constantRotarySpeed",
+      "target": "mainReq",
+      "type": "satisfies"
+    },
+    {
+      "source": "motorDynamics",
+      "target": "enhancedModel",
+      "type": "derives"
+    },
+    {
+      "source": "temperatureParameter",
+      "target": "enhancedModel",
+      "type": "derives"
+    }
+  ]
+}
