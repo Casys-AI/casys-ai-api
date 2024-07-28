@@ -1,0 +1,14 @@
+Index: src/domain/models/diagram.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># src/domain/diagram.py\r\nclass Diagram:\r\n    def __init__(self, name: str, data: dict):\r\n        self.name = name\r\n        self.data = data\r\n
+===================================================================
+diff --git a/src/domain/models/diagram.py b/src/domain/models/diagram.py
+--- a/src/domain/models/diagram.py	
++++ b/src/domain/models/diagram.py	
+@@ -1,4 +1,5 @@
+ # src/domain/diagram.py
++
+ class Diagram:
+     def __init__(self, name: str, data: dict):
+         self.name = name
