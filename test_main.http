@@ -5,7 +5,18 @@ Accept: application/json
 
 ###
 
-GET http://127.0.0.1:8000/hello/User
+GET http://127.0.0.1:8000/status
+Accept: application/json
+
+
+###
+POST http://127.0.0.1:8000/process/cdc_1
 Accept: application/json
 
 ###
+POST http://127.0.0.1:8000/process/cdc_1/REQ
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/extract-json/cdc_1/REQ}
+Accept: application/json
