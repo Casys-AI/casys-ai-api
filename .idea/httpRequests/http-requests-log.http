@@ -1,3 +1,171 @@
+POST http://127.0.0.1:8000/extract-json/cdc_1/REQ
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-07-29T142152.500.json
+
+###
+
+POST http://127.0.0.1:8000/process/cdc_1
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-07-29T130529.200.json
+
+###
+
+POST http://127.0.0.1:8000/process/cdc_1/REQ
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-07-29T125441.200.json
+
+###
+
+POST http://127.0.0.1:8000/extract-json/cdc_1/REQ
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-07-29T125146.200.json
+
+###
+
+POST http://127.0.0.1:8000/extract-json/cdc_1/REQ
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-07-29T125051.200.json
+
+###
+
+POST http://127.0.0.1:8000/extract-json/cdc_1/REQ
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-07-29T125025.200.json
+
+###
+
+POST http://127.0.0.1:8000/extract-json/cdc_1/REQ
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-07-29T124657.200.json
+
+###
+
+POST http://127.0.0.1:8000/extract-json/cdc_1/REQ
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-07-29T122622.200.json
+
+###
+
+POST http://127.0.0.1:8000/extract-json/cdc_1/REQ
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-07-29T122552.200.json
+
+###
+
+POST http://127.0.0.1:8000/process/cdc_1/REQ
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-07-29T122542.200.json
+
+###
+
+POST http://127.0.0.1:8000/process/cdc_1/REQ
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-07-29T122244.200.json
+
+###
+
+POST http://127.0.0.1:8000/extract-json/cdc_1/REQ
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+###
+
+POST http://127.0.0.1:8000/process/cdc_1
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-07-29T120406.200.json
+
+###
+
+GET http://127.0.0.1:8000/status
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-07-29T120358.200.json
+
+###
+
+POST http://127.0.0.1:8000/extract-json/cdc_1/REQ
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-07-29T120139.200.json
+
+###
+
+POST http://127.0.0.1:8000/process/cdc_1/REQ
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-07-29T120123.200.json
+
+###
+
+POST http://127.0.0.1:8000/process/cdc_1/REQ
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-07-29T115236.200.json
+
+###
+
 POST http://127.0.0.1:8000/process/cdc_1/REQ
 Accept: application/json
 User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
@@ -325,176 +493,6 @@ User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 <> 2024-07-26T184115.200.json
-
-###
-
-GET http://127.0.0.1:8000
-Accept: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2024-07-26T184015.200.json
-
-###
-
-GET http://127.0.0.1:8000
-Accept: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2024-07-26T184013.200.json
-
-###
-
-GET http://127.0.0.1:8000
-Accept: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2024-07-26T183643.200.json
-
-###
-
-GET http://127.0.0.1:8000
-Accept: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2024-07-26T183532.200.json
-
-###
-
-GET http://127.0.0.1:8000/hello/User
-Accept: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2024-07-26T181245.404.json
-
-###
-
-GET http://127.0.0.1:8000
-Accept: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2024-07-26T181244.200.json
-
-###
-
-GET http://127.0.0.1:8000
-Accept: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2024-07-26T180406.200.json
-
-###
-
-GET http://127.0.0.1:8000
-Accept: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2024-07-26T180359.200.json
-
-###
-
-GET http://127.0.0.1:8000
-Accept: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2024-07-26T180136.200.json
-
-###
-
-GET http://127.0.0.1:8000
-Accept: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2024-07-26T180049.200.json
-
-###
-
-GET http://127.0.0.1:8000
-Accept: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2024-07-26T180046.200.json
-
-###
-
-GET http://127.0.0.1:8000
-Accept: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2024-07-26T180042.200.json
-
-###
-
-GET http://127.0.0.1:8000
-Accept: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2024-07-26T175934.200.json
-
-###
-
-GET http://127.0.0.1:8000
-Accept: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2024-07-26T175931.200.json
-
-###
-
-GET http://127.0.0.1:8000
-Accept: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2024-07-26T175403.200.json
-
-###
-
-GET http://127.0.0.1:8000
-Accept: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2024-07-26T175340.200.json
-
-###
-
-GET http://127.0.0.1:8000
-Accept: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2024-07-26T175303.200.json
 
 ###
 

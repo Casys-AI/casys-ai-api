@@ -143,11 +143,11 @@ def process_single_project_diagram(config: Dict[str, Any], create_diagram_servic
     logger.info(f"Traitement du projet: {project_name}, diagramme: {diagram_type}")
     try:
         project, project_type = find_project(config, project_name)
-
         file_paths = get_file_paths(config, project_type, project['name'])
 
+        rag_adapter = RAGAdapter(config)
+
         if not extract_json_only:
-            rag_adapter = RAGAdapter(config)
             document_adapter = DocumentAdapter(config, rag_adapter.openai_chat)
             rag_service = RAGService(rag_adapter)
             document_service = DocumentService(document_adapter)
@@ -159,7 +159,8 @@ def process_single_project_diagram(config: Dict[str, Any], create_diagram_servic
             logger.info(f"Génération du diagramme {diagram_type} pour le projet {project['name']}")
             prompt_template = read_prompt_template(file_paths[diagram_type]['prompt'])
             if not prompt_template:
-                logger.error(f"Impossible de générer le diagramme {diagram_type} en raison d'une erreur de lecture du prompt")
+                logger.error(
+                    f"Impossible de générer le diagramme {diagram_type} en raison d'une erreur de lecture du prompt")
                 return
 
             diagram_content = rag_service.generate_with_fallback(prompt_template, content=summary)
@@ -176,7 +177,8 @@ def process_single_project_diagram(config: Dict[str, Any], create_diagram_servic
 
         logger.info(f"Traitement terminé pour le projet: {project_name}, diagramme: {diagram_type}")
     except Exception as e:
-        logger.exception(f"Une erreur est survenue lors du traitement du projet {project_name}, diagramme {diagram_type}")
+        logger.exception(
+            f"Une erreur est survenue lors du traitement du projet {project_name}, diagramme {diagram_type}")
         raise
 
 

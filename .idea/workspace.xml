@@ -41,26 +41,44 @@
     </treeState>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e59d207-2fd7-4630-b6eb-ca89927b30ba" name="Changes" comment="added qodana">
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T174958.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T175124.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T175127.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T175141.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T175218.200.json" beforeDir="false" />
+    <list default="true" id="a4765a1e-5880-4c04-84f6-ac25e5637da8" name="Logs, instanciation, performance traitement documents" comment="Logs, instanciation, performance traitement documents">
+      <change afterPath="$PROJECT_DIR$/src/adapters/web/openai_embedding_adapter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/application/services/similarity_processing_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/ports/embedding_port.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/ports/similarity_port.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T175303.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T175340.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T175403.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T175931.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T175934.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T180042.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T180046.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T180049.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T180136.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T180359.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T180406.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T181244.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T181245.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T183532.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T183643.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T184013.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T184015.200.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagrams/cdcs/cdc_1/BDD_diagram.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagrams/cdcs/cdc_1/BDD_entities.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagrams/cdcs/cdc_1/REQ_diagram.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagrams/cdcs/cdc_1/REQ_entities.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagrams/cdcs/cdc_1/UC_diagram.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagrams/cdcs/cdc_1/UC_entities.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagrams/parts/crushing_mill/crushing_mill_REQ_diagram.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagrams/parts/crushing_mill/crushing_mill_REQ_entities.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagrams/parts/crushing_mill/crushing_mill_UC_diagram.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extract_create_diagrams.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/background_tasks.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapters/persistence/neo4j_persistence_adapter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adapters/web/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapters/web/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adapters/web/entity_extraction_adapter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapters/web/entity_extraction_adapter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adapters/web/process_projects.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapters/web/process_projects.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adapters/web/rag_adapter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapters/web/rag_adapter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/ports/diagram_repository_port.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/ports/diagram_repository_port.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/ports/document_port.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/ports/document_port.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/ports/entity_extraction_port.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/ports/entity_extraction_port.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/ports/rag_port.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/ports/rag_port.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_main.http" beforeDir="false" afterPath="$PROJECT_DIR$/test_main.http" afterDir="false" />
     </list>
+    <list id="9e59d207-2fd7-4630-b6eb-ca89927b30ba" name="Changes" comment="added qodana" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,8 +91,9 @@
         <option value="FastAPI test_main" />
         <option value="OpenAPI" />
         <option value="Jupyter Notebook" />
-        <option value="Python Script" />
         <option value="HTTP Public Environment File" />
+        <option value="HTTP Private Environment File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -98,7 +117,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Logs-instanciation" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -140,11 +159,17 @@
     "HTTP Request.test_main | #2.executor": "Run",
     "HTTP Request.test_main | #3.executor": "Run",
     "HTTP Request.test_main | #4.executor": "Run",
+    "HTTP Request.test_main | #5.executor": "Run",
+    "HTTP Request.test_main | Full project.executor": "Run",
+    "HTTP Request.test_main | Only json.executor": "Run",
+    "HTTP Request.test_main | Project diagramme MD et json.executor": "Run",
+    "HTTP Request.test_main | statuts.executor": "Run",
+    "Python.main.executor": "Run",
     "Python.uvicorn.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Logs-instanciation",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/erpes/PycharmProjects/SysML_PLM/src/interface",
     "node.js.detected.package.eslint": "true",
@@ -202,36 +227,86 @@
       <recent name="C:\Users\erpes\PycharmProjects\SysML_PLM\src\application\services" />
     </key>
   </component>
-  <component name="RunManager" selected="HTTP Request.test_main | #4">
-    <configuration name="SysML_PLM-endpoints | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/SysML_PLM-endpoints.http" requestIdentifier="#1" runType="Run single request">
+  <component name="RunManager" selected="Python.uvicorn">
+    <configuration name="test_main | Full project" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/test_main.http" index="3" requestIdentifier="Full project" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="test_main | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/test_main.http" requestIdentifier="#1" runType="Run single request">
+    <configuration name="test_main | Only json" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/test_main.http" index="5" requestIdentifier="Only json" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="test_main | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/test_main.http" index="2" requestIdentifier="#2" runType="Run single request">
+    <configuration name="test_main | Project diagramme MD et json" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/test_main.http" index="4" requestIdentifier="Project diagramme MD et json" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="test_main | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/test_main.http" index="3" requestIdentifier="#3" runType="Run single request">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SysML_PLM" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_main | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/test_main.http" index="4" requestIdentifier="#4" runType="Run single request">
+    <configuration name="uvicorn" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SysML_PLM" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </EXTENSION>
+      <option name="SCRIPT_NAME" value="uvicorn" />
+      <option name="PARAMETERS" value="main:app --reload --log-level debug" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="HTTP Request.test_main | #2" />
-      <item itemvalue="HTTP Request.test_main | #4" />
-      <item itemvalue="HTTP Request.test_main | #3" />
-      <item itemvalue="HTTP Request.SysML_PLM-endpoints | #1" />
-      <item itemvalue="HTTP Request.test_main | #1" />
+      <item itemvalue="HTTP Request.test_main | Full project" />
+      <item itemvalue="HTTP Request.test_main | Only json" />
+      <item itemvalue="HTTP Request.test_main | Project diagramme MD et json" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.uvicorn" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.test_main | #4" />
-        <item itemvalue="HTTP Request.test_main | #2" />
-        <item itemvalue="HTTP Request.test_main | #3" />
-        <item itemvalue="HTTP Request.test_main | #1" />
-        <item itemvalue="HTTP Request.SysML_PLM-endpoints | #1" />
+        <item itemvalue="Python.uvicorn" />
+        <item itemvalue="HTTP Request.test_main | Only json" />
+        <item itemvalue="HTTP Request.test_main | Full project" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="HTTP Request.test_main | Project diagramme MD et json" />
       </list>
     </recent_temporary>
   </component>
@@ -256,7 +331,7 @@
       <created>1721966206277</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1722082331556</updated>
+      <updated>1722225235745</updated>
       <workItem from="1721966265929" duration="7320000" />
       <workItem from="1721973822748" duration="14273000" />
       <workItem from="1721988691672" duration="366000" />
@@ -268,20 +343,22 @@
       <workItem from="1722061307593" duration="46000" />
       <workItem from="1722061392865" duration="380000" />
       <workItem from="1722061797598" duration="6086000" />
+      <workItem from="1722225225289" duration="11000" />
     </task>
-    <task active="true" id="LOCAL-00001" summary="app working">
+    <task id="LOCAL-00001" summary="app working">
+      <branch name="main" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" />
       <changelist id="9e59d207-2fd7-4630-b6eb-ca89927b30ba" name="Changes" comment="app working" />
       <option name="closed" value="true" />
       <created>1722066345347</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1722082331556</updated>
+      <updated>1722224984058</updated>
       <workItem from="1722082331848" duration="5832000" />
       <workItem from="1722141198206" duration="238000" />
       <workItem from="1722141882691" duration="151000" />
       <workItem from="1722142082216" duration="125000" />
-      <workItem from="1722222308314" duration="2537000" />
+      <workItem from="1722222308314" duration="2655000" />
     </task>
     <task id="LOCAL-00002" summary="added qodana">
       <option name="closed" value="true" />
@@ -299,7 +376,27 @@
       <option name="project" value="LOCAL" />
       <updated>1722157046902</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added qodana">
+      <option name="closed" value="true" />
+      <created>1722224889378</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722224889378</updated>
+    </task>
+    <task active="true" id="LOCAL-00006" summary="Logs, instanciation, performance traitement documents">
+      <branch name="main" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" original="true" />
+      <branch name="Logs-instanciation" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" />
+      <changelist id="a4765a1e-5880-4c04-84f6-ac25e5637da8" name="Logs, instanciation, performance traitement documents" comment="" />
+      <created>1722224937336</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1722225235745</updated>
+      <workItem from="1722224984567" duration="237000" />
+      <workItem from="1722225236322" duration="9686000" />
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers>
       <YouTrack url="https://thenocodeguy.youtrack.cloud">
         <username>random</username>
@@ -334,12 +431,24 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="app working" />
+    <MESSAGE value="Logs, instanciation, performance traitement documents" />
     <MESSAGE value="added qodana" />
     <option name="LAST_COMMIT_MESSAGE" value="added qodana" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SysML_PLM$main.coverage" NAME="main Coverage Results" MODIFIED="1722005395397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SysML_PLM$main.coverage" NAME="main Coverage Results" MODIFIED="1722229112541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SysML_PLM$SysML_PLM.coverage" NAME="SysML_PLM Coverage Results" MODIFIED="1722100904076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/SysML_PLM$uvicorn.coverage" NAME="uvicorn Coverage Results" MODIFIED="1722223371369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SysML_PLM$uvicorn.coverage" NAME="uvicorn Coverage Results" MODIFIED="1722234122321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

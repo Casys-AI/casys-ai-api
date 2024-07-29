@@ -1,29 +1,25 @@
 # src/adapters/web/rag_adapter.py
-
 import logging
 from typing import Dict, List, Tuple, Optional
 import re
 from langchain_openai import ChatOpenAI
-from langchain_openai import OpenAIEmbeddings
 from langchain.prompts import PromptTemplate
 from neo4j import GraphDatabase
 from tenacity import retry, stop_after_attempt, wait_random_exponential
 from src.domain.ports.rag_port import RAGPort
+from src.domain.ports.embedding_port import EmbeddingPort
 
 logger = logging.getLogger(__name__)
 
-
-# src/adapters/web/rag_adapter.py
-
 class RAGAdapter(RAGPort):
-    def __init__(self, config: Dict):
+    def __init__(self, config: Dict, embedding_service: EmbeddingPort):
         self.config = config
+        self.embedding_service = embedding_service
         self.openai_chat = ChatOpenAI(
             model_name=config["openai"]["model"],
             temperature=config["openai"]["temperature"],
             openai_api_key=config["openai"]["api_key"]
         )
-        self.embeddings_model = OpenAIEmbeddings(openai_api_key=config["openai"]["api_key"])
         self.neo4j_driver = self._create_neo4j_driver()
 
     def _create_neo4j_driver(self) -> Optional[GraphDatabase.driver]:
@@ -32,7 +28,6 @@ class RAGAdapter(RAGPort):
                 self.config["neo4j"]["uri"],
                 auth=(self.config["neo4j"]["user"], self.config["neo4j"]["password"])
             )
-            # Test de connexion
             with driver.session() as session:
                 session.run("RETURN 1")
             logger.info("Connexion à Neo4j établie avec succès.")
@@ -67,14 +62,13 @@ class RAGAdapter(RAGPort):
             else:
                 logger.warning(f"Impossible de créer l'index vectoriel : {str(e)}")
 
-    def hybrid_search_with_fallback(self, query: str, semantic_top_k: int = 5, graph_depth: int = 2) -> List[
-        Tuple[str, str]]:
+    def hybrid_search_with_fallback(self, query: str, semantic_top_k: int = 5, graph_depth: int = 2) -> List[Tuple[str, str]]:
         if not self.is_neo4j_connected():
             logger.warning("Neo4j n'est pas connecté. Utilisation de la recherche par mot-clé comme solution de repli.")
             return self.keyword_search_fallback(query, semantic_top_k)
 
         try:
-            query_embedding = self.embeddings_model.embed_query(query)
+            query_embedding = self.embedding_service.get_query_embedding(query)
 
             with self.neo4j_driver.session() as session:
                 semantic_results = session.run("""

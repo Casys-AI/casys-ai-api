@@ -1,6 +1,9 @@
 from fastapi import FastAPI, HTTPException, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
+
+from src.adapters.persistence.neo4j_persistence_adapter import Neo4jPersistenceAdapter
+from src.adapters.web.openai_embedding_adapter import OpenAIEmbeddingAdapter
 from src.adapters.web.process_projects import load_config, process_single_project, process_single_project_diagram
 from src.adapters.web.rag_adapter import RAGAdapter
 from src.application.services.create_diagram_service import CreateDiagramService
@@ -12,22 +15,24 @@ import asyncio
 logger = logging.getLogger("uvicorn.error")
 
 config = None
-service = None
+diagram_service = None
+neo4j_adapter = None
 processing_status = {"status": "idle", "message": "No processing has started yet"}
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    global config, service
+    global config, diagram_service, neo4j_adapter
     logger.info("Initializing services...")
     try:
         config = load_config("config.yaml")
-        repository = FileDiagramRepositoryAdapter(directory="diagrams")
-        service = CreateDiagramService(repository=repository)
+        file_repository = FileDiagramRepositoryAdapter(directory="diagrams")
+        diagram_service = CreateDiagramService(repository=file_repository)
 
-        # Vérifiez la connexion Neo4j
-        rag_adapter = RAGAdapter(config)
-        if rag_adapter.is_neo4j_connected():
+        neo4j_adapter = Neo4jPersistenceAdapter(config)
+        embedding_adapter = OpenAIEmbeddingAdapter(config['openai']['api_key'])
+
+        if neo4j_adapter.is_connected():
             logger.info("Neo4j connection successful")
         else:
             logger.warning("Unable to connect to Neo4j. Some features may be limited.")
@@ -35,11 +40,12 @@ async def lifespan(app: FastAPI):
         logger.info("Services initialized successfully.")
     except Exception as e:
         logger.error(f"Error during startup: {str(e)}")
-        # Ne levez pas d'exception ici, permettez à l'application de démarrer même en cas d'erreur
 
     yield
 
     logger.info("Shutting down...")
+    if neo4j_adapter:
+        neo4j_adapter.close()
 
 app = FastAPI(lifespan=lifespan)
 
@@ -147,6 +153,64 @@ async def extract_json_task(config: Dict[str, Any], service: Any, project_name: 
         logger.exception(f"Error during JSON extraction: {str(e)}")
         processing_status = {"status": "error", "message": f"Error during JSON extraction {project_name}, {diagram_type}: {str(e)}"}
 
+
+@app.post("/process-neo4j-data/{project_name}/{diagram_type}")
+async def process_neo4j_data(project_name: str, diagram_type: str, background_tasks: BackgroundTasks) -> Dict[str, Any]:
+    logger.info(f"Received request to process Neo4j data for project: {project_name}, diagram: {diagram_type}")
+    if not config or not neo4j_adapter:
+        logger.error("Services not initialized")
+        raise HTTPException(status_code=500, detail="Services not initialized")
+
+    if diagram_type not in config['diagram_types']:
+        raise HTTPException(status_code=400, detail=f"Invalid diagram type: {diagram_type}")
+
+    try:
+        logger.info(f"Starting Neo4j data processing for project {project_name}, diagram {diagram_type} in background")
+        background_tasks.add_task(process_neo4j_data_task, project_name, diagram_type)
+        return {"status": "success", "message": f"Neo4j data processing started for {project_name}, {diagram_type}"}
+    except Exception as e:
+        logger.exception(f"Error during Neo4j data processing: {str(e)}")
+        return {"status": "error", "message": str(e)}
+
+
+async def process_neo4j_data_task(project_name: str, diagram_type: str):
+    global processing_status
+    processing_status = {"status": "processing",
+                         "message": f"Processing Neo4j data for project: {project_name}, diagram: {diagram_type}"}
+    try:
+        logger.info(f"Starting Neo4j data processing for project: {project_name}, diagram: {diagram_type}")
+
+        # Ensure vector index
+        neo4j_adapter.ensure_vector_index()
+
+        # Load JSON data
+        file_path = f"diagrams/{project_name}/{diagram_type}_entities.json"
+        data = process_json_file(file_path)
+
+        # Process entities and relationships
+        neo4j_adapter.batch_create_or_update_entities(data['entities'], project_name, project_name.upper())
+        neo4j_adapter.batch_create_relationships(data['relationships'], project_name)
+
+        # Update embeddings for new entities
+        neo4j_adapter.update_embeddings(project_name, diagram_type)
+
+        # Calculate similarities with all existing entities
+        new_entity_ids = [f"{diagram_type}_{entity['name']}" for entity in data['entities']]
+        similarities = neo4j_adapter.calculate_similarities_with_existing(new_entity_ids)
+
+        # Update similarity relationships
+        neo4j_adapter.update_similarity_relationships(similarities)
+
+        logger.info(
+            f"Neo4j data processing and similarity calculation completed for project: {project_name}, diagram: {diagram_type}")
+        processing_status = {"status": "completed",
+                             "message": f"Neo4j data processing and similarity calculation completed for {project_name}, {diagram_type}"}
+    except Exception as e:
+        logger.exception(f"Error during Neo4j data processing: {str(e)}")
+        processing_status = {"status": "error",
+                             "message": f"Error during Neo4j data processing for {project_name}, {diagram_type}: {str(e)}"}
+        # Perform rollback
+        neo4j_adapter.rollback(project_name)
 
 @app.get("/status")
 async def get_processing_status() -> Dict[str, Any]:

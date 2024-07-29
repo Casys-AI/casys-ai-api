@@ -1,22 +1,19 @@
 # Test your FastAPI endpoints
-
 GET http://127.0.0.1:8000/
 Accept: application/json
 
-###
-
+###statuts
 GET http://127.0.0.1:8000/status
 Accept: application/json
 
-
-###
+### Full project
 POST http://127.0.0.1:8000/process/cdc_1
 Accept: application/json
 
-###
+### Project diagramme MD et json
 POST http://127.0.0.1:8000/process/cdc_1/REQ
 Accept: application/json
 
-###
-POST http://127.0.0.1:8000/extract-json/cdc_1/REQ}
+### Only json
+POST http://127.0.0.1:8000/extract-json/cdc_1/REQ
 Accept: application/json
