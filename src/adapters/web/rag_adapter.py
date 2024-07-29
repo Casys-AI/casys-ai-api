@@ -11,6 +11,7 @@ from src.domain.ports.embedding_port import EmbeddingPort
 
 logger = logging.getLogger(__name__)
 
+
 class RAGAdapter(RAGPort):
     def __init__(self, config: Dict, embedding_service: EmbeddingPort):
         self.config = config

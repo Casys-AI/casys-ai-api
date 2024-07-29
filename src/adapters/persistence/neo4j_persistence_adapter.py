@@ -2,13 +2,39 @@
 
 import logging
 from typing import Dict, List, Any
-
 from neo4j import GraphDatabase
-
 from src.domain.ports.similarity_port import SimilarityPort
 
 logger = logging.getLogger(__name__)
 
+def _neo4j_create_relationships(tx, project_name: str, relationships: List[Dict[str, Any]]):
+    query = """
+    MATCH (p:Project {name: $project_name})
+    WITH p
+    UNWIND $relationships AS rel
+    MATCH (s:Entity {id: rel.source_id})<-[:CONTAINS_ENTITY]-(:Diagram)<-[:HAS_DIAGRAM]-(p)
+    MATCH (t:Entity {id: rel.target_id})<-[:CONTAINS_ENTITY]-(:Diagram)<-[:HAS_DIAGRAM]-(p)
+    CALL apoc.merge.relationship(s, rel.type, {}, {}, t)
+    YIELD rel AS created_rel
+    RETURN count(created_rel)
+    """
+    tx.run(query, project_name=project_name, relationships=relationships)
+
+def _neo4j_create_or_update_entities(tx, project_name: str, diagram_type: str, entities: List[Dict[str, Any]]):
+    query = """
+    MERGE (p:Project {name: $project_name})
+    WITH p
+    UNWIND $entities AS entity
+    MERGE (d:Diagram {type: $diagram_type, project: p.name})
+    MERGE (e:Entity {id: entity.id})
+    SET e += entity
+    MERGE (d)-[:CONTAINS_ENTITY]->(e)
+    WITH e, entity
+    UNWIND entity.keywords AS keyword
+    MERGE (k:Keyword {name: keyword})
+    MERGE (e)-[:HAS_KEYWORD]->(k)
+    """
+    tx.run(query, project_name=project_name, diagram_type=diagram_type, entities=entities)
 
 class Neo4jPersistenceAdapter(SimilarityPort):
     def __init__(self, config: Dict[str, Any]):
@@ -18,13 +44,18 @@ class Neo4jPersistenceAdapter(SimilarityPort):
             auth=(config["neo4j"]["user"], config["neo4j"]["password"])
         )
 
-    def save(self, project_name: str, diagram_type: str, entities: List[Dict[str, Any]],
-             relationships: List[Dict[str, Any]]):
+    def save(self, project_name: str, diagram_type: str, entities: List[Dict[str, Any]], relationships: List[Dict[str, Any]]):
+        """
+        Sauvegarde les entités et les relations dans Neo4j.
+        """
         with self.driver.session() as session:
-            session.execute_write(self._create_or_update_entities, project_name, diagram_type, entities)
-            session.execute_write(self._create_relationships, project_name, relationships)
+            session.execute_write(_neo4j_create_or_update_entities, project_name, diagram_type, entities)
+            session.execute_write(_neo4j_create_relationships, project_name, relationships)
 
     def ensure_vector_index(self):
+        """
+        Crée l'index vectoriel si nécessaire.
+        """
         with self.driver.session() as session:
             try:
                 session.run("""
@@ -42,44 +73,6 @@ class Neo4jPersistenceAdapter(SimilarityPort):
                     logger.info("L'index vectoriel existe déjà.")
                 else:
                     logger.error(f"Erreur lors de la création de l'index vectoriel : {e}")
-
-    def batch_create_or_update_entities(self, entities: List[Dict[str, Any]], project_name: str, project_label: str):
-        with self.driver.session() as session:
-            session.execute_write(self._create_or_update_entities, project_name, project_label, entities)
-
-    def batch_create_relationships(self, relationships: List[Dict[str, Any]], project_name: str):
-        with self.driver.session() as session:
-            session.execute_write(self._create_relationships, project_name, relationships)
-
-    def _create_or_update_entities(self, tx, project_name: str, project_label: str, entities: List[Dict[str, Any]]):
-        query = """
-        MERGE (p:Project {name: $project_name})
-        SET p:$project_label
-        WITH p
-        UNWIND $entities AS entity
-        MERGE (d:Diagram {type: entity.diagramType, project: p.name})
-        MERGE (e:Entity {id: entity.id})
-        SET e += entity
-        MERGE (d)-[:CONTAINS_ENTITY]->(e)
-        WITH e, entity
-        UNWIND entity.keywords AS keyword
-        MERGE (k:Keyword {name: keyword})
-        MERGE (e)-[:HAS_KEYWORD]->(k)
-        """
-        tx.run(query, project_name=project_name, project_label=project_label, entities=entities)
-
-    def _create_relationships(self, tx, project_name: str, relationships: List[Dict[str, Any]]):
-        query = """
-        MATCH (p:Project {name: $project_name})
-        WITH p
-        UNWIND $relationships AS rel
-        MATCH (s:Entity {id: rel.source_id})<-[:CONTAINS_ENTITY]-(:Diagram)<-[:HAS_DIAGRAM]-(p)
-        MATCH (t:Entity {id: rel.target_id})<-[:CONTAINS_ENTITY]-(:Diagram)<-[:HAS_DIAGRAM]-(p)
-        CALL apoc.merge.relationship(s, rel.type, {}, {}, t)
-        YIELD rel AS created_rel
-        RETURN count(created_rel)
-        """
-        tx.run(query, project_name=project_name, relationships=relationships)
 
     def update_embeddings(self, project_name: str, diagram_type: str, embeddings: Dict[str, List[float]]):
         query = """
@@ -107,19 +100,6 @@ class Neo4jPersistenceAdapter(SimilarityPort):
             result = session.run(query, new_entity_ids=new_entity_ids,
                                  similarity_threshold=self.config['similarity']['threshold'])
             return [self._format_similarity_result(record) for record in result]
-
-    def _format_similarity_result(self, record):
-        embedding_weight = self.config['similarity']['embedding_weight']
-        keyword_weight = self.config['similarity']['keyword_weight']
-        total_weight = embedding_weight + keyword_weight
-        return {
-            'id1': record['id1'],
-            'id2': record['id2'],
-            'combined_similarity': (embedding_weight * record['embedding_similarity'] +
-                                    keyword_weight * record['keyword_similarity']) / total_weight,
-            'embedding_similarity': record['embedding_similarity'],
-            'keyword_similarity': record['keyword_similarity']
-        }
 
     def update_similarity_relationships(self, similarities: List[Dict[str, Any]]):
         query = """
@@ -158,6 +138,9 @@ class Neo4jPersistenceAdapter(SimilarityPort):
         logger.info(f"Rollback completed for project {project_name}")
 
     def is_connected(self) -> bool:
+        """
+        Vérifie si la connexion à Neo4j est active.
+        """
         try:
             return self.driver.verify_connectivity()
         except Exception as e:
@@ -165,4 +148,23 @@ class Neo4jPersistenceAdapter(SimilarityPort):
             return False
 
     def close(self):
+        """
+        Ferme la connexion à Neo4j.
+        """
         self.driver.close()
+
+    def _format_similarity_result(self, record):
+        """
+        Formate le résultat de similarité.
+        """
+        embedding_weight = self.config['similarity']['embedding_weight']
+        keyword_weight = self.config['similarity']['keyword_weight']
+        total_weight = embedding_weight + keyword_weight
+        return {
+            'id1': record['id1'],
+            'id2': record['id2'],
+            'combined_similarity': (embedding_weight * record['embedding_similarity'] +
+                                    keyword_weight * record['keyword_similarity']) / total_weight,
+            'embedding_similarity': record['embedding_similarity'],
+            'keyword_similarity': record['keyword_similarity']
+        }

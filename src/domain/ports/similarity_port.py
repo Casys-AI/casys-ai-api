@@ -1,4 +1,4 @@
-# src/domain/ports/diagram_repository_port.py
+# src/domain/ports/similarity_port.py
 from abc import ABC, abstractmethod
 from typing import Dict, List, Any
 from src.domain.models.diagram import Diagram

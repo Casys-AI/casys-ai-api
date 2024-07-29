@@ -39,44 +39,30 @@
         </pathElement>
       </selectedPath>
     </treeState>
+    <treeState key="responsibilities">
+      <selectedPath>
+        <pathElement>
+          <option name="myNodeId" value="helperText" />
+          <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.LinkedTextDescriptor" />
+        </pathElement>
+      </selectedPath>
+    </treeState>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4765a1e-5880-4c04-84f6-ac25e5637da8" name="Logs, instanciation, performance traitement documents" comment="Logs, instanciation, performance traitement documents">
-      <change afterPath="$PROJECT_DIR$/src/adapters/web/openai_embedding_adapter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/services/similarity_processing_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/ports/embedding_port.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/ports/similarity_port.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T175303.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T175340.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T175403.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T175931.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T175934.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T180042.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T180046.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T180049.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T180136.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T180359.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T180406.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T181244.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T181245.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T183532.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T183643.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T184013.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T184015.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+    <list default="true" id="a4765a1e-5880-4c04-84f6-ac25e5637da8" name="Logs, instanciation, performance traitement documents" comment="ajout du script graph et modif des logs pour niveau debug">
+      <change afterPath="$PROJECT_DIR$/src/application/services/neo4j_processing_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/application/services/project_management_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/application/services/project_processing_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/background_tasks.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapters/persistence/neo4j_persistence_adapter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adapters/persistence/neo4j_persistence_adapter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapters/persistence/neo4j_persistence_adapter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/adapters/web/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapters/web/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/adapters/web/entity_extraction_adapter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapters/web/entity_extraction_adapter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adapters/web/document_adapter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapters/web/document_adapter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adapters/web/openai_embedding_adapter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapters/web/openai_embedding_adapter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/adapters/web/process_projects.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapters/web/process_projects.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/adapters/web/rag_adapter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapters/web/rag_adapter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/ports/diagram_repository_port.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/ports/diagram_repository_port.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/ports/document_port.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/ports/document_port.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/ports/entity_extraction_port.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/ports/entity_extraction_port.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/ports/rag_port.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/ports/rag_port.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_main.http" beforeDir="false" afterPath="$PROJECT_DIR$/test_main.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/services/similarity_processing_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/services/similarity_processing_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/ports/embedding_port.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/ports/embedding_port.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/ports/similarity_port.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/ports/similarity_port.py" afterDir="false" />
     </list>
     <list id="9e59d207-2fd7-4630-b6eb-ca89927b30ba" name="Changes" comment="added qodana" />
     <option name="SHOW_DIALOG" value="false" />
@@ -151,58 +137,58 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "FastAPI.SysML_PLM.executor": "Run",
-    "HTTP Request.SysML_PLM-endpoints | #1.executor": "Run",
-    "HTTP Request.test_main | #1.executor": "Run",
-    "HTTP Request.test_main | #2.executor": "Run",
-    "HTTP Request.test_main | #3.executor": "Run",
-    "HTTP Request.test_main | #4.executor": "Run",
-    "HTTP Request.test_main | #5.executor": "Run",
-    "HTTP Request.test_main | Full project.executor": "Run",
-    "HTTP Request.test_main | Only json.executor": "Run",
-    "HTTP Request.test_main | Project diagramme MD et json.executor": "Run",
-    "HTTP Request.test_main | statuts.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.uvicorn.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Logs-instanciation",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/erpes/PycharmProjects/SysML_PLM/src/interface",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.tabs",
-    "spentTimePerTaskStorage.store": "{}",
-    "timeTracker.activityTracker": "null",
-    "timeTracker.comment": "",
-    "timeTracker.inactivityPeriodInMills": "600000",
-    "timeTracker.isAutoTrackingEnable": "true",
-    "timeTracker.isAutoTrackingTemporaryDisabled": "false",
-    "timeTracker.isManualTrackingEnable": "false",
-    "timeTracker.isPaused": "true",
-    "timeTracker.isPostAfterCommitEnabled": "true",
-    "timeTracker.isPostedScheduled": "true",
-    "timeTracker.isRunning": "false",
-    "timeTracker.isScheduledEnabled": "false",
-    "timeTracker.isWhenProjectClosedEnabled": "true",
-    "timeTracker.issueId": "Default",
-    "timeTracker.issueIdReadable": "Default",
-    "timeTracker.pausedTime": "0",
-    "timeTracker.query": "",
-    "timeTracker.recordedTime": "0",
-    "timeTracker.scheduledPeriod": "19:00:0",
-    "timeTracker.startTime": "0",
-    "timeTracker.timeInMills": "0",
-    "timeTracker.type": "Développement",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;FastAPI.SysML_PLM.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.SysML_PLM-endpoints | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.test_main | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.test_main | #2.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.test_main | #3.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.test_main | #4.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.test_main | #5.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.test_main | Full project.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.test_main | Only json.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.test_main | Project diagramme MD et json.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.test_main | statuts.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.uvicorn.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Logs-instanciation&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/erpes/PycharmProjects/SysML_PLM/src/interface&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
+    &quot;spentTimePerTaskStorage.store&quot;: &quot;{}&quot;,
+    &quot;timeTracker.activityTracker&quot;: &quot;null&quot;,
+    &quot;timeTracker.comment&quot;: &quot;&quot;,
+    &quot;timeTracker.inactivityPeriodInMills&quot;: &quot;600000&quot;,
+    &quot;timeTracker.isAutoTrackingEnable&quot;: &quot;true&quot;,
+    &quot;timeTracker.isAutoTrackingTemporaryDisabled&quot;: &quot;false&quot;,
+    &quot;timeTracker.isManualTrackingEnable&quot;: &quot;false&quot;,
+    &quot;timeTracker.isPaused&quot;: &quot;true&quot;,
+    &quot;timeTracker.isPostAfterCommitEnabled&quot;: &quot;true&quot;,
+    &quot;timeTracker.isPostedScheduled&quot;: &quot;true&quot;,
+    &quot;timeTracker.isRunning&quot;: &quot;false&quot;,
+    &quot;timeTracker.isScheduledEnabled&quot;: &quot;false&quot;,
+    &quot;timeTracker.isWhenProjectClosedEnabled&quot;: &quot;true&quot;,
+    &quot;timeTracker.issueId&quot;: &quot;Default&quot;,
+    &quot;timeTracker.issueIdReadable&quot;: &quot;Default&quot;,
+    &quot;timeTracker.pausedTime&quot;: &quot;0&quot;,
+    &quot;timeTracker.query&quot;: &quot;&quot;,
+    &quot;timeTracker.recordedTime&quot;: &quot;0&quot;,
+    &quot;timeTracker.scheduledPeriod&quot;: &quot;19:00:0&quot;,
+    &quot;timeTracker.startTime&quot;: &quot;0&quot;,
+    &quot;timeTracker.timeInMills&quot;: &quot;0&quot;,
+    &quot;timeTracker.type&quot;: &quot;Développement&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="QodanaCloudProjectLink">
     <option name="lastReportId" value="9b2nM" />
     <option name="linkedProjectId" value="3e9lD" />
@@ -394,9 +380,18 @@
       <option name="project" value="LOCAL" />
       <updated>1722225235745</updated>
       <workItem from="1722224984567" duration="237000" />
-      <workItem from="1722225236322" duration="9686000" />
+      <workItem from="1722225236322" duration="9970000" />
+      <workItem from="1722244599447" duration="5898000" />
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ajout du script graph et modif des logs pour niveau debug">
+      <option name="closed" value="true" />
+      <created>1722236494324</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1722236494324</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers>
       <YouTrack url="https://thenocodeguy.youtrack.cloud">
         <username>random</username>
@@ -433,7 +428,8 @@
     <MESSAGE value="app working" />
     <MESSAGE value="Logs, instanciation, performance traitement documents" />
     <MESSAGE value="added qodana" />
-    <option name="LAST_COMMIT_MESSAGE" value="added qodana" />
+    <MESSAGE value="ajout du script graph et modif des logs pour niveau debug" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout du script graph et modif des logs pour niveau debug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
