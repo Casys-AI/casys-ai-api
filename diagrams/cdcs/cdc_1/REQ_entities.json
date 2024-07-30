@@ -1,0 +1,277 @@
+{
+  "entities": [
+    {
+      "name": "mainReq",
+      "type": "requirement",
+      "description": "Develop a Digital Twin of a coffee machine",
+      "keywords": [
+        "Digital Twin",
+        "coffee machine",
+        "High risk",
+        "analysis"
+      ]
+    },
+    {
+      "name": "productArchitecture",
+      "type": "functionalRequirement",
+      "description": "Define product architecture",
+      "keywords": [
+        "product architecture",
+        "Medium risk",
+        "analysis"
+      ]
+    },
+    {
+      "name": "componentSizing",
+      "type": "functionalRequirement",
+      "description": "Size components",
+      "keywords": [
+        "components",
+        "Medium risk",
+        "analysis"
+      ]
+    },
+    {
+      "name": "physicalPlantModels",
+      "type": "functionalRequirement",
+      "description": "Provide physical plant models for control development",
+      "keywords": [
+        "physical plant models",
+        "control development",
+        "High risk",
+        "analysis"
+      ]
+    },
+    {
+      "name": "modelComponents",
+      "type": "functionalRequirement",
+      "description": "Model individual components",
+      "keywords": [
+        "individual components",
+        "Medium risk",
+        "analysis"
+      ]
+    },
+    {
+      "name": "assessBehavior",
+      "type": "performanceRequirement",
+      "description": "Assess physical behavior, energy consumption, and production rates",
+      "keywords": [
+        "physical behavior",
+        "energy consumption",
+        "production rates",
+        "Medium risk",
+        "analysis"
+      ]
+    },
+    {
+      "name": "assembleMachine",
+      "type": "functionalRequirement",
+      "description": "Assemble the complete coffee machine",
+      "keywords": [
+        "complete coffee machine",
+        "Medium risk",
+        "analysis"
+      ]
+    },
+    {
+      "name": "controlModule",
+      "type": "functionalRequirement",
+      "description": "Incorporate a control module",
+      "keywords": [
+        "control module",
+        "High risk",
+        "analysis"
+      ]
+    },
+    {
+      "name": "interactiveElements",
+      "type": "functionalRequirement",
+      "description": "Add interactive elements to simulate real usage",
+      "keywords": [
+        "interactive elements",
+        "real usage",
+        "Medium risk",
+        "analysis"
+      ]
+    },
+    {
+      "name": "stateChart",
+      "type": "functionalRequirement",
+      "description": "Use a state chart to program the control logic",
+      "keywords": [
+        "state chart",
+        "control logic",
+        "Medium risk",
+        "analysis"
+      ]
+    },
+    {
+      "name": "waterHeating",
+      "type": "performanceRequirement",
+      "description": "Ensure efficient water heating",
+      "keywords": [
+        "water heating",
+        "High risk",
+        "test"
+      ]
+    },
+    {
+      "name": "pressureControl",
+      "type": "performanceRequirement",
+      "description": "Maintain optimal pressure control",
+      "keywords": [
+        "pressure control",
+        "High risk",
+        "test"
+      ]
+    },
+    {
+      "name": "userInterface",
+      "type": "performanceRequirement",
+      "description": "Provide an intuitive user interface",
+      "keywords": [
+        "user interface",
+        "Medium risk",
+        "inspection"
+      ]
+    },
+    {
+      "name": "coffeeQuality",
+      "type": "performanceRequirement",
+      "description": "Ensure high coffee quality",
+      "keywords": [
+        "coffee quality",
+        "High risk",
+        "test"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "source": "mainReq",
+      "target": "productArchitecture",
+      "type": "dependency"
+    },
+    {
+      "source": "mainReq",
+      "target": "componentSizing",
+      "type": "dependency"
+    },
+    {
+      "source": "mainReq",
+      "target": "physicalPlantModels",
+      "type": "dependency"
+    },
+    {
+      "source": "mainReq",
+      "target": "modelComponents",
+      "type": "dependency"
+    },
+    {
+      "source": "modelComponents",
+      "target": "assessBehavior",
+      "type": "dependency"
+    },
+    {
+      "source": "mainReq",
+      "target": "assembleMachine",
+      "type": "dependency"
+    },
+    {
+      "source": "assembleMachine",
+      "target": "controlModule",
+      "type": "dependency"
+    },
+    {
+      "source": "assembleMachine",
+      "target": "interactiveElements",
+      "type": "dependency"
+    },
+    {
+      "source": "interactiveElements",
+      "target": "stateChart",
+      "type": "dependency"
+    },
+    {
+      "source": "mainReq",
+      "target": "waterHeating",
+      "type": "dependency"
+    },
+    {
+      "source": "mainReq",
+      "target": "pressureControl",
+      "type": "dependency"
+    },
+    {
+      "source": "mainReq",
+      "target": "userInterface",
+      "type": "dependency"
+    },
+    {
+      "source": "mainReq",
+      "target": "coffeeQuality",
+      "type": "dependency"
+    },
+    {
+      "source": "componentSizing",
+      "target": "waterHeating",
+      "type": "dependency"
+    },
+    {
+      "source": "componentSizing",
+      "target": "pressureControl",
+      "type": "dependency"
+    },
+    {
+      "source": "controlModule",
+      "target": "userInterface",
+      "type": "dependency"
+    },
+    {
+      "source": "controlModule",
+      "target": "coffeeQuality",
+      "type": "dependency"
+    },
+    {
+      "source": "physicalPlantModels",
+      "target": "waterHeating",
+      "type": "dependency"
+    },
+    {
+      "source": "physicalPlantModels",
+      "target": "pressureControl",
+      "type": "dependency"
+    },
+    {
+      "source": "physicalPlantModels",
+      "target": "coffeeQuality",
+      "type": "dependency"
+    },
+    {
+      "source": "modelComponents",
+      "target": "waterHeating",
+      "type": "dependency"
+    },
+    {
+      "source": "modelComponents",
+      "target": "pressureControl",
+      "type": "dependency"
+    },
+    {
+      "source": "modelComponents",
+      "target": "coffeeQuality",
+      "type": "dependency"
+    },
+    {
+      "source": "interactiveElements",
+      "target": "userInterface",
+      "type": "dependency"
+    },
+    {
+      "source": "interactiveElements",
+      "target": "coffeeQuality",
+      "type": "dependency"
+    }
+  ]
+}

@@ -7,6 +7,7 @@ from src.domain.ports.similarity_port import SimilarityPort
 
 logger = logging.getLogger(__name__)
 
+
 def _neo4j_create_relationships(tx, project_name: str, relationships: List[Dict[str, Any]]):
     query = """
     MATCH (p:Project {name: $project_name})
@@ -19,6 +20,7 @@ def _neo4j_create_relationships(tx, project_name: str, relationships: List[Dict[
     RETURN count(created_rel)
     """
     tx.run(query, project_name=project_name, relationships=relationships)
+
 
 def _neo4j_create_or_update_entities(tx, project_name: str, diagram_type: str, entities: List[Dict[str, Any]]):
     query = """
@@ -36,13 +38,25 @@ def _neo4j_create_or_update_entities(tx, project_name: str, diagram_type: str, e
     """
     tx.run(query, project_name=project_name, diagram_type=diagram_type, entities=entities)
 
+
 class Neo4jPersistenceAdapter(SimilarityPort):
     def __init__(self, config: Dict[str, Any]):
         self.config = config
-        self.driver = GraphDatabase.driver(
-            config["neo4j"]["uri"],
-            auth=(config["neo4j"]["user"], config["neo4j"]["password"])
-        )
+        try:
+            logger.info(f"Attempting to connect to Neo4j with URI: {config['neo4j']['uri']}")
+            self.driver = GraphDatabase.driver(
+                config["neo4j"]["uri"],
+                auth=(config["neo4j"]["user"], config["neo4j"]["password"])
+            )
+            # Test de connexion
+            with self.driver.session() as session:
+                result = session.run("RETURN 1 AS num")
+                for record in result:
+                    logger.info(f"Neo4j connection test successful. Result: {record['num']}")
+            logger.info("Neo4j connection established successfully")
+        except Exception as e:
+            logger.error(f"Failed to connect to Neo4j: {str(e)}")
+            raise
 
     def save(self, project_name: str, diagram_type: str, entities: List[Dict[str, Any]], relationships: List[Dict[str, Any]]):
         """

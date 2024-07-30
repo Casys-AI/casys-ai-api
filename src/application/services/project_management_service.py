@@ -8,9 +8,39 @@ from contextlib import contextmanager
 logger = logging.getLogger(__name__)
 
 
+def check_file_paths(config: Dict[str, Any]) -> None:
+    for project_type in ['cdc', 'part']:
+        for diagram_type in config['diagram_types']:
+            prompt_path = config['file_templates'][project_type]['prompt'].format(
+                cdc_name='cdc_1', part_name='crushing_mill', diagram_type=diagram_type
+            )
+            if not os.path.exists(prompt_path):
+                logger.error(f"Le fichier de prompt n'existe pas : {prompt_path}")
+
+
+def check_project_paths(config: Dict[str, Any]) -> None:
+    for project_type in ['cdcs', 'parts']:
+        for project in config['projects'][project_type]:
+            if not os.path.exists(project['path']):
+                logger.error(f"Le fichier du projet n'existe pas : {project['path']}")
+
+
+def load_config(config_path: str) -> Dict[str, Any]:
+    try:
+        with open(config_path, "r") as config_file:
+            config = yaml.safe_load(config_file)
+        check_file_paths(config)
+        check_project_paths(config)
+        return config
+    except Exception as e:
+        logger.exception(f"Erreur lors du chargement de la configuration : {str(e)}")
+        raise
+
+
 class ProjectManagementService:
     def __init__(self, config_path: str):
-        self.config = self.load_config(config_path)
+        self.config_path = config_path
+        self.config = load_config(config_path)
 
     @contextmanager
     def log_project_processing(self, project_name: str):
@@ -31,32 +61,6 @@ class ProjectManagementService:
                 'entities': template['entities'].format(cdc_name=project_name, part_name=project_name, diagram_type=diagram_type)
             } for diagram_type in self.config['diagram_types']
         }
-
-    def check_file_paths(self) -> None:
-        for project_type in ['cdc', 'part']:
-            for diagram_type in self.config['diagram_types']:
-                prompt_path = self.config['file_templates'][project_type]['prompt'].format(
-                    cdc_name='cdc_1', part_name='crushing_mill', diagram_type=diagram_type
-                )
-                if not os.path.exists(prompt_path):
-                    logger.error(f"Le fichier de prompt n'existe pas : {prompt_path}")
-
-    def check_project_paths(self) -> None:
-        for project_type in ['cdcs', 'parts']:
-            for project in self.config['projects'][project_type]:
-                if not os.path.exists(project['path']):
-                    logger.error(f"Le fichier du projet n'existe pas : {project['path']}")
-
-    def load_config(self, config_path: str) -> Dict[str, Any]:
-        try:
-            with open(config_path, "r") as config_file:
-                config = yaml.safe_load(config_file)
-            self.check_file_paths()
-            self.check_project_paths()
-            return config
-        except Exception as e:
-            logger.exception(f"Erreur lors du chargement de la configuration : {str(e)}")
-            raise
 
     def read_prompt_template(self, prompt_path: str) -> str:
         try:

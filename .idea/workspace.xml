@@ -50,21 +50,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4765a1e-5880-4c04-84f6-ac25e5637da8" name="Logs, instanciation, performance traitement documents" comment="ajout du script graph et modif des logs pour niveau debug">
-      <change afterPath="$PROJECT_DIR$/src/application/services/neo4j_processing_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/services/project_management_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/services/project_processing_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diagrams/cdcs/cdc_1/REQ_diagram.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diagrams/cdcs/cdc_1/REQ_entities.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T184115.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T184117.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T184252.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T184346.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T184815.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T184951.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T184956.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T185117.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T185154.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T185345.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T185525.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T185923.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T185928.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T190114.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T192758.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T193147.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T193149.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T193202.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T193204.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T193335.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T221027.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T221027.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T221032.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T221036.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T221038.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T224533.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/adapters/persistence/neo4j_persistence_adapter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapters/persistence/neo4j_persistence_adapter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/adapters/web/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapters/web/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/adapters/web/document_adapter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapters/web/document_adapter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/adapters/web/openai_embedding_adapter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapters/web/openai_embedding_adapter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/adapters/web/process_projects.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapters/web/process_projects.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/adapters/web/rag_adapter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapters/web/rag_adapter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/services/similarity_processing_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/services/similarity_processing_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/ports/embedding_port.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/ports/embedding_port.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/ports/similarity_port.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/ports/similarity_port.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adapters/web/process_projects.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapters/web/deprecated_process_projects.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/services/neo4j_processing_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/services/neo4j_processing_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/services/project_management_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/services/project_management_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/services/project_processing_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/services/project_processing_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_main.http" beforeDir="false" afterPath="$PROJECT_DIR$/test_main.http" afterDir="false" />
     </list>
-    <list id="9e59d207-2fd7-4630-b6eb-ca89927b30ba" name="Changes" comment="added qodana" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,6 +144,13 @@
     &quot;accountId&quot;: &quot;94bd6f70-f7ce-411a-aa81-6bac7234dd56&quot;
   }
 }</component>
+  <component name="HttpClientSelectedEnvironments">
+    <file url="file://$PROJECT_DIR$/test_main.http" environment="cdc_1" />
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http" environment="test" />
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-tests.http" environment="test" />
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/different-responses.http" environment="test" />
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" environment="test" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -131,64 +161,70 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2jlegyPWCp3nVAJ1ApLAdbAPaLm" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;FastAPI.SysML_PLM.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.SysML_PLM-endpoints | #1.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.test_main | #1.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.test_main | #2.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.test_main | #3.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.test_main | #4.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.test_main | #5.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.test_main | Full project.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.test_main | Only json.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.test_main | Project diagramme MD et json.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.test_main | statuts.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.uvicorn.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Logs-instanciation&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/erpes/PycharmProjects/SysML_PLM/src/interface&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
-    &quot;spentTimePerTaskStorage.store&quot;: &quot;{}&quot;,
-    &quot;timeTracker.activityTracker&quot;: &quot;null&quot;,
-    &quot;timeTracker.comment&quot;: &quot;&quot;,
-    &quot;timeTracker.inactivityPeriodInMills&quot;: &quot;600000&quot;,
-    &quot;timeTracker.isAutoTrackingEnable&quot;: &quot;true&quot;,
-    &quot;timeTracker.isAutoTrackingTemporaryDisabled&quot;: &quot;false&quot;,
-    &quot;timeTracker.isManualTrackingEnable&quot;: &quot;false&quot;,
-    &quot;timeTracker.isPaused&quot;: &quot;true&quot;,
-    &quot;timeTracker.isPostAfterCommitEnabled&quot;: &quot;true&quot;,
-    &quot;timeTracker.isPostedScheduled&quot;: &quot;true&quot;,
-    &quot;timeTracker.isRunning&quot;: &quot;false&quot;,
-    &quot;timeTracker.isScheduledEnabled&quot;: &quot;false&quot;,
-    &quot;timeTracker.isWhenProjectClosedEnabled&quot;: &quot;true&quot;,
-    &quot;timeTracker.issueId&quot;: &quot;Default&quot;,
-    &quot;timeTracker.issueIdReadable&quot;: &quot;Default&quot;,
-    &quot;timeTracker.pausedTime&quot;: &quot;0&quot;,
-    &quot;timeTracker.query&quot;: &quot;&quot;,
-    &quot;timeTracker.recordedTime&quot;: &quot;0&quot;,
-    &quot;timeTracker.scheduledPeriod&quot;: &quot;19:00:0&quot;,
-    &quot;timeTracker.startTime&quot;: &quot;0&quot;,
-    &quot;timeTracker.timeInMills&quot;: &quot;0&quot;,
-    &quot;timeTracker.type&quot;: &quot;Développement&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "FastAPI.SysML_PLM.executor": "Run",
+    "HTTP Request.SysML_PLM-endpoints | #1.executor": "Run",
+    "HTTP Request.test_main | #1.executor": "Run",
+    "HTTP Request.test_main | #2.executor": "Run",
+    "HTTP Request.test_main | #3.executor": "Run",
+    "HTTP Request.test_main | #4.executor": "Run",
+    "HTTP Request.test_main | #5.executor": "Run",
+    "HTTP Request.test_main | Full project.executor": "Run",
+    "HTTP Request.test_main | Neo4j.executor": "Run",
+    "HTTP Request.test_main | Only json.executor": "Run",
+    "HTTP Request.test_main | Project diagramme MD et json.executor": "Run",
+    "HTTP Request.test_main | statuts.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.uvicorn.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Logs-instanciation",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/erpes/PycharmProjects/SysML_PLM/src/interface",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "rest.client.default.execution.environment": "cdc_1",
+    "settings.editor.selected.configurable": "editor.preferences.tabs",
+    "spentTimePerTaskStorage.store": "{}",
+    "timeTracker.activityTracker": "null",
+    "timeTracker.comment": "",
+    "timeTracker.inactivityPeriodInMills": "600000",
+    "timeTracker.isAutoTrackingEnable": "true",
+    "timeTracker.isAutoTrackingTemporaryDisabled": "true",
+    "timeTracker.isManualTrackingEnable": "false",
+    "timeTracker.isPaused": "false",
+    "timeTracker.isPostAfterCommitEnabled": "true",
+    "timeTracker.isPostedScheduled": "true",
+    "timeTracker.isRunning": "false",
+    "timeTracker.isScheduledEnabled": "false",
+    "timeTracker.isWhenProjectClosedEnabled": "true",
+    "timeTracker.issueId": "Default",
+    "timeTracker.issueIdReadable": "Default",
+    "timeTracker.pausedTime": "0",
+    "timeTracker.query": "admin",
+    "timeTracker.recordedTime": "0",
+    "timeTracker.scheduledPeriod": "19:00:0",
+    "timeTracker.startTime": "1722305697331",
+    "timeTracker.timeInMills": "0",
+    "timeTracker.type": "Développement",
+    "vue.rearranger.settings.migration": "true",
+    "ytplugin.issueListCompactView": "true"
   }
-}</component>
+}]]></component>
   <component name="QodanaCloudProjectLink">
     <option name="lastReportId" value="9b2nM" />
     <option name="linkedProjectId" value="3e9lD" />
@@ -217,33 +253,13 @@
     <configuration name="test_main | Full project" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/test_main.http" index="3" requestIdentifier="Full project" runType="Run single request">
       <method v="2" />
     </configuration>
+    <configuration name="test_main | Neo4j" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/test_main.http" index="6" requestIdentifier="Neo4j" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="test_main | Only json" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/test_main.http" index="5" requestIdentifier="Only json" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="test_main | Project diagramme MD et json" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/test_main.http" index="4" requestIdentifier="Project diagramme MD et json" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="SysML_PLM" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="uvicorn" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -280,19 +296,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="HTTP Request.test_main | Neo4j" />
       <item itemvalue="HTTP Request.test_main | Full project" />
       <item itemvalue="HTTP Request.test_main | Only json" />
       <item itemvalue="HTTP Request.test_main | Project diagramme MD et json" />
-      <item itemvalue="Python.main" />
       <item itemvalue="Python.uvicorn" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.uvicorn" />
+        <item itemvalue="HTTP Request.test_main | Neo4j" />
+        <item itemvalue="HTTP Request.test_main | Project diagramme MD et json" />
         <item itemvalue="HTTP Request.test_main | Only json" />
         <item itemvalue="HTTP Request.test_main | Full project" />
-        <item itemvalue="Python.main" />
-        <item itemvalue="HTTP Request.test_main | Project diagramme MD et json" />
       </list>
     </recent_temporary>
   </component>
@@ -313,7 +329,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task id="Default" summary="Default task">
-      <changelist id="9e59d207-2fd7-4630-b6eb-ca89927b30ba" name="Changes" comment="" />
+      <changelist id="" name="Changes" comment="" />
       <created>1721966206277</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -331,45 +347,6 @@
       <workItem from="1722061797598" duration="6086000" />
       <workItem from="1722225225289" duration="11000" />
     </task>
-    <task id="LOCAL-00001" summary="app working">
-      <branch name="main" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" />
-      <changelist id="9e59d207-2fd7-4630-b6eb-ca89927b30ba" name="Changes" comment="app working" />
-      <option name="closed" value="true" />
-      <created>1722066345347</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1722224984058</updated>
-      <workItem from="1722082331848" duration="5832000" />
-      <workItem from="1722141198206" duration="238000" />
-      <workItem from="1722141882691" duration="151000" />
-      <workItem from="1722142082216" duration="125000" />
-      <workItem from="1722222308314" duration="2655000" />
-    </task>
-    <task id="LOCAL-00002" summary="added qodana">
-      <option name="closed" value="true" />
-      <created>1722084134378</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1722084134379</updated>
-    </task>
-    <task id="LOCAL-00004" summary="added qodana">
-      <option name="closed" value="true" />
-      <created>1722157046901</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1722157046902</updated>
-    </task>
-    <task id="LOCAL-00005" summary="added qodana">
-      <option name="closed" value="true" />
-      <created>1722224889378</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1722224889378</updated>
-    </task>
     <task active="true" id="LOCAL-00006" summary="Logs, instanciation, performance traitement documents">
       <branch name="main" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" original="true" />
       <branch name="Logs-instanciation" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" />
@@ -378,20 +355,25 @@
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1722225235745</updated>
+      <updated>1722306446159</updated>
       <workItem from="1722224984567" duration="237000" />
       <workItem from="1722225236322" duration="9970000" />
-      <workItem from="1722244599447" duration="5898000" />
+      <workItem from="1722244599447" duration="6318000" />
+      <workItem from="1722305716375" duration="494000" />
+      <workItem from="1722306241567" duration="25000" />
+      <workItem from="1722306446641" duration="8447000" />
     </task>
     <task id="LOCAL-00007" summary="ajout du script graph et modif des logs pour niveau debug">
+      <changelist id="a4765a1e-5880-4c04-84f6-ac25e5637da8" name="Logs, instanciation, performance traitement documents" comment="ajout du script graph et modif des logs pour niveau debug" />
       <option name="closed" value="true" />
       <created>1722236494324</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1722236494324</updated>
+      <updated>1722306446159</updated>
+      <workItem from="1722306323381" duration="122000" />
     </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="9" />
     <servers>
       <YouTrack url="https://thenocodeguy.youtrack.cloud">
         <username>random</username>
@@ -425,6 +407,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="app working" />
     <MESSAGE value="Logs, instanciation, performance traitement documents" />
     <MESSAGE value="added qodana" />
@@ -445,6 +428,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SysML_PLM$main.coverage" NAME="main Coverage Results" MODIFIED="1722229112541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SysML_PLM$SysML_PLM.coverage" NAME="SysML_PLM Coverage Results" MODIFIED="1722100904076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/SysML_PLM$uvicorn.coverage" NAME="uvicorn Coverage Results" MODIFIED="1722234122321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SysML_PLM$uvicorn.coverage" NAME="uvicorn Coverage Results" MODIFIED="1722314961658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

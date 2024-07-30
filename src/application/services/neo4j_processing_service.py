@@ -5,6 +5,7 @@ from src.adapters.persistence.neo4j_persistence_adapter import Neo4jPersistenceA
 
 logger = logging.getLogger(__name__)
 
+
 class Neo4jProcessingService:
     @staticmethod
     async def process_neo4j_data(neo4j_adapter: Neo4jPersistenceAdapter, project_name: str, diagram_type: str) -> Dict[str, Any]:
