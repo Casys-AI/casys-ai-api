@@ -1,5 +1,8 @@
-# src/domain/diagram.py
+from dataclasses import dataclass
+from typing import Dict, Any
+
+
+@dataclass
 class Diagram:
-    def __init__(self, name: str, data: dict):
-        self.name = name
-        self.data = data
+    name: str
+    data: Dict[str, Any]

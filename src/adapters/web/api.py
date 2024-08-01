@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 import logging
@@ -9,36 +9,52 @@ from src.adapters.web.openai_embedding_adapter import OpenAIEmbeddingAdapter
 from src.application.services.project_management_service import ProjectManagementService
 from src.application.services.create_diagram_service import CreateDiagramService
 from src.adapters.persistence.file_diagram_repository_adapter import FileDiagramRepositoryAdapter
-from src.application.services.project_processing_service import ProjectProcessingService
 from src.application.services.neo4j_processing_service import Neo4jProcessingService
+from src.application.services.project_processing_service import ProjectProcessingService
+from src.application.services.similarity_processing_service import SimilarityProcessingService
 
 logger = logging.getLogger("uvicorn.error")
 
-project_manager = None
-project_processing_service = None
-diagram_service = None
-neo4j_adapter = None
-processing_status = {"status": "idle", "message": "No processing has started yet"}
+
+class AppState:
+    def __init__(self):
+        self.project_manager = None
+        self.project_processing_service = None
+        self.diagram_service = None
+        self.neo4j_adapter = None
+        self.neo4j_processing_service = None
+        self.embedding_adapter = None
+        self.processing_status = {"status": "idle", "message": "No processing has started yet"}
+
+
+app_state = AppState()
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    global project_processing_service, diagram_service, neo4j_adapter
     logger.info("Initializing services...")
     try:
-        project_processing_service = ProjectProcessingService("config.yaml")
-        if not project_processing_service or not project_processing_service.config:
-            raise ValueError("Failed to initialize ProjectProcessingService or load configuration")
+        app_state.project_manager = ProjectManagementService(r"C:\Users\erpes\PycharmProjects\SysML_PLM\config.yaml")
+        config = app_state.project_manager.get_config()
 
         file_repository = FileDiagramRepositoryAdapter(directory="diagrams")
-        diagram_service = CreateDiagramService(repository=file_repository)
+        app_state.diagram_service = CreateDiagramService(repository_adapter=file_repository)
 
-        neo4j_adapter = Neo4jPersistenceAdapter(project_processing_service.config)
+        app_state.neo4j_adapter = Neo4jPersistenceAdapter(config)
 
-        if neo4j_adapter.is_connected():
-            logger.info("Neo4j connection successful")
-        else:
+        if not app_state.neo4j_adapter.is_connected():
             logger.warning("Unable to connect to Neo4j. Some features may be limited.")
+        else:
+            logger.info("Neo4j connection successful")
+
+        app_state.embedding_adapter = OpenAIEmbeddingAdapter(api_key=config["openai"]["api_key"])
+
+        app_state.neo4j_processing_service = Neo4jProcessingService(
+            app_state.project_manager,
+            app_state.embedding_adapter,
+            app_state.neo4j_adapter
+        )
+        app_state.project_processing_service = ProjectProcessingService(app_state.project_manager)
 
         logger.info("Services initialized successfully.")
     except Exception as e:
@@ -48,10 +64,11 @@ async def lifespan(app: FastAPI):
     yield
 
     logger.info("Shutting down...")
-    if neo4j_adapter:
-        neo4j_adapter.close()
+    if app_state.neo4j_adapter:
+        app_state.neo4j_adapter.close()
 
-app = FastAPI(lifespan=lifespan)
+
+app = FastAPI(title="SysML PLM API", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
@@ -62,86 +79,124 @@ app.add_middleware(
 )
 
 
+def get_project_manager():
+    if app_state.project_manager is None:
+        raise HTTPException(status_code=500, detail="Project manager not initialized")
+    return app_state.project_manager
+
+
+@app.get("/test-neo4j-connection")
+async def test_neo4j_connection() -> Dict[str, Any]:
+    if not app_state.neo4j_adapter:
+        raise HTTPException(status_code=500, detail="Neo4j adapter not initialized")
+    is_connected = app_state.neo4j_adapter.is_connected()
+    return {
+        "status": "connected" if is_connected else "disconnected",
+        "message": "Neo4j connection successful" if is_connected else "Unable to connect to Neo4j"
+    }
+
+
 @app.post("/process/{project_name}")
 async def process_project(project_name: str) -> Dict[str, Any]:
-    global processing_status
-    if not project_processing_service:
-        raise HTTPException(status_code=500, detail="Services not initialized")
-
+    if not app_state.project_processing_service:
+        raise HTTPException(status_code=500, detail="Project processing service not initialized")
     try:
-        result = await project_processing_service.process_project(project_name)
-        processing_status = result
+        result = await app_state.project_processing_service.process_project(project_name)
+        app_state.processing_status = result
         return {"status": "success", "message": result['message']}
     except Exception as e:
         logger.exception(f"Error during project processing: {str(e)}")
-        processing_status = {"status": "error", "message": f"Error during processing {project_name}: {str(e)}"}
-        return {"status": "error", "message": str(e)}
+        app_state.processing_status = {"status": "error",
+                                       "message": f"Error during processing {project_name}: {str(e)}"}
+        raise HTTPException(status_code=500, detail=str(e))
 
 
 @app.post("/process/{project_name}/{diagram_type}")
-async def process_project_diagram(project_name: str, diagram_type: str) -> Dict[str, Any]:
-    global processing_status
-    if not project_processing_service:
-        raise HTTPException(status_code=500, detail="Services not initialized")
-
-    if diagram_type not in project_processing_service.config['diagram_types']:
+async def process_project_diagram(
+        project_name: str,
+        diagram_type: str,
+        project_manager: ProjectManagementService = Depends(get_project_manager)
+) -> Dict[str, Any]:
+    if not app_state.project_processing_service:
+        raise HTTPException(status_code=500, detail="Project processing service not initialized")
+    if diagram_type not in project_manager.get_diagram_types():
         raise HTTPException(status_code=400, detail=f"Invalid diagram type: {diagram_type}")
-
     try:
-        result = await project_processing_service.process_project_diagram(project_name, diagram_type)
-        processing_status = result
+        result = await app_state.project_processing_service.process_project_diagram(project_name, diagram_type)
+        app_state.processing_status = result
         return {"status": "success", "message": result['message']}
     except Exception as e:
         logger.exception(f"Error during project diagram processing: {str(e)}")
-        processing_status = {"status": "error", "message": f"Error during processing {project_name}, {diagram_type}: {str(e)}"}
-        return {"status": "error", "message": str(e)}
+        app_state.processing_status = {"status": "error",
+                                       "message": f"Error during processing {project_name}, {diagram_type}: {str(e)}"}
+        raise HTTPException(status_code=500, detail=str(e))
 
 
 @app.post("/extract-json/{project_name}/{diagram_type}")
-async def extract_json(project_name: str, diagram_type: str) -> Dict[str, Any]:
-    global processing_status
-    if not project_processing_service:
-        raise HTTPException(status_code=500, detail="Services not initialized")
-
-    if diagram_type not in project_processing_service.config['diagram_types']:
+async def extract_json(
+        project_name: str,
+        diagram_type: str,
+        project_manager: ProjectManagementService = Depends(get_project_manager)
+) -> Dict[str, Any]:
+    if not app_state.project_processing_service:
+        raise HTTPException(status_code=500, detail="Project processing service not initialized")
+    if diagram_type not in project_manager.get_diagram_types():
         raise HTTPException(status_code=400, detail=f"Invalid diagram type: {diagram_type}")
-
     try:
-        result = await project_processing_service.extract_json(project_name, diagram_type)
-        processing_status = result
+        result = await app_state.project_processing_service.extract_json(project_name, diagram_type)
+        app_state.processing_status = result
         return {"status": "success", "message": result['message']}
     except Exception as e:
         logger.exception(f"Error during JSON extraction: {str(e)}")
-        processing_status = {"status": "error", "message": f"Error during JSON extraction: {str(e)}"}
-        return {"status": "error", "message": str(e)}
+        app_state.processing_status = {"status": "error", "message": f"Error during JSON extraction: {str(e)}"}
+        raise HTTPException(status_code=500, detail=str(e))
 
 
 @app.post("/process-neo4j-data/{project_name}/{diagram_type}")
-async def process_neo4j_data(project_name: str, diagram_type: str) -> Dict[str, Any]:
-    global processing_status
-    if not neo4j_adapter or not project_processing_service:
-        logger.error("Services not initialized")
-        raise HTTPException(status_code=500, detail="Services not initialized")
-
-    if diagram_type not in project_processing_service.config['diagram_types']:
-        logger.error(f"Invalid diagram type: {diagram_type}")
+async def process_neo4j_data(
+        project_name: str,
+        diagram_type: str,
+        project_manager: ProjectManagementService = Depends(get_project_manager)
+) -> Dict[str, Any]:
+    if not app_state.neo4j_processing_service:
+        raise HTTPException(status_code=500, detail="Neo4j processing service not initialized")
+    if diagram_type not in project_manager.get_diagram_types():
         raise HTTPException(status_code=400, detail=f"Invalid diagram type: {diagram_type}")
-
     try:
         logger.info(f"Processing Neo4j data for project: {project_name}, diagram: {diagram_type}")
-        result = await Neo4jProcessingService.process_neo4j_data(neo4j_adapter, project_name, diagram_type)
-        processing_status = result
+        result = await app_state.neo4j_processing_service.process_neo4j_data(project_name, diagram_type)
+        app_state.processing_status = result
         logger.info(f"Neo4j data processing completed: {result}")
         return {"status": "success", "message": result['message']}
     except Exception as e:
         logger.exception(f"Error during Neo4j data processing: {str(e)}")
-        processing_status = {"status": "error", "message": f"Error during Neo4j data processing: {str(e)}"}
-        return {"status": "error", "message": str(e)}
+        app_state.processing_status = {"status": "error", "message": f"Error during Neo4j data processing: {str(e)}"}
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/process-entire-project/{project_name}")
+async def process_entire_project(
+        project_name: str,
+        project_manager: ProjectManagementService = Depends(get_project_manager)
+) -> Dict[str, Any]:
+    if not app_state.neo4j_processing_service:
+        raise HTTPException(status_code=500, detail="Neo4j processing service not initialized")
+    try:
+        logger.info(f"Processing entire project: {project_name}")
+        result = await app_state.neo4j_processing_service.process_entire_project(project_name)
+        app_state.processing_status = result
+        logger.info(f"Entire project processing completed: {result}")
+        return {"status": "success", "message": result['message']}
+    except Exception as e:
+        logger.exception(f"Error during entire project processing: {str(e)}")
+        app_state.processing_status = {"status": "error",
+                                       "message": f"Error during entire project processing: {str(e)}"}
+        raise HTTPException(status_code=500, detail=str(e))
 
 
 @app.get("/status")
 async def get_processing_status() -> Dict[str, Any]:
-    return processing_status
+    return app_state.processing_status
 
 
 @app.get("/")

@@ -1,0 +1,274 @@
+{
+  "entities": [
+    {
+      "name": "User",
+      "type": "actor",
+      "description": "An actor representing the user of the coffee machine.",
+      "keywords": [
+        "actor",
+        "user"
+      ]
+    },
+    {
+      "name": "MaintenanceTechnician",
+      "type": "actor",
+      "description": "An actor representing the maintenance technician for the coffee machine.",
+      "keywords": [
+        "actor",
+        "maintenance",
+        "technician"
+      ]
+    },
+    {
+      "name": "Transform Coffee Beans into Powder",
+      "type": "usecase",
+      "description": "A use case for transforming coffee beans into powder.",
+      "keywords": [
+        "usecase",
+        "coffee",
+        "powder"
+      ]
+    },
+    {
+      "name": "Minimize Energy Consumption",
+      "type": "usecase",
+      "description": "A use case for minimizing energy consumption.",
+      "keywords": [
+        "usecase",
+        "energy",
+        "consumption"
+      ]
+    },
+    {
+      "name": "Control Rotary Speed",
+      "type": "usecase",
+      "description": "A use case for controlling the rotary speed.",
+      "keywords": [
+        "usecase",
+        "rotary",
+        "speed"
+      ]
+    },
+    {
+      "name": "Monitor Energy Consumption",
+      "type": "usecase",
+      "description": "A use case for monitoring energy consumption.",
+      "keywords": [
+        "usecase",
+        "energy",
+        "monitoring"
+      ]
+    },
+    {
+      "name": "Advanced 3D FEM Analysis",
+      "type": "usecase",
+      "description": "A use case for advanced 3D FEM analysis.",
+      "keywords": [
+        "usecase",
+        "3D",
+        "FEM",
+        "analysis"
+      ]
+    },
+    {
+      "name": "Basic Model Analysis",
+      "type": "usecase",
+      "description": "A use case for basic model analysis.",
+      "keywords": [
+        "usecase",
+        "basic",
+        "model",
+        "analysis"
+      ]
+    },
+    {
+      "name": "Enhanced Model Analysis",
+      "type": "usecase",
+      "description": "A use case for enhanced model analysis.",
+      "keywords": [
+        "usecase",
+        "enhanced",
+        "model",
+        "analysis"
+      ]
+    },
+    {
+      "name": "Crushing Mill",
+      "type": "usecase",
+      "description": "A component use case for the crushing mill.",
+      "keywords": [
+        "usecase",
+        "crushing",
+        "mill"
+      ]
+    },
+    {
+      "name": "Rotational Spring/Damper",
+      "type": "usecase",
+      "description": "A component use case for the rotational spring/damper.",
+      "keywords": [
+        "usecase",
+        "rotational",
+        "spring",
+        "damper"
+      ]
+    },
+    {
+      "name": "Friction Elements",
+      "type": "usecase",
+      "description": "A component use case for the friction elements.",
+      "keywords": [
+        "usecase",
+        "friction",
+        "elements"
+      ]
+    },
+    {
+      "name": "Gear for Speed Reduction",
+      "type": "usecase",
+      "description": "A component use case for the gear for speed reduction.",
+      "keywords": [
+        "usecase",
+        "gear",
+        "speed",
+        "reduction"
+      ]
+    },
+    {
+      "name": "Motor Icon for Signal Transfer",
+      "type": "usecase",
+      "description": "A component use case for the motor icon for signal transfer.",
+      "keywords": [
+        "usecase",
+        "motor",
+        "signal",
+        "transfer"
+      ]
+    },
+    {
+      "name": "Energy Sensor",
+      "type": "usecase",
+      "description": "A component use case for the energy sensor.",
+      "keywords": [
+        "usecase",
+        "energy",
+        "sensor"
+      ]
+    },
+    {
+      "name": "Electrical Motor with Voltage Supply and Speed Control",
+      "type": "usecase",
+      "description": "A component use case for the electrical motor with voltage supply and speed control.",
+      "keywords": [
+        "usecase",
+        "electrical",
+        "motor",
+        "voltage",
+        "speed",
+        "control"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "source": "Transform Coffee Beans into Powder",
+      "target": "Crushing Mill",
+      "type": "containment"
+    },
+    {
+      "source": "Transform Coffee Beans into Powder",
+      "target": "Rotational Spring/Damper",
+      "type": "containment"
+    },
+    {
+      "source": "Transform Coffee Beans into Powder",
+      "target": "Friction Elements",
+      "type": "containment"
+    },
+    {
+      "source": "Transform Coffee Beans into Powder",
+      "target": "Gear for Speed Reduction",
+      "type": "containment"
+    },
+    {
+      "source": "Transform Coffee Beans into Powder",
+      "target": "Motor Icon for Signal Transfer",
+      "type": "containment"
+    },
+    {
+      "source": "Transform Coffee Beans into Powder",
+      "target": "Energy Sensor",
+      "type": "containment"
+    },
+    {
+      "source": "Transform Coffee Beans into Powder",
+      "target": "Electrical Motor with Voltage Supply and Speed Control",
+      "type": "containment"
+    },
+    {
+      "source": "User",
+      "target": "Transform Coffee Beans into Powder",
+      "type": "association"
+    },
+    {
+      "source": "User",
+      "target": "Minimize Energy Consumption",
+      "type": "association"
+    },
+    {
+      "source": "User",
+      "target": "Control Rotary Speed",
+      "type": "association"
+    },
+    {
+      "source": "User",
+      "target": "Monitor Energy Consumption",
+      "type": "association"
+    },
+    {
+      "source": "MaintenanceTechnician",
+      "target": "Advanced 3D FEM Analysis",
+      "type": "association"
+    },
+    {
+      "source": "MaintenanceTechnician",
+      "target": "Basic Model Analysis",
+      "type": "association"
+    },
+    {
+      "source": "MaintenanceTechnician",
+      "target": "Enhanced Model Analysis",
+      "type": "association"
+    },
+    {
+      "source": "Minimize Energy Consumption",
+      "target": "Monitor Energy Consumption",
+      "type": "association"
+    },
+    {
+      "source": "Control Rotary Speed",
+      "target": "Motor Icon for Signal Transfer",
+      "type": "association"
+    },
+    {
+      "source": "Monitor Energy Consumption",
+      "target": "Energy Sensor",
+      "type": "association"
+    },
+    {
+      "source": "Advanced 3D FEM Analysis",
+      "target": "Crushing Mill",
+      "type": "association"
+    },
+    {
+      "source": "Basic Model Analysis",
+      "target": "Crushing Mill",
+      "type": "association"
+    },
+    {
+      "source": "Enhanced Model Analysis",
+      "target": "Electrical Motor with Voltage Supply and Speed Control",
+      "type": "association"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "entities": [
+    {
+      "name": "CoffeeMachine",
+      "type": "Main Block",
+      "description": "The coffee machine must efficiently transform coffee beans into powder and manage energy consumption.",
+      "keywords": [
+        "coffee machine",
+        "transform",
+        "coffee beans",
+        "powder",
+        "energy consumption"
+      ]
+    },
+    {
+      "name": "CrushingMill",
+      "type": "Sub-block",
+      "description": "Transforms coffee beans into powder.",
+      "keywords": [
+        "crushing mill",
+        "transform",
+        "coffee beans",
+        "powder"
+      ]
+    },
+    {
+      "name": "RotationalInertia",
+      "type": "Sub-block",
+      "description": "Simplified model using rotational inertia with friction driven by a speed source or motor.",
+      "keywords": [
+        "rotational inertia",
+        "friction",
+        "speed source",
+        "motor"
+      ]
+    },
+    {
+      "name": "Control",
+      "type": "Sub-block",
+      "description": "Control for constant rotary speed.",
+      "keywords": [
+        "control",
+        "constant rotary speed"
+      ]
+    },
+    {
+      "name": "Motor",
+      "type": "Sub-block",
+      "description": "Motor icon for signal transfer.",
+      "keywords": [
+        "motor",
+        "signal transfer"
+      ]
+    },
+    {
+      "name": "Gear",
+      "type": "Sub-block",
+      "description": "Gear for speed reduction.",
+      "keywords": [
+        "gear",
+        "speed reduction"
+      ]
+    },
+    {
+      "name": "RotationalSpringDamper",
+      "type": "Sub-block",
+      "description": "Rotational spring/damper for causality.",
+      "keywords": [
+        "rotational spring",
+        "damper",
+        "causality"
+      ]
+    },
+    {
+      "name": "FrictionElements",
+      "type": "Sub-block",
+      "description": "Friction elements.",
+      "keywords": [
+        "friction elements"
+      ]
+    },
+    {
+      "name": "EnergySensor",
+      "type": "Sub-block",
+      "description": "Energy sensor.",
+      "keywords": [
+        "energy sensor"
+      ]
+    },
+    {
+      "name": "ElectricalMotor",
+      "type": "Sub-block",
+      "description": "Electrical motor with voltage supply and speed control to monitor motor dynamics and heat generation.",
+      "keywords": [
+        "electrical motor",
+        "voltage supply",
+        "speed control",
+        "motor dynamics",
+        "heat generation"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "source": "CoffeeMachine",
+      "target": "CrushingMill",
+      "type": "contains"
+    },
+    {
+      "source": "CoffeeMachine",
+      "target": "RotationalInertia",
+      "type": "contains"
+    },
+    {
+      "source": "CoffeeMachine",
+      "target": "Control",
+      "type": "contains"
+    },
+    {
+      "source": "CoffeeMachine",
+      "target": "Motor",
+      "type": "contains"
+    },
+    {
+      "source": "CoffeeMachine",
+      "target": "Gear",
+      "type": "contains"
+    },
+    {
+      "source": "CoffeeMachine",
+      "target": "RotationalSpringDamper",
+      "type": "contains"
+    },
+    {
+      "source": "CoffeeMachine",
+      "target": "FrictionElements",
+      "type": "contains"
+    },
+    {
+      "source": "CoffeeMachine",
+      "target": "EnergySensor",
+      "type": "contains"
+    },
+    {
+      "source": "CoffeeMachine",
+      "target": "ElectricalMotor",
+      "type": "contains"
+    }
+  ]
+}

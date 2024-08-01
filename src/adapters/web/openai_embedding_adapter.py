@@ -2,19 +2,23 @@
 
 import logging
 from typing import List,Dict, Any
-from langchain_openai import OpenAIEmbeddings
-from src.domain.ports.embedding_port import EmbeddingPort
-
-logger = logging.getLogger(__name__)
+from langchain_openai import OpenAIEmbeddings as openai_embeddings
 
 
-class OpenAIEmbeddingAdapter(EmbeddingPort):
+logger = logging.getLogger("uvicorn.error")
+
+
+class OpenAIEmbeddingAdapter:
     def __init__(self, api_key: str):
-        self.embeddings_model = OpenAIEmbeddings(openai_api_key=api_key)
+        self.embeddings_model = openai_embeddings(openai_api_key=api_key)
 
     def get_embeddings(self, texts: List[str]) -> List[List[float]]:
         try:
-            return self.embeddings_model.embed_documents(texts)
+            embeddings = self.embeddings_model.embed_documents(texts)
+            # Vérification du format
+            if not all(isinstance(emb, list) and all(isinstance(x, float) for x in emb) for emb in embeddings):
+                raise ValueError("Invalid embedding format")
+            return embeddings
         except Exception as e:
             logger.error(f"Erreur lors de la génération des embeddings : {str(e)}")
             return []
@@ -27,21 +31,14 @@ class OpenAIEmbeddingAdapter(EmbeddingPort):
             return []
 
     def get_embeddings_dict(self, entities: List[Dict[str, Any]], diagram_type: str) -> Dict[str, List[float]]:
-        """
-        Génère un dictionnaire d'embeddings pour les entités données.
+        embeddings_dict = {}
+        for index, entity in enumerate(entities):
+            if 'description' in entity:
+                # Générer un ID temporaire si non présent
+                entity_id = entity.get('id', f"{diagram_type}_{index}")
+                embedding = self.get_embeddings([entity['description']])[0]
+                embeddings_dict[entity_id] = embedding
+                logger.debug(f"Generated embedding for entity {entity_id}: {embedding[:5]}...")
 
-        Args:
-            entities (List[Dict[str, Any]]): Liste des entités.
-            diagram_type (str): Type de diagramme.
-
-        Returns:
-            Dict[str, List[float]]: Dictionnaire des embeddings.
-        """
-        descriptions = [entity['description'] for entity in entities if 'description' in entity]
-        embeddings = self.get_embeddings(descriptions)
-
-        return {
-            f"{diagram_type}_{entity['name']}": embedding
-            for entity, embedding in zip(entities, embeddings)
-            if 'description' in entity
-        }
+        logger.info(f"Successfully generated embeddings for {len(embeddings_dict)} entities")
+        return embeddings_dict

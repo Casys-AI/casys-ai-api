@@ -1,0 +1,186 @@
+{
+  "entities": [
+    {
+      "name": "mainReq",
+      "type": "requirement",
+      "description": "Develop a Digital Twin of a coffee machine",
+      "keywords": [
+        "Digital Twin",
+        "coffee machine",
+        "High risk",
+        "analysis"
+      ]
+    },
+    {
+      "name": "architectureReq",
+      "type": "functionalRequirement",
+      "description": "Define product architecture",
+      "keywords": [
+        "product architecture",
+        "Medium risk",
+        "analysis"
+      ]
+    },
+    {
+      "name": "componentSizingReq",
+      "type": "functionalRequirement",
+      "description": "Size components",
+      "keywords": [
+        "components",
+        "Medium risk",
+        "analysis"
+      ]
+    },
+    {
+      "name": "physicalModelsReq",
+      "type": "functionalRequirement",
+      "description": "Provide physical plant models for control development",
+      "keywords": [
+        "physical plant models",
+        "control development",
+        "High risk",
+        "analysis"
+      ]
+    },
+    {
+      "name": "costReductionReq",
+      "type": "performanceRequirement",
+      "description": "Reduce development costs and risks",
+      "keywords": [
+        "development costs",
+        "risks",
+        "High risk",
+        "analysis"
+      ]
+    },
+    {
+      "name": "componentModelingReq",
+      "type": "functionalRequirement",
+      "description": "Model individual components of the coffee machine",
+      "keywords": [
+        "individual components",
+        "coffee machine",
+        "Medium risk",
+        "analysis"
+      ]
+    },
+    {
+      "name": "controlAlgorithmReq",
+      "type": "functionalRequirement",
+      "description": "Build a simple control algorithm",
+      "keywords": [
+        "control algorithm",
+        "Medium risk",
+        "analysis"
+      ]
+    },
+    {
+      "name": "energyConsumptionReq",
+      "type": "performanceRequirement",
+      "description": "Assess energy consumption",
+      "keywords": [
+        "energy consumption",
+        "Medium risk",
+        "analysis"
+      ]
+    },
+    {
+      "name": "productionRatesReq",
+      "type": "performanceRequirement",
+      "description": "Assess production rates",
+      "keywords": [
+        "production rates",
+        "Medium risk",
+        "analysis"
+      ]
+    },
+    {
+      "name": "interactiveElementsReq",
+      "type": "functionalRequirement",
+      "description": "Incorporate interactive elements",
+      "keywords": [
+        "interactive elements",
+        "Low risk",
+        "analysis"
+      ]
+    },
+    {
+      "name": "stateChartReq",
+      "type": "functionalRequirement",
+      "description": "Use a state chart to program control logic",
+      "keywords": [
+        "state chart",
+        "control logic",
+        "Medium risk",
+        "analysis"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "source": "mainReq",
+      "target": "architectureReq",
+      "type": "contains"
+    },
+    {
+      "source": "mainReq",
+      "target": "componentSizingReq",
+      "type": "contains"
+    },
+    {
+      "source": "mainReq",
+      "target": "physicalModelsReq",
+      "type": "contains"
+    },
+    {
+      "source": "mainReq",
+      "target": "costReductionReq",
+      "type": "contains"
+    },
+    {
+      "source": "mainReq",
+      "target": "componentModelingReq",
+      "type": "contains"
+    },
+    {
+      "source": "mainReq",
+      "target": "controlAlgorithmReq",
+      "type": "contains"
+    },
+    {
+      "source": "mainReq",
+      "target": "energyConsumptionReq",
+      "type": "contains"
+    },
+    {
+      "source": "mainReq",
+      "target": "productionRatesReq",
+      "type": "contains"
+    },
+    {
+      "source": "mainReq",
+      "target": "interactiveElementsReq",
+      "type": "contains"
+    },
+    {
+      "source": "mainReq",
+      "target": "stateChartReq",
+      "type": "contains"
+    },
+    {
+      "source": "architectureReq",
+      "target": "componentSizingReq",
+      "type": "derives"
+    },
+    {
+      "source": "architectureReq",
+      "target": "physicalModelsReq",
+      "type": "derives"
+    },
+    {
+      "source": "componentModelingReq",
+      "target": "physicalModelsReq",
+      "type": "satisfies"
+    }
+  ]
+}

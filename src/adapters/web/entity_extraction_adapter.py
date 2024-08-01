@@ -2,19 +2,13 @@
 import logging
 import json
 import re
-from langchain.prompts import ChatPromptTemplate
-from src.domain.ports.entity_extraction_port import EntityExtractionPort
-
-import logging
-import json
-import re
 from typing import Dict, Any, Optional
 from langchain.prompts import ChatPromptTemplate
-from src.domain.ports.entity_extraction_port import EntityExtractionPort
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger("uvicorn.error")
 
-class EntityExtractionAdapter(EntityExtractionPort):
+
+class EntityExtractionAdapter:
     def __init__(self, openai_chat):
         self.openai_chat = openai_chat
 

@@ -1,10 +1,26 @@
-# src/domain/ports/rag_port.py
-from abc import ABC, abstractmethod
-from typing import List, Tuple, Optional
+# src/domain/ports/rag_adapter_protocol.py
 
-class RAGPort(ABC):
-    @abstractmethod
-    def hybrid_search_with_fallback(self, query: str, semantic_top_k: int = 5, graph_depth: int = 2) -> List[Tuple[str, str]]:
+from typing import List, Tuple, Optional, Protocol
+
+
+class RAGAdapterProtocol(Protocol):
+    """
+    Performs a hybrid search with fallback to keyword search.
+
+    Args:
+        query (str): The search query.
+        semantic_top_k (int): The number of most relevant semantic results to return.
+        graph_depth (int): The depth of the search in the graph.
+
+    Returns:
+        List[Tuple[str, str]]: A list of (name, description) tuples of the found entities.
+    """
+
+    def __init__(self):
+        self.openai_chat = None
+
+    def hybrid_search_with_fallback(self, query: str, semantic_top_k: int = 5, graph_depth: int = 2) -> List[
+        Tuple[str, str]]:
         """
         Effectue une recherche hybride avec repli sur une recherche par mots-clés.
 
@@ -16,9 +32,7 @@ class RAGPort(ABC):
         Returns:
             List[Tuple[str, str]]: Une liste de tuples (nom, description) des entités trouvées.
         """
-        pass
 
-    @abstractmethod
     def rag_pipeline(self, content: str, prompt_template: str) -> Tuple[Optional[str], bool]:
         """
         Exécute le pipeline RAG complet.
@@ -30,4 +44,3 @@ class RAGPort(ABC):
         Returns:
             Tuple[Optional[str], bool]: Le résultat généré et un booléen indiquant le succès de l'opération.
         """
-        pass

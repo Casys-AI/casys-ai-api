@@ -6,22 +6,24 @@ from langchain_openai import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from neo4j import GraphDatabase
 from tenacity import retry, stop_after_attempt, wait_random_exponential
-from src.domain.ports.rag_port import RAGPort
-from src.domain.ports.embedding_port import EmbeddingPort
 
-logger = logging.getLogger(__name__)
+from src.adapters.web.openai_embedding_adapter import OpenAIEmbeddingAdapter
+from src.domain.ports.embedding_adapter_protocol import EmbeddingAdapterProtocol
+
+logger = logging.getLogger("uvicorn.error")
 
 
-class RAGAdapter(RAGPort):
-    def __init__(self, config: Dict, embedding_service: EmbeddingPort):
+class RAGAdapter:
+    def __init__(self, config: Dict, embedding_adapter: OpenAIEmbeddingAdapter):
         self.config = config
-        self.embedding_service = embedding_service
+        self.embedding_adapter = embedding_adapter
         self.openai_chat = ChatOpenAI(
             model_name=config["openai"]["model"],
             temperature=config["openai"]["temperature"],
             openai_api_key=config["openai"]["api_key"]
         )
         self.neo4j_driver = self._create_neo4j_driver()
+
 
     def _create_neo4j_driver(self) -> Optional[GraphDatabase.driver]:
         try:

@@ -1,56 +1,49 @@
+# main.py
 import uvicorn
 import os
 import logging
 from logging.handlers import RotatingFileHandler
-from src.adapters.web.api import app
 
-def setup_logging():
-    log_level = os.environ.get("LOG_LEVEL", "debug").upper()
 
-    # Configuration du logger principal
-    root_logger = logging.getLogger()
-    root_logger.setLevel(logging.DEBUG)  # Capture tous les niveaux de log
+def setup_logging(config_log_level: str):
+    # Configuration of the main logger
+    root_logger = logging.getLogger("uvicorn.error")
+    root_logger.setLevel(logging.DEBUG)  # Capture all log levels
 
-    # Formatter personnalisé
-    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    # Custom formatter
+    formatter = logging.Formatter('%(asctime)s - %(name)s - %(filename)s:%(lineno)d - %(levelname)s - %(message)s')
 
-    # Handler pour la console (INFO et au-dessus)
+    # Console handler (INFO and above)
     console_handler = logging.StreamHandler()
-    console_handler.setLevel(log_level)
+    console_handler.setLevel(config_log_level.upper())
     console_handler.setFormatter(formatter)
     root_logger.addHandler(console_handler)
 
-    # Handler pour le fichier avec rotation (tous les logs)
+    # File handler with rotation (all logs)
     file_handler = RotatingFileHandler("app.log", maxBytes=10 * 1024 * 1024, backupCount=5)
     file_handler.setLevel(logging.DEBUG)
     file_handler.setFormatter(formatter)
     root_logger.addHandler(file_handler)
 
-    # Configuration spécifique pour uvicorn et fastapi
-    for module in ['uvicorn', 'fastapi']:
-        mod_logger = logging.getLogger(module)
-        mod_logger.handlers = []  # Supprime les handlers existants
-        mod_logger.propagate = True  # Propage les logs au logger principal
-
-    # Ajuster le niveau de log pour les modules spécifiques si nécessaire
+    # Adjust log level for uvicorn.access if necessary
     logging.getLogger('uvicorn.access').setLevel(logging.WARNING)
 
-def main():
-    setup_logging()
-    logger = logging.getLogger(__name__)
+
+if __name__ == "__main__":
+    log_level = os.environ.get("LOG_LEVEL", "debug")
+    setup_logging(log_level)
+
+    logger = logging.getLogger("uvicorn.error")  # Updated line
     logger.info("Starting the application...")
 
     try:
         uvicorn.run(
-            app,
+            "src.adapters.web.api:app",
             host="0.0.0.0",
             port=8000,
-            log_level=os.environ.get("LOG_LEVEL", "debug").lower(),
+            log_level=log_level.lower(),
             reload=True
         )
     except Exception as e:
         logger.error(f"Application failed to start: {str(e)}")
         raise
-
-if __name__ == "__main__":
-    main()

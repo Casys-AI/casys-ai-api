@@ -1,52 +1,120 @@
 import logging
 import json
-from typing import Dict, Any
+from typing import Dict, Any, List
 from src.adapters.persistence.neo4j_persistence_adapter import Neo4jPersistenceAdapter
+from src.application.services.project_management_service import ProjectManagementService
+from src.application.services.similarity_processing_service import SimilarityProcessingService
+from src.domain.ports.embedding_adapter_protocol import EmbeddingAdapterProtocol
+from src.domain.ports.neo4j_persistence_adapter_protocol import Neo4jPersistenceAdapterProtocol
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger("uvicorn.error")
+
+
+def _process_json_file(file_path: str) -> Dict[str, Any]:
+    try:
+        with open(file_path, 'r', encoding='utf-8') as file:
+            data = json.load(file)
+        logger.info(f"JSON file processed successfully: {file_path}")
+        return data
+    except json.JSONDecodeError as e:
+        logger.error(f"Error decoding JSON from file {file_path}: {str(e)}")
+        raise
+    except IOError as e:
+        logger.error(f"Error reading file {file_path}: {str(e)}")
+        raise
+    except Exception as e:
+        logger.error(f"Unexpected error processing JSON file {file_path}: {str(e)}")
+        raise
 
 
 class Neo4jProcessingService:
-    @staticmethod
-    async def process_neo4j_data(neo4j_adapter: Neo4jPersistenceAdapter, project_name: str, diagram_type: str) -> Dict[str, Any]:
+    def __init__(self, project_manager: ProjectManagementService, embedding_adapter: EmbeddingAdapterProtocol,
+                 neo4j_adapter: Neo4jPersistenceAdapterProtocol):
+        self.project_manager = project_manager
+        self.embedding_adapter = embedding_adapter
+        self.neo4j_adapter = neo4j_adapter
+        self.similarity_service = SimilarityProcessingService(neo4j_adapter, embedding_adapter,
+                                                              project_manager.get_config())
+
+    async def process_neo4j_data(self, project_name: str, diagram_type: str) -> Dict[str, Any]:
         try:
             logger.info(f"Starting Neo4j data processing for project: {project_name}, diagram: {diagram_type}")
 
-            neo4j_adapter.ensure_vector_index()
+            self.neo4j_adapter.ensure_vector_index()
 
-            file_path = f"diagrams/{project_name}/{diagram_type}_entities.json"
-            data = Neo4jProcessingService._process_json_file(file_path)
+            self.project_manager.find_project(project_name)
+            entities_path = self.project_manager.get_project_entities_path(project_name, diagram_type)
 
-            neo4j_adapter.batch_create_or_update_entities(data['entities'], project_name, project_name.upper())
-            neo4j_adapter.batch_create_relationships(data['relationships'], project_name)
+            data = _process_json_file(entities_path)
 
-            neo4j_adapter.update_embeddings(project_name, diagram_type)
+            entities_with_ids = self._add_temp_ids_to_entities(data['entities'], diagram_type)
 
-            new_entity_ids = [f"{diagram_type}_{entity['name']}" for entity in data['entities']]
-            similarities = neo4j_adapter.calculate_similarities_with_existing(new_entity_ids)
+            logger.info(f"Creating/updating entities for project: {project_name}, diagram: {diagram_type}")
+            self.neo4j_adapter.batch_create_or_update_entities(entities_with_ids, project_name, diagram_type)
 
-            neo4j_adapter.update_similarity_relationships(similarities)
+            logger.info(f"Creating relationships for project: {project_name}")
+            self.neo4j_adapter.batch_create_relationships(data['relationships'], project_name)
 
-            logger.info(f"Neo4j data processing and similarity calculation completed for project: {project_name}, diagram: {diagram_type}")
-            return {"status": "completed", "message": f"Neo4j data processing and similarity calculation completed for {project_name}, {diagram_type}"}
+            logger.info(f"Generating and updating embeddings for project: {project_name}")
+            embeddings = self.embedding_adapter.get_embeddings_dict(entities_with_ids, diagram_type)
+            self.neo4j_adapter.update_embeddings(project_name, diagram_type, embeddings)
+
+            logger.info(f"Checking and fixing embeddings format for project: {project_name}")
+            self.neo4j_adapter.check_and_fix_embeddings(project_name, diagram_type)
+
+            logger.info(f"Checking and fixing keywords format for project: {project_name}")
+            self.neo4j_adapter.check_and_fix_keywords(project_name, diagram_type)
+
+            logger.info(f"Processing similarities for project: {project_name}")
+            self.similarity_service.process_similarities(project_name)
+
+            logger.info(f"Neo4j data processing completed for project: {project_name}, diagram: {diagram_type}")
+            return {"status": "completed",
+                    "message": f"Neo4j data processing completed for {project_name}, {diagram_type}"}
+
+        except ValueError as ve:
+            logger.error(f"Validation error during Neo4j data processing: {str(ve)}")
+            await self._handle_error(project_name, str(ve))
+            return {"status": "error", "message": f"Validation error: {str(ve)}"}
         except Exception as e:
             logger.exception(f"Error during Neo4j data processing: {str(e)}")
-            neo4j_adapter.rollback(project_name)
-            return {"status": "error", "message": f"Error during Neo4j data processing for {project_name}, {diagram_type}: {str(e)}"}
+            await self._handle_error(project_name, str(e))
+            return {"status": "error", "message": f"Unexpected error: {str(e)}"}
 
-    @staticmethod
-    def _process_json_file(file_path: str) -> Dict[str, Any]:
+    async def process_entire_project(self, project_name: str) -> Dict[str, Any]:
         try:
-            with open(file_path, 'r', encoding='utf-8') as file:
-                data = json.load(file)
-            logger.info(f"JSON file processed successfully: {file_path}")
-            return data
-        except json.JSONDecodeError as e:
-            logger.error(f"Error decoding JSON from file {file_path}: {str(e)}")
-            raise
-        except IOError as e:
-            logger.error(f"Error reading file {file_path}: {str(e)}")
-            raise
+            logger.info(f"Starting Neo4j data processing for entire project: {project_name}")
+
+            self.neo4j_adapter.ensure_vector_index()
+
+            project = self.project_manager.find_project(project_name)
+            diagram_types = self.project_manager.get_diagram_types()
+
+            for diagram_type in diagram_types:
+                logger.info(f"Processing diagram type: {diagram_type}")
+                result = await self.process_neo4j_data(project_name, diagram_type)
+                if result['status'] == 'error':
+                    return result  # Si une erreur se produit, on arrête le traitement
+
+            logger.info(f"Neo4j data processing completed for entire project: {project_name}")
+            return {"status": "completed", "message": f"Neo4j data processing completed for entire project {project_name}"}
+
         except Exception as e:
-            logger.error(f"Unexpected error processing JSON file {file_path}: {str(e)}")
-            raise
+            logger.exception(f"Error during Neo4j data processing for entire project: {str(e)}")
+            await self._handle_error(project_name, str(e))
+            return {"status": "error", "message": f"Unexpected error: {str(e)}"}
+
+    def _add_temp_ids_to_entities(self, entities: List[Dict[str, Any]], diagram_type: str) -> List[Dict[str, Any]]:
+        return [
+            {**entity, 'id': entity.get('id', f"{diagram_type}_{index}")}
+            for index, entity in enumerate(entities)
+        ]
+
+    async def _handle_error(self, project_name: str, error_message: str):
+        logger.error(f"Error occurred. Attempting rollback for project: {project_name}")
+        try:
+            self.neo4j_adapter.rollback(project_name)
+            logger.info(f"Rollback completed for project: {project_name}")
+        except Exception as rollback_error:
+            logger.error(f"Rollback failed for project {project_name}: {str(rollback_error)}")
+        logger.error(f"Original error: {error_message}")

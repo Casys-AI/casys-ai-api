@@ -31,7 +31,7 @@ Accept: application/json
   "diagram_type": "{{diagram_type}}"
 }
 
-### Neo4j
+### Neo4j 1 diagrame
 POST http://127.0.0.1:8000/process-neo4j-data/{{project_name}}/{{diagram_type}}
 Content-Type: application/json
 
@@ -39,3 +39,15 @@ Content-Type: application/json
   "project_name": "{{project_name}}",
   "diagram_type": "{{diagram_type}}"
 }
+### Neo4j full project
+POST http://127.0.0.1:8000/process-entire-project/{{project_name}}
+Content-Type: application/json
+
+{
+  "project_name": "{{project_name}}"
+}
+
+
+### Co Neo4j
+GET http://127.0.0.1:8000/test-neo4j-connection
+Content-Type: application/json
