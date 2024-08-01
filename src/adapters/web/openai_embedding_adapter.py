@@ -2,7 +2,7 @@
 
 import logging
 from typing import List,Dict, Any
-from langchain_openai import OpenAIEmbeddings as openai_embeddings
+from langchain_openai import OpenAIEmbeddings
 
 
 logger = logging.getLogger("uvicorn.error")
@@ -10,7 +10,7 @@ logger = logging.getLogger("uvicorn.error")
 
 class OpenAIEmbeddingAdapter:
     def __init__(self, api_key: str):
-        self.embeddings_model = openai_embeddings(openai_api_key=api_key)
+        self.embeddings_model = OpenAIEmbeddings(openai_api_key=api_key)
 
     def get_embeddings(self, texts: List[str]) -> List[List[float]]:
         try:

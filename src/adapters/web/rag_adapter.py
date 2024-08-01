@@ -24,7 +24,6 @@ class RAGAdapter:
         )
         self.neo4j_driver = self._create_neo4j_driver()
 
-
     def _create_neo4j_driver(self) -> Optional[GraphDatabase.driver]:
         try:
             driver = GraphDatabase.driver(
