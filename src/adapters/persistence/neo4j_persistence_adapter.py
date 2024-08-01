@@ -1,7 +1,7 @@
 # src/adapters/persistence/neo4j_persistence_adapter.py
 import logging
 from typing import Dict, List, Any
-from neo4j import GraphDatabase
+from neo4j import GraphDatabase, Driver
 from neo4j.exceptions import Neo4jError
 
 logger = logging.getLogger("uvicorn.error")
@@ -10,21 +10,18 @@ logger = logging.getLogger("uvicorn.error")
 class Neo4jPersistenceAdapter:
     def __init__(self, config: Dict[str, Any]):
         self.config = config
-        self.driver = None
-        self._connect()
+        self.driver: Driver = self._connect()
 
-    def _connect(self):
+    def _connect(self) -> Driver:
         try:
-            logger.info(f"Attempting to connect to Neo4j with URI: {self.config['neo4j']['uri']}")
-            self.driver = GraphDatabase.driver(
+            driver = GraphDatabase.driver(
                 self.config["neo4j"]["uri"],
                 auth=(self.config["neo4j"]["user"], self.config["neo4j"]["password"])
             )
-            with self.driver.session() as session:
-                result = session.run("RETURN 1 AS num")
-                for record in result:
-                    logger.info(f"Neo4j connection test successful. Result: {record['num']}")
+            with driver.session() as session:
+                session.run("RETURN 1")
             logger.info("Neo4j connection established successfully")
+            return driver
         except Exception as e:
             logger.error(f"Failed to connect to Neo4j: {str(e)}")
             raise
@@ -55,33 +52,9 @@ class Neo4jPersistenceAdapter:
                     logger.error(f"Error creating vector index: {e}")
                     raise
 
-    def batch_create_or_update_entities(self, entities: List[Dict[str, Any]], project_name: str, diagram_type: str):
+    def batch_create_or_update_entities(self, project_name: str, diagram_type: str, entities: List[Dict[str, Any]]):
         query = """
-        MERGE (p:Project {name: $project_name})
-        MERGE (d:Diagram {type: $diagram_type})
-        MERGE (p)-[:HAS_DIAGRAM]->(d)
-        WITH p, d
-        UNWIND $entities AS entity
-        MERGE (e:Entity {id: entity.id})
-        SET e += entity
-        MERGE (d)-[:CONTAINS_ENTITY]->(e)
-        """
-        try:
-            with self.driver.session() as session:
-                result = session.run(query, project_name=project_name, diagram_type=diagram_type, entities=entities)
-                logger.info(
-                    f"Created or updated {result.consume().counters.nodes_created} entities for project {project_name}, diagram type {diagram_type}")
-        except Neo4jError as e:
-            logger.error(f"Neo4j error in batch_create_or_update_entities: {str(e)}")
-            raise
-
-    @staticmethod
-    def _neo4j_create_or_update_entities(tx, entities: List[Dict[str, Any]], project_name: str, diagram_type: str):
-        query = """
-        MERGE (p:Project {name: $project_name})
-        MERGE (d:Diagram {type: $diagram_type, project: p.name})
-        MERGE (p)-[:HAS_DIAGRAM]->(d)
-        WITH p, d
+        MATCH (p:Project {name: $project_name})-[:HAS_DIAGRAM]->(d:Diagram {type: $diagram_type})
         UNWIND $entities AS entity
         MERGE (e:Entity {id: entity.id})
         SET e += entity
@@ -91,63 +64,40 @@ class Neo4jPersistenceAdapter:
         MERGE (k:Keyword {name: keyword})
         MERGE (e)-[:HAS_KEYWORD]->(k)
         """
-        return tx.run(query, project_name=project_name, diagram_type=diagram_type, entities=entities)
+        with self.driver.session() as session:
+            session.run(query, project_name=project_name, diagram_type=diagram_type, entities=entities)
 
-    def batch_create_relationships(self, relationships: List[Dict[str, Any]], project_name: str):
-        self._check_connection()
-        try:
-            with self.driver.session() as session:
-                result = session.execute_write(self._neo4j_create_relationships, relationships, project_name)
-            logger.info(f"Successfully created {len(relationships)} relationships for project {project_name}")
-            return result
-        except Neo4jError as e:
-            logger.error(f"Neo4j error in batch_create_relationships: {str(e)}")
-            raise
-        except Exception as e:
-            logger.error(f"Unexpected error in batch_create_relationships: {str(e)}")
-            raise
+    def create_or_update_project(self, project_name: str, project_type: str):
+        query = """
+        MERGE (p:Project {name: $project_name})
+        SET p.type = $project_type
+        RETURN p
+        """
+        with self.driver.session() as session:
+            session.run(query, project_name=project_name, project_type=project_type)
 
-    @staticmethod
-    def _neo4j_create_relationships(tx, relationships: List[Dict[str, Any]], project_name: str):
+    def create_or_update_diagram(self, project_name: str, diagram_type: str):
         query = """
         MATCH (p:Project {name: $project_name})
-        WITH p
-        UNWIND $relationships AS rel
-        MATCH (s:Entity {id: rel.source_id})<-[:CONTAINS_ENTITY]-(:Diagram)<-[:HAS_DIAGRAM]-(p)
-        MATCH (t:Entity {id: rel.target_id})<-[:CONTAINS_ENTITY]-(:Diagram)<-[:HAS_DIAGRAM]-(p)
-        CALL apoc.merge.relationship(s, rel.type, {}, {}, t)
-        YIELD rel AS created_rel
-        RETURN count(created_rel)
+        MERGE (d:Diagram {type: $diagram_type})
+        MERGE (p)-[:HAS_DIAGRAM]->(d)
+        RETURN d
         """
-        return tx.run(query, project_name=project_name, relationships=relationships)
+        with self.driver.session() as session:
+            session.run(query, project_name=project_name, diagram_type=diagram_type)
 
     def update_embeddings(self, project_name: str, diagram_type: str, embeddings: Dict[str, List[float]]):
-        self._check_connection()
-        try:
-            for entity_id, embedding in embeddings.items():
-                if not isinstance(embedding, list) or not all(isinstance(x, float) for x in embedding):
-                    raise ValueError(f"Invalid embedding format for entity {entity_id}")
-
-            query = """
-            MATCH (p:Project {name: $project_name})-[:HAS_DIAGRAM]->(d:Diagram {type: $diagram_type})-[:CONTAINS_ENTITY]->(e:Entity)
-            WHERE e.id IN $embedding_ids
-            SET e.embedding = $embeddings[e.id]
-            """
-            with self.driver.session() as session:
-                result = session.run(query,
-                                     project_name=project_name,
-                                     diagram_type=diagram_type,
-                                     embedding_ids=list(embeddings.keys()),
-                                     embeddings=embeddings)
-                updated_count = result.consume().counters.properties_set
-                logger.info(f"Updated embeddings for {updated_count} entities")
-            return updated_count
-        except Neo4jError as e:
-            logger.error(f"Neo4j error in update_embeddings: {str(e)}")
-            raise
-        except Exception as e:
-            logger.error(f"Unexpected error in update_embeddings: {str(e)}")
-            raise
+        query = """
+        MATCH (p:Project {name: $project_name})-[:HAS_DIAGRAM]->(d:Diagram {type: $diagram_type})-[:CONTAINS_ENTITY]->(e:Entity)
+        WHERE e.id IN $embedding_ids
+        SET e.embedding = $embeddings[e.id]
+        """
+        with self.driver.session() as session:
+            session.run(query,
+                        project_name=project_name,
+                        diagram_type=diagram_type,
+                        embedding_ids=list(embeddings.keys()),
+                        embeddings=embeddings)
 
     def update_similarity_relationships(self, similarities: List[Dict[str, Any]]):
         query = """
@@ -159,26 +109,8 @@ class Neo4jPersistenceAdapter:
             r.embedding_similarity = sim.embedding_similarity,
             r.keyword_similarity = sim.keyword_similarity
         """
-        try:
-            with self.driver.session() as session:
-                result = session.run(query, similarities=similarities)
-                logger.info(
-                    f"Created or updated {result.consume().counters.relationships_created} similarity relationships")
-        except Neo4jError as e:
-            logger.error(f"Neo4j error in update_similarity_relationships: {str(e)}")
-            raise
-
-    @staticmethod
-    def _neo4j_update_similarity_relationships(tx, similarities: List[Dict[str, Any]]):
-        query = """
-        UNWIND $similarities AS sim
-        MATCH (e1:Entity {id: sim.id1}), (e2:Entity {id: sim.id2})
-        MERGE (e1)-[r:SIMILAR_TO]->(e2)
-        SET r.score = sim.combined_similarity,
-            r.embedding_similarity = sim.embedding_similarity,
-            r.keyword_similarity = sim.keyword_similarity
-        """
-        return tx.run(query, similarities=similarities)
+        with self.driver.session() as session:
+            session.run(query, similarities=similarities)
 
     def get_entities_for_similarity(self, project_name: str, diagram_type: str = None) -> List[Dict[str, Any]]:
         query = """
@@ -216,39 +148,6 @@ class Neo4jPersistenceAdapter:
         except Exception as e:
             logger.error(f"Error verifying Neo4j connection: {e}")
             return False
-
-    @staticmethod
-    def _neo4j_create_entire_project(tx, project_name: str, diagram_data: Dict[str, List[Dict[str, Any]]]):
-        query = """
-          MERGE (p:Project {name: $project_name})
-          WITH p
-          UNWIND $diagram_data AS diagram
-          MERGE (d:Diagram {type: diagram.type, project: p.name})
-          MERGE (p)-[:HAS_DIAGRAM]->(d)
-          WITH d, diagram
-          UNWIND diagram.entities AS entity
-          MERGE (e:Entity {id: entity.id})
-          SET e += entity
-          MERGE (d)-[:CONTAINS_ENTITY]->(e)
-          WITH e, entity
-          UNWIND coalesce(entity.keywords, []) AS keyword
-          MERGE (k:Keyword {name: keyword})
-          MERGE (e)-[:HAS_KEYWORD]->(k)
-          """
-        tx.run(query, project_name=project_name,
-               diagram_data=[{"type": k, "entities": v} for k, v in diagram_data.items()])
-
-    def create_entire_project(self, project_name: str, diagram_data: Dict[str, List[Dict[str, Any]]]):
-        try:
-            with self.driver.session() as session:
-                session.execute_write(self._neo4j_create_entire_project, project_name, diagram_data)
-            logger.info(f"Successfully created entire project: {project_name}")
-        except Neo4jError as e:
-            logger.error(f"Neo4j error in create_entire_project: {str(e)}")
-            raise
-        except Exception as e:
-            logger.error(f"Unexpected error in create_entire_project: {str(e)}")
-            raise
 
     def _format_similarity_result(self, record):
         embedding_weight = self.config['similarity']['embedding_weight']

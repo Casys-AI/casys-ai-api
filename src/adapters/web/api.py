@@ -11,7 +11,7 @@ from src.application.services.create_diagram_service import CreateDiagramService
 from src.adapters.persistence.file_diagram_repository_adapter import FileDiagramRepositoryAdapter
 from src.application.services.neo4j_processing_service import Neo4jProcessingService
 from src.application.services.project_processing_service import ProjectProcessingService
-from src.application.services.similarity_processing_service import SimilarityProcessingService
+from src.application.services.similarity_processing_service import SimilarityService
 
 logger = logging.getLogger("uvicorn.error")
 
@@ -24,6 +24,7 @@ class AppState:
         self.neo4j_adapter = None
         self.neo4j_processing_service = None
         self.embedding_adapter = None
+        self.similarity_service = None
         self.processing_status = {"status": "idle", "message": "No processing has started yet"}
 
 
@@ -48,11 +49,12 @@ async def lifespan(app: FastAPI):
             logger.info("Neo4j connection successful")
 
         app_state.embedding_adapter = OpenAIEmbeddingAdapter(api_key=config["openai"]["api_key"])
-
+        app_state.similarity_service = SimilarityService(config)
         app_state.neo4j_processing_service = Neo4jProcessingService(
             app_state.project_manager,
             app_state.embedding_adapter,
-            app_state.neo4j_adapter
+            app_state.neo4j_adapter,
+            app_state.similarity_service
         )
         app_state.project_processing_service = ProjectProcessingService(app_state.project_manager)
 
