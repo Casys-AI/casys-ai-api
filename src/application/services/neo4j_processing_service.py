@@ -47,6 +47,10 @@ class Neo4jProcessingService:
             data = _process_json_file(entities_path)
             entities = self._add_temp_ids_to_entities(data['entities'], diagram_type)
 
+            # Ajouter le nom du projet à chaque entité
+            for entity in entities:
+                entity['project_name'] = project_name
+
             self.neo4j_adapter.create_or_update_project(project_name, project['type'])
             self.neo4j_adapter.create_or_update_diagram(project_name, diagram_type)
             self.neo4j_adapter.batch_create_or_update_entities(project_name, diagram_type, entities)

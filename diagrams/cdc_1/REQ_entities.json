@@ -3,183 +3,164 @@
     {
       "name": "mainReq",
       "type": "requirement",
-      "description": "Develop a Digital Twin of a coffee machine",
+      "description": "Develop a Digital Twin of a coffee machine using Simcenter Amesim",
       "keywords": [
         "Digital Twin",
         "coffee machine",
+        "Simcenter Amesim",
         "High risk",
         "analysis"
       ]
     },
     {
-      "name": "architectureReq",
+      "name": "modelComponents",
       "type": "functionalRequirement",
-      "description": "Define product architecture",
+      "description": "Model components of the coffee machine",
       "keywords": [
-        "product architecture",
+        "components",
+        "coffee machine",
         "Medium risk",
         "analysis"
       ]
     },
     {
-      "name": "componentSizingReq",
+      "name": "intermediateDetailModels",
       "type": "functionalRequirement",
-      "description": "Size components",
+      "description": "Create intermediate-detail models for each component",
       "keywords": [
+        "intermediate-detail models",
         "components",
         "Medium risk",
         "analysis"
       ]
     },
     {
-      "name": "physicalModelsReq",
+      "name": "controlModule",
       "type": "functionalRequirement",
-      "description": "Provide physical plant models for control development",
+      "description": "Add a control module to the coffee machine",
       "keywords": [
-        "physical plant models",
-        "control development",
-        "High risk",
-        "analysis"
-      ]
-    },
-    {
-      "name": "costReductionReq",
-      "type": "performanceRequirement",
-      "description": "Reduce development costs and risks",
-      "keywords": [
-        "development costs",
-        "risks",
-        "High risk",
-        "analysis"
-      ]
-    },
-    {
-      "name": "componentModelingReq",
-      "type": "functionalRequirement",
-      "description": "Model individual components of the coffee machine",
-      "keywords": [
-        "individual components",
+        "control module",
         "coffee machine",
         "Medium risk",
         "analysis"
       ]
     },
     {
-      "name": "controlAlgorithmReq",
+      "name": "controlLogic",
       "type": "functionalRequirement",
-      "description": "Build a simple control algorithm",
+      "description": "Program control logic using a state chart",
       "keywords": [
-        "control algorithm",
+        "control logic",
+        "state chart",
         "Medium risk",
         "analysis"
       ]
     },
     {
-      "name": "energyConsumptionReq",
+      "name": "analyzeBehavior",
       "type": "performanceRequirement",
-      "description": "Assess energy consumption",
+      "description": "Analyze physical behavior, energy consumption, and production rates",
       "keywords": [
+        "physical behavior",
         "energy consumption",
-        "Medium risk",
-        "analysis"
-      ]
-    },
-    {
-      "name": "productionRatesReq",
-      "type": "performanceRequirement",
-      "description": "Assess production rates",
-      "keywords": [
         "production rates",
         "Medium risk",
         "analysis"
       ]
     },
     {
-      "name": "interactiveElementsReq",
+      "name": "simpleModels",
       "type": "functionalRequirement",
-      "description": "Incorporate interactive elements",
+      "description": "Start with simple functional models and verify them",
       "keywords": [
-        "interactive elements",
+        "simple models",
         "Low risk",
+        "test"
+      ]
+    },
+    {
+      "name": "physicsBasedModels",
+      "type": "functionalRequirement",
+      "description": "Transition to physics-based modeling",
+      "keywords": [
+        "physics-based modeling",
+        "Medium risk",
         "analysis"
       ]
     },
     {
-      "name": "stateChartReq",
+      "name": "assembleMachine",
       "type": "functionalRequirement",
-      "description": "Use a state chart to program control logic",
+      "description": "Assemble the complete coffee machine",
       "keywords": [
-        "state chart",
-        "control logic",
+        "assemble",
+        "coffee machine",
         "Medium risk",
-        "analysis"
+        "demonstration"
+      ]
+    },
+    {
+      "name": "interactiveElements",
+      "type": "functionalRequirement",
+      "description": "Incorporate interactive elements to simulate real usage",
+      "keywords": [
+        "interactive elements",
+        "simulate",
+        "real usage",
+        "Medium risk",
+        "demonstration"
       ]
     }
   ],
   "relationships": [
     {
       "source": "mainReq",
-      "target": "architectureReq",
+      "target": "modelComponents",
       "type": "contains"
     },
     {
       "source": "mainReq",
-      "target": "componentSizingReq",
+      "target": "analyzeBehavior",
       "type": "contains"
     },
     {
       "source": "mainReq",
-      "target": "physicalModelsReq",
+      "target": "simpleModels",
       "type": "contains"
     },
     {
       "source": "mainReq",
-      "target": "costReductionReq",
+      "target": "physicsBasedModels",
       "type": "contains"
     },
     {
       "source": "mainReq",
-      "target": "componentModelingReq",
+      "target": "assembleMachine",
       "type": "contains"
     },
     {
       "source": "mainReq",
-      "target": "controlAlgorithmReq",
+      "target": "interactiveElements",
       "type": "contains"
     },
     {
-      "source": "mainReq",
-      "target": "energyConsumptionReq",
+      "source": "modelComponents",
+      "target": "intermediateDetailModels",
       "type": "contains"
     },
     {
-      "source": "mainReq",
-      "target": "productionRatesReq",
+      "source": "modelComponents",
+      "target": "controlModule",
       "type": "contains"
     },
     {
-      "source": "mainReq",
-      "target": "interactiveElementsReq",
+      "source": "modelComponents",
+      "target": "controlLogic",
       "type": "contains"
     },
     {
-      "source": "mainReq",
-      "target": "stateChartReq",
-      "type": "contains"
-    },
-    {
-      "source": "architectureReq",
-      "target": "componentSizingReq",
-      "type": "derives"
-    },
-    {
-      "source": "architectureReq",
-      "target": "physicalModelsReq",
-      "type": "derives"
-    },
-    {
-      "source": "componentModelingReq",
-      "target": "physicalModelsReq",
+      "source": "controlModule",
+      "target": "controlLogic",
       "type": "satisfies"
     }
   ]

@@ -9,6 +9,580 @@ Accept: */*
   "project_name": "cdc_1"
 }
 
+<> 2024-08-02T145114.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-entire-project/crushing_mill
+Content-Type: application/json
+Content-Length: 37
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "crushing_mill"
+}
+
+<> 2024-08-02T145038.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-entire-project/cdc_1
+Content-Type: application/json
+Content-Length: 29
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "cdc_1"
+}
+
+<> 2024-08-02T144450.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-entire-project/crushing_mill
+Content-Type: application/json
+Content-Length: 37
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "crushing_mill"
+}
+
+<> 2024-08-02T144340.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-entire-project/crushing_mill
+Content-Type: application/json
+Content-Length: 37
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "crushing_mill"
+}
+
+<> 2024-08-02T144116.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-entire-project/crushing_mill
+Content-Type: application/json
+Content-Length: 37
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "crushing_mill"
+}
+
+<> 2024-08-02T143521.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-entire-project/cdc_1
+Content-Type: application/json
+Content-Length: 29
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "cdc_1"
+}
+
+<> 2024-08-02T143449.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-entire-project/cdc_1
+Content-Type: application/json
+Content-Length: 29
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "cdc_1"
+}
+
+<> 2024-08-02T143158.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-entire-project/cdc_1
+Content-Type: application/json
+Content-Length: 29
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "cdc_1"
+}
+
+<> 2024-08-02T142816.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-entire-project/crushing_mill
+Content-Type: application/json
+Content-Length: 37
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "crushing_mill"
+}
+
+<> 2024-08-02T142631.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-entire-project/crushing_mill
+Content-Type: application/json
+Content-Length: 37
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "crushing_mill"
+}
+
+<> 2024-08-02T142240.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-entire-project/cdc_1
+Content-Type: application/json
+Content-Length: 29
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "cdc_1"
+}
+
+<> 2024-08-02T142034.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-entire-project/cdc_1
+Content-Type: application/json
+Content-Length: 29
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "cdc_1"
+}
+
+<> 2024-08-02T141822.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-entire-project/crushing_mill
+Content-Type: application/json
+Content-Length: 37
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "crushing_mill"
+}
+
+<> 2024-08-02T141447.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-entire-project/crushing_mill
+Content-Type: application/json
+Content-Length: 37
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "crushing_mill"
+}
+
+<> 2024-08-02T140837.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-entire-project/cdc_1
+Content-Type: application/json
+Content-Length: 29
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "cdc_1"
+}
+
+<> 2024-08-02T140733.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-entire-project/cdc_1
+Content-Type: application/json
+Content-Length: 29
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "cdc_1"
+}
+
+<> 2024-08-02T140010.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-entire-project/crushing_mill
+Content-Type: application/json
+Content-Length: 37
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "crushing_mill"
+}
+
+<> 2024-08-02T135808.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-neo4j-data/crushing_mill/REQ
+Content-Type: application/json
+Content-Length: 62
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "crushing_mill",
+  "diagram_type": "REQ"
+}
+
+<> 2024-08-02T135623.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-entire-project/crushing_mill
+Content-Type: application/json
+Content-Length: 37
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "crushing_mill"
+}
+
+<> 2024-08-02T135346.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-entire-project/cdc_1
+Content-Type: application/json
+Content-Length: 29
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "cdc_1"
+}
+
+<> 2024-08-02T135302.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-entire-project/cdc_1
+Content-Type: application/json
+Content-Length: 29
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "cdc_1"
+}
+
+<> 2024-08-02T134228.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-entire-project/crushing_mill
+Content-Type: application/json
+Content-Length: 37
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "crushing_mill"
+}
+
+<> 2024-08-02T134123.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-entire-project/crushing_mill
+Content-Type: application/json
+Content-Length: 37
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "crushing_mill"
+}
+
+<> 2024-08-02T133633.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-entire-project/cdc_1
+Content-Type: application/json
+Content-Length: 29
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "cdc_1"
+}
+
+<> 2024-08-02T133327.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-entire-project/cdc_1
+Content-Type: application/json
+Content-Length: 29
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "cdc_1"
+}
+
+<> 2024-08-02T133146.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-entire-project/cdc_1
+Content-Type: application/json
+Content-Length: 29
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "cdc_1"
+}
+
+<> 2024-08-02T133113.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-entire-project/cdc_1
+Content-Type: application/json
+Content-Length: 29
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "cdc_1"
+}
+
+<> 2024-08-02T132732.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-entire-project/cdc_1
+Content-Type: application/json
+Content-Length: 29
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "cdc_1"
+}
+
+<> 2024-08-02T122908.200.json
+
+###
+
+POST http://127.0.0.1:8000/process/cdc_1/REQ
+Accept: application/json
+Content-Length: 54
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+
+{
+  "project_name": "cdc_1",
+  "diagram_type": "REQ"
+}
+
+<> 2024-08-01T183316.200.json
+
+###
+
+GET http://127.0.0.1:8000/test-neo4j-connection
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-08-01T183057-1.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-entire-project/cdc_1
+Content-Type: application/json
+Content-Length: 29
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "cdc_1"
+}
+
+<> 2024-08-01T183057.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-neo4j-data/cdc_1/REQ
+Content-Type: application/json
+Content-Length: 54
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "cdc_1",
+  "diagram_type": "REQ"
+}
+
+<> 2024-08-01T183041.200.json
+
+###
+
+POST http://127.0.0.1:8000/extract-json/cdc_1/REQ
+Content-Length: 80
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+Accept: application/json
+{
+
+  "project_name": "cdc_1",
+  "diagram_type": "REQ"
+}
+
+<> 2024-08-01T183037.200.json
+
+###
+
+POST http://127.0.0.1:8000/process/cdc_1/REQ
+Accept: application/json
+Content-Length: 54
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+
+{
+  "project_name": "cdc_1",
+  "diagram_type": "REQ"
+}
+
+<> 2024-08-01T183024.200.json
+
+###
+
+POST http://127.0.0.1:8000/process/cdc_1
+Accept: application/json
+Content-Length: 29
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+
+{
+  "project_name": "cdc_1"
+}
+
+<> 2024-08-01T183023-2.200.json
+
+###
+
+GET http://127.0.0.1:8000/status
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-08-01T183023-1.200.json
+
+###
+
+GET http://127.0.0.1:8000
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-08-01T183023.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-entire-project/cdc_1
+Content-Type: application/json
+Content-Length: 29
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "cdc_1"
+}
+
+<> 2024-08-01T183018.200.json
+
+###
+
+POST http://127.0.0.1:8000/process-entire-project/cdc_1
+Content-Type: application/json
+Content-Length: 29
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "project_name": "cdc_1"
+}
+
 <> 2024-08-01T174741.200.json
 
 ###
@@ -168,692 +742,3 @@ Accept: */*
 
 <> 2024-08-01T161412.200.json
 
-###
-
-POST http://127.0.0.1:8000/process-entire-project/cdc_1
-Content-Type: application/json
-Content-Length: 29
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "project_name": "cdc_1"
-}
-
-<> 2024-08-01T161328.200.json
-
-###
-
-POST http://127.0.0.1:8000/process-entire-project/cdc_1
-Content-Type: application/json
-Content-Length: 29
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "project_name": "cdc_1"
-}
-
-<> 2024-08-01T161125.200.json
-
-###
-
-POST http://127.0.0.1:8000/process-entire-project/crushing_mill
-Content-Type: application/json
-Content-Length: 37
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "project_name": "crushing_mill"
-}
-
-<> 2024-08-01T161056.200.json
-
-###
-
-POST http://127.0.0.1:8000/process/cdc_1
-Accept: application/json
-Content-Length: 29
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-{
-  "project_name": "cdc_1"
-}
-
-<> 2024-08-01T161006.200.json
-
-###
-
-POST http://127.0.0.1:8000/process-neo4j-data/crushing_mill/REQ
-Content-Type: application/json
-Content-Length: 62
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "project_name": "crushing_mill",
-  "diagram_type": "REQ"
-}
-
-<> 2024-08-01T160606.200.json
-
-###
-
-POST http://127.0.0.1:8000/process-neo4j-data/crushing_mill/REQ
-Content-Type: application/json
-Content-Length: 62
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "project_name": "crushing_mill",
-  "diagram_type": "REQ"
-}
-
-<> 2024-08-01T160414.200.json
-
-###
-
-POST http://127.0.0.1:8000/process-neo4j-data/crushing_mill/REQ
-Content-Type: application/json
-Content-Length: 62
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "project_name": "crushing_mill",
-  "diagram_type": "REQ"
-}
-
-<> 2024-08-01T160137.200.json
-
-###
-
-POST http://127.0.0.1:8000/process-neo4j-data/crushing_mill/REQ
-Content-Type: application/json
-Content-Length: 62
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "project_name": "crushing_mill",
-  "diagram_type": "REQ"
-}
-
-<> 2024-08-01T155647.200.json
-
-###
-
-POST http://127.0.0.1:8000/process-neo4j-data/crushing_mill/REQ
-Content-Type: application/json
-Content-Length: 62
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "project_name": "crushing_mill",
-  "diagram_type": "REQ"
-}
-
-<> 2024-08-01T154414.200.json
-
-###
-
-POST http://127.0.0.1:8000/process-neo4j-data/crushing_mill/REQ
-Content-Type: application/json
-Content-Length: 62
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "project_name": "crushing_mill",
-  "diagram_type": "REQ"
-}
-
-<> 2024-08-01T153720.200.json
-
-###
-
-POST http://127.0.0.1:8000/process-neo4j-data/crushing_mill/REQ
-Content-Type: application/json
-Content-Length: 62
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "project_name": "crushing_mill",
-  "diagram_type": "REQ"
-}
-
-<> 2024-08-01T153336.200.json
-
-###
-
-POST http://127.0.0.1:8000/process-neo4j-data/crushing_mill/REQ
-Content-Type: application/json
-Content-Length: 62
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "project_name": "crushing_mill",
-  "diagram_type": "REQ"
-}
-
-<> 2024-08-01T153030.200.json
-
-###
-
-POST http://127.0.0.1:8000/process-neo4j-data/crushing_mill/REQ
-Content-Type: application/json
-Content-Length: 62
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "project_name": "crushing_mill",
-  "diagram_type": "REQ"
-}
-
-<> 2024-08-01T152731.200.json
-
-###
-
-POST http://127.0.0.1:8000/process-neo4j-data/crushing_mill/REQ
-Content-Type: application/json
-Content-Length: 62
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "project_name": "crushing_mill",
-  "diagram_type": "REQ"
-}
-
-<> 2024-08-01T152317.200.json
-
-###
-
-POST http://127.0.0.1:8000/extract-json/crushing_mill/REQ
-Content-Length: 88
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-Accept: application/json
-{
-
-  "project_name": "crushing_mill",
-  "diagram_type": "REQ"
-}
-
-<> 2024-08-01T152227.200.json
-
-###
-
-POST http://127.0.0.1:8000/process-entire-project/crushing_mill
-Content-Type: application/json
-Content-Length: 37
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "project_name": "crushing_mill"
-}
-
-<> 2024-08-01T152155.200.json
-
-###
-
-POST http://127.0.0.1:8000/process-entire-project/crushing_mill
-Content-Type: application/json
-Content-Length: 37
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "project_name": "crushing_mill"
-}
-
-<> 2024-08-01T151652.200.json
-
-###
-
-POST http://127.0.0.1:8000/process-entire-project/crushing_mill
-Content-Type: application/json
-Content-Length: 37
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "project_name": "crushing_mill"
-}
-
-<> 2024-08-01T151535.200.json
-
-###
-
-POST http://127.0.0.1:8000/process-entire-project/crushing_mill
-Content-Type: application/json
-Content-Length: 37
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "project_name": "crushing_mill"
-}
-
-<> 2024-08-01T151244.200.json
-
-###
-
-POST http://127.0.0.1:8000/process-entire-project/crushing_mill
-Content-Type: application/json
-Content-Length: 37
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "project_name": "crushing_mill"
-}
-
-<> 2024-08-01T151220.200.json
-
-###
-
-POST http://127.0.0.1:8000/process-entire-project/crushing_mill
-Content-Type: application/json
-Content-Length: 37
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "project_name": "crushing_mill"
-}
-
-<> 2024-08-01T151043.200.json
-
-###
-
-POST http://127.0.0.1:8000/process-entire-project/crushing_mill
-Content-Type: application/json
-Content-Length: 37
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "project_name": "crushing_mill"
-}
-
-<> 2024-08-01T150955.200.json
-
-###
-
-POST http://127.0.0.1:8000/process-entire-project/crushing_mill
-Content-Type: application/json
-Content-Length: 37
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "project_name": "crushing_mill"
-}
-
-<> 2024-08-01T150726.200.json
-
-###
-
-POST http://127.0.0.1:8000/process-entire-project/crushing_mill
-Content-Type: application/json
-Content-Length: 37
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "project_name": "crushing_mill"
-}
-
-<> 2024-08-01T142524.200.json
-
-###
-
-POST http://127.0.0.1:8000/process/crushing_mill
-Accept: application/json
-Content-Length: 37
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-{
-  "project_name": "crushing_mill"
-}
-
-<> 2024-08-01T142443.200.json
-
-###
-
-POST http://127.0.0.1:8000/process/crushing_mill/REQ
-Accept: application/json
-Content-Length: 62
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-{
-  "project_name": "crushing_mill",
-  "diagram_type": "REQ"
-}
-
-<> 2024-08-01T142134.200.json
-
-###
-
-POST http://127.0.0.1:8000/process/crushing_mill/REQ
-Accept: application/json
-Content-Length: 62
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-{
-  "project_name": "crushing_mill",
-  "diagram_type": "REQ"
-}
-
-<> 2024-08-01T141931.200.json
-
-###
-
-POST http://127.0.0.1:8000/process/cdc_1
-Accept: application/json
-Content-Length: 29
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-{
-  "project_name": "cdc_1"
-}
-
-<> 2024-08-01T141627.200.json
-
-###
-
-POST http://127.0.0.1:8000/process/cdc_1
-Accept: application/json
-Content-Length: 29
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-{
-  "project_name": "cdc_1"
-}
-
-<> 2024-08-01T141503.200.json
-
-###
-
-POST http://127.0.0.1:8000/process/cdc_1
-Accept: application/json
-Content-Length: 29
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-{
-  "project_name": "cdc_1"
-}
-
-<> 2024-08-01T140311.200.json
-
-###
-
-POST http://127.0.0.1:8000/process/cdc_1
-Accept: application/json
-Content-Length: 29
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-{
-  "project_name": "cdc_1"
-}
-
-<> 2024-08-01T140137.200.json
-
-###
-
-POST http://127.0.0.1:8000/process/cdc_1
-Accept: application/json
-Content-Length: 29
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-{
-  "project_name": "cdc_1"
-}
-
-<> 2024-08-01T135731.200.json
-
-###
-
-POST http://127.0.0.1:8000/process/cdc_1
-Accept: application/json
-Content-Length: 29
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-{
-  "project_name": "cdc_1"
-}
-
-<> 2024-08-01T135612.200.json
-
-###
-
-POST http://127.0.0.1:8000/extract-json/cdc_1/REQ
-Content-Length: 80
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-Accept: application/json
-{
-
-  "project_name": "cdc_1",
-  "diagram_type": "REQ"
-}
-
-<> 2024-08-01T135333.200.json
-
-###
-
-POST http://127.0.0.1:8000/extract-json/cdc_1/REQ
-Content-Length: 80
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-Accept: application/json
-{
-
-  "project_name": "cdc_1",
-  "diagram_type": "REQ"
-}
-
-<> 2024-08-01T135156.200.json
-
-###
-
-POST http://127.0.0.1:8000/process-neo4j-data/cdc_1/REQ
-Content-Type: application/json
-Content-Length: 54
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "project_name": "cdc_1",
-  "diagram_type": "REQ"
-}
-
-<> 2024-08-01T135153.200.json
-
-###
-
-POST http://127.0.0.1:8000/process-neo4j-data/crushing_mill/REQ
-Content-Type: application/json
-Content-Length: 62
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "project_name": "crushing_mill",
-  "diagram_type": "REQ"
-}
-
-<> 2024-08-01T135109.200.json
-
-###
-
-POST http://127.0.0.1:8000/process-entire-project/crushing_mill
-Content-Type: application/json
-Content-Length: 37
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "project_name": "crushing_mill"
-}
-
-<> 2024-08-01T135038.200.json
-
-###
-
-POST http://127.0.0.1:8000/process-entire-project/crushing_mill
-Content-Type: application/json
-Content-Length: 37
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "project_name": "crushing_mill"
-}
-
-<> 2024-08-01T134902.200.json
-
-###
-
-<<<<<<< HEAD
-=======
-POST http://127.0.0.1:8000/process-entire-project/crushing_mill
-Content-Type: application/json
-Content-Length: 37
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "project_name": "crushing_mill"
-}
-
-<> 2024-08-01T133800.200.json
-
-###
-
-POST http://127.0.0.1:8000/process/crushing_mill
-Accept: application/json
-Content-Length: 37
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-{
-  "project_name": "crushing_mill"
-}
-
-<> 2024-08-01T133658.200.json
-
-###
-
-POST http://127.0.0.1:8000/process/crushing_mill/REQ
-Accept: application/json
-Content-Length: 62
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-{
-  "project_name": "crushing_mill",
-  "diagram_type": "REQ"
-}
-
-<> 2024-08-01T133336.200.json
-
-###
-
-POST http://127.0.0.1:8000/process-entire-project/crushing_mill
-Content-Type: application/json
-Content-Length: 37
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "project_name": "crushing_mill"
-}
-
-<> 2024-08-01T133243.200.json
-
-###
-
-GET http://127.0.0.1:8000
-Accept: application/json
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-content-length: 0
-
-<> 2024-07-29T113135.200.json
-
-###
-
-GET http://127.0.0.1:8000
-Accept: application/json
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-content-length: 0
-
-<> 2024-07-28T170355.200.json
-
-###
-
-GET http://127.0.0.1:8000
-Accept: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2024-07-26T224536.200.json
-
-###
-
->>>>>>> parent of d9534d3 (SMA-1 integrate create graph script)

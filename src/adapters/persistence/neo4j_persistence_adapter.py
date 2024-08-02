@@ -54,18 +54,21 @@ class Neo4jPersistenceAdapter:
 
     def batch_create_or_update_entities(self, project_name: str, diagram_type: str, entities: List[Dict[str, Any]]):
         query = """
-        MATCH (p:Project {name: $project_name})-[:HAS_DIAGRAM]->(d:Diagram {type: $diagram_type})
-        UNWIND $entities AS entity
-        MERGE (e:Entity {id: entity.id})
-        SET e += entity
-        MERGE (d)-[:CONTAINS_ENTITY]->(e)
-        WITH e, entity
-        UNWIND coalesce(entity.keywords, []) AS keyword
-        MERGE (k:Keyword {name: keyword})
-        MERGE (e)-[:HAS_KEYWORD]->(k)
-        """
+            MATCH (p:Project {name: $project_name})
+            MATCH (d:Diagram {id: $diagram_id})
+            UNWIND $entities AS entity
+            MERGE (e:Entity {id: $project_name + '_' + entity.id})
+            SET e += entity, e.project_name = $project_name, e.diagram_type = $diagram_type
+            MERGE (d)-[:CONTAINS_ENTITY]->(e)
+            WITH e, entity
+            UNWIND coalesce(entity.keywords, []) AS keyword
+            MERGE (k:Keyword {name: keyword + '_' + $project_name})
+            SET k.project_name = $project_name
+            MERGE (e)-[:HAS_KEYWORD]->(k)
+            """
+        diagram_id = f"{project_name}_{diagram_type}"
         with self.driver.session() as session:
-            session.run(query, project_name=project_name, diagram_type=diagram_type, entities=entities)
+            session.run(query, project_name=project_name, diagram_id=diagram_id, diagram_type=diagram_type, entities=entities)
 
     def create_or_update_project(self, project_name: str, project_type: str):
         query = """
@@ -78,13 +81,15 @@ class Neo4jPersistenceAdapter:
 
     def create_or_update_diagram(self, project_name: str, diagram_type: str):
         query = """
-        MATCH (p:Project {name: $project_name})
-        MERGE (d:Diagram {type: $diagram_type})
-        MERGE (p)-[:HAS_DIAGRAM]->(d)
-        RETURN d
-        """
+            MATCH (p:Project {name: $project_name})
+            MERGE (d:Diagram {id: $diagram_id})
+            SET d.type = $diagram_type, d.project_name = $project_name
+            MERGE (p)-[:HAS_DIAGRAM]->(d)
+            RETURN d
+            """
+        diagram_id = f"{project_name}_{diagram_type}"
         with self.driver.session() as session:
-            session.run(query, project_name=project_name, diagram_type=diagram_type)
+            session.run(query, project_name=project_name, diagram_id=diagram_id, diagram_type=diagram_type)
 
     def update_embeddings(self, project_name: str, diagram_type: str, embeddings: Dict[str, List[float]]):
         query = """
@@ -112,20 +117,18 @@ class Neo4jPersistenceAdapter:
         with self.driver.session() as session:
             session.run(query, similarities=similarities)
 
-    def get_entities_for_similarity(self, project_name: str, diagram_type: str = None) -> List[Dict[str, Any]]:
+    def get_entities_for_similarity(self, project_name: str = None) -> List[Dict[str, Any]]:
         query = """
-        MATCH (p:Project {name: $project_name})-[:HAS_DIAGRAM]->(d:Diagram)-[:CONTAINS_ENTITY]->(e:Entity)
+        MATCH (p:Project)-[:HAS_DIAGRAM]->(d:Diagram)-[:CONTAINS_ENTITY]->(e:Entity)
         WHERE e.embedding IS NOT NULL
-        """
-        if diagram_type:
-            query += " AND d.type = $diagram_type"
-        query += """
-        RETURN e.id AS id, e.embedding AS embedding, d.type AS diagramType, 
-               [(e)-[:HAS_KEYWORD]->(k) | k.name] AS keywords
+        AND (($project_name IS NULL) OR (p.name = $project_name))
+        OPTIONAL MATCH (e)-[:HAS_KEYWORD]->(k:Keyword)
+        RETURN e.id AS id, e.name AS name, e.embedding AS embedding, 
+               collect(DISTINCT k.name) AS keywords, d.type AS diagram_type, p.name AS project_name
         """
         with self.driver.session() as session:
-            result = session.run(query, project_name=project_name, diagram_type=diagram_type)
-            return [record.data() for record in result]
+            result = session.run(query, project_name=project_name)
+            return [dict(record) for record in result]
 
     def rollback(self, project_name: str):
         query = """

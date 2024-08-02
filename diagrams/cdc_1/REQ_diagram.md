@@ -1,95 +1,85 @@
 ```mermaid
 requirementDiagram
     requirement mainReq {
-        id: RQ-001
-        text: Develop a Digital Twin of a coffee machine
+        id: 1
+        text: Develop a Digital Twin of a coffee machine using Simcenter Amesim
         risk: High
         verification: analysis
     }
 
-    functionalRequirement architectureReq {
-        id: RQ-002
-        text: Define product architecture
+    functionalRequirement modelComponents {
+        id: 1.1
+        text: Model components of the coffee machine
         risk: Medium
         verification: analysis
     }
 
-    functionalRequirement componentSizingReq {
-        id: RQ-003
-        text: Size components
+    functionalRequirement intermediateDetailModels {
+        id: 1.1.1
+        text: Create intermediate-detail models for each component
         risk: Medium
         verification: analysis
     }
 
-    functionalRequirement physicalModelsReq {
-        id: RQ-004
-        text: Provide physical plant models for control development
-        risk: High
-        verification: analysis
-    }
-
-    performanceRequirement costReductionReq {
-        id: RQ-005
-        text: Reduce development costs and risks
-        risk: High
-        verification: analysis
-    }
-
-    functionalRequirement componentModelingReq {
-        id: RQ-006
-        text: Model individual components of the coffee machine
+    functionalRequirement controlModule {
+        id: 1.1.2
+        text: Add a control module to the coffee machine
         risk: Medium
         verification: analysis
     }
 
-    functionalRequirement controlAlgorithmReq {
-        id: RQ-007
-        text: Build a simple control algorithm
+    functionalRequirement controlLogic {
+        id: 1.1.3
+        text: Program control logic using a state chart
         risk: Medium
         verification: analysis
     }
 
-    performanceRequirement energyConsumptionReq {
-        id: RQ-008
-        text: Assess energy consumption
+    performanceRequirement analyzeBehavior {
+        id: 1.2
+        text: Analyze physical behavior, energy consumption, and production rates
         risk: Medium
         verification: analysis
     }
 
-    performanceRequirement productionRatesReq {
-        id: RQ-009
-        text: Assess production rates
-        risk: Medium
-        verification: analysis
-    }
-
-    functionalRequirement interactiveElementsReq {
-        id: RQ-010
-        text: Incorporate interactive elements
+    functionalRequirement simpleModels {
+        id: 1.3
+        text: Start with simple functional models and verify them
         risk: Low
-        verification: analysis
+        verification: test
     }
 
-    functionalRequirement stateChartReq {
-        id: RQ-011
-        text: Use a state chart to program control logic
+    functionalRequirement physicsBasedModels {
+        id: 1.4
+        text: Transition to physics-based modeling
         risk: Medium
         verification: analysis
     }
 
-    mainReq contains architectureReq
-    mainReq contains componentSizingReq
-    mainReq contains physicalModelsReq
-    mainReq contains costReductionReq
-    mainReq contains componentModelingReq
-    mainReq contains controlAlgorithmReq
-    mainReq contains energyConsumptionReq
-    mainReq contains productionRatesReq
-    mainReq contains interactiveElementsReq
-    mainReq contains stateChartReq
+    functionalRequirement assembleMachine {
+        id: 1.5
+        text: Assemble the complete coffee machine
+        risk: Medium
+        verification: demonstration
+    }
 
-    architectureReq derives componentSizingReq
-    architectureReq derives physicalModelsReq
+    functionalRequirement interactiveElements {
+        id: 1.6
+        text: Incorporate interactive elements to simulate real usage
+        risk: Medium
+        verification: demonstration
+    }
 
-    componentModelingReq satisfies physicalModelsReq
+    mainReq contains modelComponents
+    mainReq contains analyzeBehavior
+    mainReq contains simpleModels
+    mainReq contains physicsBasedModels
+    mainReq contains assembleMachine
+    mainReq contains interactiveElements
+
+    modelComponents contains intermediateDetailModels
+    modelComponents contains controlModule
+    modelComponents contains controlLogic
+
+    controlModule satisfies controlLogic
 ```
