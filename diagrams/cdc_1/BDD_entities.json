@@ -1,235 +1,164 @@
 {
   "entities": [
     {
-      "name": "SimcenterAmesim",
-      "type": "System",
-      "description": "System simulation platform used to develop a Digital Twin of a product.",
-      "keywords": [
-        "simulation",
-        "Digital Twin",
-        "platform"
-      ]
-    },
-    {
       "name": "CoffeeMachine",
-      "type": "Product",
-      "description": "Digital Twin of a complex mechatronic device, specifically a coffee machine.",
+      "type": "class",
+      "description": "A complex mechatronic device to prepare different coffee types",
       "keywords": [
-        "Digital Twin",
         "mechatronic",
+        "coffee",
+        "device"
+      ]
+    },
+    {
+      "name": "Component",
+      "type": "class",
+      "description": "String",
+      "keywords": [
+        "component"
+      ]
+    },
+    {
+      "name": "ControlModule",
+      "type": "class",
+      "description": "Module to control the coffee machine",
+      "keywords": [
+        "control",
+        "module",
         "coffee machine"
       ]
     },
     {
-      "name": "Reservoir",
-      "type": "Component",
-      "description": "Component for storing water or other liquids.",
+      "name": "InteractiveElements",
+      "type": "class",
+      "description": "Elements to simulate real usage",
       "keywords": [
-        "storage",
-        "water",
-        "liquids"
-      ]
-    },
-    {
-      "name": "CrushingMill",
-      "type": "Component",
-      "description": "Component for grinding coffee beans.",
-      "keywords": [
-        "grinding",
-        "coffee beans"
-      ]
-    },
-    {
-      "name": "Brewer",
-      "type": "Component",
-      "description": "Component for brewing coffee.",
-      "keywords": [
-        "brewing",
-        "coffee"
-      ]
-    },
-    {
-      "name": "MilkFrother",
-      "type": "Component",
-      "description": "Component for frothing milk.",
-      "keywords": [
-        "frothing",
-        "milk"
-      ]
-    },
-    {
-      "name": "SugarDispenser",
-      "type": "Component",
-      "description": "Component for dispensing sugar.",
-      "keywords": [
-        "dispensing",
-        "sugar"
-      ]
-    },
-    {
-      "name": "Heater",
-      "type": "Component",
-      "description": "Component for heating water.",
-      "keywords": [
-        "heating",
-        "water"
-      ]
-    },
-    {
-      "name": "ControlDevice",
-      "type": "Component",
-      "description": "Component for controlling the coffee machine.",
-      "keywords": [
-        "controlling",
-        "coffee machine"
+        "interactive",
+        "elements",
+        "simulation"
       ]
     },
     {
       "name": "SignalAndControl",
-      "type": "Library",
-      "description": "Library for signal and control models.",
+      "type": "class",
+      "description": "Library for signal and control",
       "keywords": [
+        "library",
         "signal",
-        "control",
-        "models"
+        "control"
       ]
     },
     {
       "name": "OneDMechanical",
-      "type": "Library",
-      "description": "Library for 1D mechanical models.",
+      "type": "class",
+      "description": "Library for 1D mechanical components",
       "keywords": [
+        "library",
         "1D",
-        "mechanical",
-        "models"
+        "mechanical"
       ]
     },
     {
       "name": "Thermal",
-      "type": "Library",
-      "description": "Library for thermal models.",
+      "type": "class",
+      "description": "Library for thermal components",
       "keywords": [
-        "thermal",
-        "models"
+        "library",
+        "thermal"
       ]
     },
     {
       "name": "ThermalHydraulic",
-      "type": "Library",
-      "description": "Library for thermal hydraulic models.",
+      "type": "class",
+      "description": "Library for thermal hydraulic components",
       "keywords": [
+        "library",
         "thermal",
-        "hydraulic",
-        "models"
+        "hydraulic"
       ]
     },
     {
       "name": "TwoPhaseFlow",
-      "type": "Library",
-      "description": "Library for two-phase flow models.",
+      "type": "class",
+      "description": "Library for two-phase flow components",
       "keywords": [
+        "library",
         "two-phase",
-        "flow",
-        "models"
+        "flow"
       ]
     },
     {
       "name": "ElectricalBasics",
-      "type": "Library",
-      "description": "Library for basic electrical models.",
+      "type": "class",
+      "description": "Library for basic electrical components",
       "keywords": [
+        "library",
         "electrical",
-        "basic",
-        "models"
+        "basics"
       ]
     },
     {
       "name": "ElectricalMotorsAndDrives",
-      "type": "Library",
-      "description": "Library for electrical motors and drives models.",
+      "type": "class",
+      "description": "Library for electrical motors and drives",
       "keywords": [
+        "library",
         "electrical",
         "motors",
-        "drives",
-        "models"
+        "drives"
       ]
     }
   ],
   "relationships": [
     {
-      "source": "SimcenterAmesim",
-      "target": "CoffeeMachine",
+      "source": "CoffeeMachine",
+      "target": "Component",
       "type": "contains"
     },
     {
       "source": "CoffeeMachine",
-      "target": "Reservoir",
+      "target": "ControlModule",
       "type": "contains"
     },
     {
       "source": "CoffeeMachine",
-      "target": "CrushingMill",
+      "target": "InteractiveElements",
       "type": "contains"
     },
     {
       "source": "CoffeeMachine",
-      "target": "Brewer",
-      "type": "contains"
-    },
-    {
-      "source": "CoffeeMachine",
-      "target": "MilkFrother",
-      "type": "contains"
-    },
-    {
-      "source": "CoffeeMachine",
-      "target": "SugarDispenser",
-      "type": "contains"
-    },
-    {
-      "source": "CoffeeMachine",
-      "target": "Heater",
-      "type": "contains"
-    },
-    {
-      "source": "CoffeeMachine",
-      "target": "ControlDevice",
-      "type": "contains"
-    },
-    {
-      "source": "SimcenterAmesim",
       "target": "SignalAndControl",
-      "type": "contains"
+      "type": "uses"
     },
     {
-      "source": "SimcenterAmesim",
+      "source": "CoffeeMachine",
       "target": "OneDMechanical",
-      "type": "contains"
+      "type": "uses"
     },
     {
-      "source": "SimcenterAmesim",
+      "source": "CoffeeMachine",
       "target": "Thermal",
-      "type": "contains"
+      "type": "uses"
     },
     {
-      "source": "SimcenterAmesim",
+      "source": "CoffeeMachine",
       "target": "ThermalHydraulic",
-      "type": "contains"
+      "type": "uses"
     },
     {
-      "source": "SimcenterAmesim",
+      "source": "CoffeeMachine",
       "target": "TwoPhaseFlow",
-      "type": "contains"
+      "type": "uses"
     },
     {
-      "source": "SimcenterAmesim",
+      "source": "CoffeeMachine",
       "target": "ElectricalBasics",
-      "type": "contains"
+      "type": "uses"
     },
     {
-      "source": "SimcenterAmesim",
+      "source": "CoffeeMachine",
       "target": "ElectricalMotorsAndDrives",
-      "type": "contains"
+      "type": "uses"
     }
   ]
 }

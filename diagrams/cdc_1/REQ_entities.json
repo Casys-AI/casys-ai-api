@@ -3,87 +3,19 @@
     {
       "name": "mainReq",
       "type": "requirement",
-      "description": "Develop a Digital Twin of a coffee machine using Simcenter Amesim",
+      "description": "Develop a Digital Twin of a coffee machine",
       "keywords": [
         "Digital Twin",
         "coffee machine",
-        "Simcenter Amesim",
-        "High risk",
-        "analysis"
+        "High risk"
       ]
     },
     {
       "name": "modelComponents",
       "type": "functionalRequirement",
-      "description": "Model components of the coffee machine",
+      "description": "Model individual components of the coffee machine",
       "keywords": [
         "components",
-        "coffee machine",
-        "Medium risk",
-        "analysis"
-      ]
-    },
-    {
-      "name": "intermediateDetailModels",
-      "type": "functionalRequirement",
-      "description": "Create intermediate-detail models for each component",
-      "keywords": [
-        "intermediate-detail models",
-        "components",
-        "Medium risk",
-        "analysis"
-      ]
-    },
-    {
-      "name": "controlModule",
-      "type": "functionalRequirement",
-      "description": "Add a control module to the coffee machine",
-      "keywords": [
-        "control module",
-        "coffee machine",
-        "Medium risk",
-        "analysis"
-      ]
-    },
-    {
-      "name": "controlLogic",
-      "type": "functionalRequirement",
-      "description": "Program control logic using a state chart",
-      "keywords": [
-        "control logic",
-        "state chart",
-        "Medium risk",
-        "analysis"
-      ]
-    },
-    {
-      "name": "analyzeBehavior",
-      "type": "performanceRequirement",
-      "description": "Analyze physical behavior, energy consumption, and production rates",
-      "keywords": [
-        "physical behavior",
-        "energy consumption",
-        "production rates",
-        "Medium risk",
-        "analysis"
-      ]
-    },
-    {
-      "name": "simpleModels",
-      "type": "functionalRequirement",
-      "description": "Start with simple functional models and verify them",
-      "keywords": [
-        "simple models",
-        "Low risk",
-        "test"
-      ]
-    },
-    {
-      "name": "physicsBasedModels",
-      "type": "functionalRequirement",
-      "description": "Transition to physics-based modeling",
-      "keywords": [
-        "physics-based modeling",
         "Medium risk",
         "analysis"
       ]
@@ -94,21 +26,74 @@
       "description": "Assemble the complete coffee machine",
       "keywords": [
         "assemble",
-        "coffee machine",
         "Medium risk",
         "demonstration"
       ]
     },
     {
+      "name": "controlModule",
+      "type": "functionalRequirement",
+      "description": "Incorporate a control module",
+      "keywords": [
+        "control module",
+        "Medium risk",
+        "analysis"
+      ]
+    },
+    {
+      "name": "assessBehavior",
+      "type": "performanceRequirement",
+      "description": "Assess physical behavior, energy consumption, and production rates",
+      "keywords": [
+        "behavior",
+        "energy consumption",
+        "production rates",
+        "Low risk",
+        "analysis"
+      ]
+    },
+    {
+      "name": "simpleModels",
+      "type": "functionalRequirement",
+      "description": "Start with simple functional models and gradually add details",
+      "keywords": [
+        "simple models",
+        "details",
+        "Low risk",
+        "analysis"
+      ]
+    },
+    {
+      "name": "verifyModels",
+      "type": "functionalRequirement",
+      "description": "Verify models at each stage",
+      "keywords": [
+        "verify",
+        "models",
+        "Low risk",
+        "test"
+      ]
+    },
+    {
       "name": "interactiveElements",
       "type": "functionalRequirement",
-      "description": "Incorporate interactive elements to simulate real usage",
+      "description": "Add interactive elements to simulate real usage",
       "keywords": [
         "interactive elements",
         "simulate",
-        "real usage",
         "Medium risk",
         "demonstration"
+      ]
+    },
+    {
+      "name": "stateChart",
+      "type": "functionalRequirement",
+      "description": "Use a state chart to program the control logic",
+      "keywords": [
+        "state chart",
+        "control logic",
+        "Medium risk",
+        "analysis"
       ]
     }
   ],
@@ -120,47 +105,47 @@
     },
     {
       "source": "mainReq",
-      "target": "analyzeBehavior",
-      "type": "contains"
-    },
-    {
-      "source": "mainReq",
-      "target": "simpleModels",
-      "type": "contains"
-    },
-    {
-      "source": "mainReq",
-      "target": "physicsBasedModels",
-      "type": "contains"
-    },
-    {
-      "source": "mainReq",
       "target": "assembleMachine",
       "type": "contains"
     },
     {
       "source": "mainReq",
-      "target": "interactiveElements",
-      "type": "contains"
-    },
-    {
-      "source": "modelComponents",
-      "target": "intermediateDetailModels",
-      "type": "contains"
-    },
-    {
-      "source": "modelComponents",
       "target": "controlModule",
       "type": "contains"
     },
     {
       "source": "modelComponents",
-      "target": "controlLogic",
+      "target": "assessBehavior",
+      "type": "contains"
+    },
+    {
+      "source": "modelComponents",
+      "target": "simpleModels",
+      "type": "contains"
+    },
+    {
+      "source": "modelComponents",
+      "target": "verifyModels",
       "type": "contains"
     },
     {
       "source": "controlModule",
-      "target": "controlLogic",
+      "target": "interactiveElements",
+      "type": "contains"
+    },
+    {
+      "source": "controlModule",
+      "target": "stateChart",
+      "type": "contains"
+    },
+    {
+      "source": "modelComponents",
+      "target": "assessBehavior",
+      "type": "derives"
+    },
+    {
+      "source": "controlModule",
+      "target": "mainReq",
       "type": "satisfies"
     }
   ]

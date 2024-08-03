@@ -85,3 +85,4 @@ class Neo4jPersistenceAdapterProtocol(Protocol):
     
     def update_embeddings(self, project_name, diagram_type, embeddings):
         pass
+    

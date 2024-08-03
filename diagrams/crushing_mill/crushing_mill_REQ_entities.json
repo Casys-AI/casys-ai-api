@@ -3,157 +3,200 @@
     {
       "name": "mainReq",
       "type": "requirement",
-      "description": "The crushing mill transforms coffee beans into coffee powder.",
+      "description": "The crushing mill transforms coffee beans into powder.",
       "keywords": [
         "crushing mill",
         "coffee beans",
-        "coffee powder"
+        "powder",
+        "High risk",
+        "analysis"
       ]
     },
     {
-      "name": "energyConsumptionAnalysis",
+      "name": "modelReq",
       "type": "functionalRequirement",
-      "description": "For energy consumption analysis, a simpler model using rotational inertia with friction driven by a speed source or motor is sufficient.",
+      "description": "The model should include rotational inertia with friction driven by a speed source or motor.",
       "keywords": [
-        "energy consumption",
         "rotational inertia",
         "friction",
         "speed source",
-        "motor"
+        "motor",
+        "Medium risk",
+        "analysis"
       ]
     },
     {
-      "name": "constantRotarySpeedControl",
+      "name": "controlReq",
       "type": "functionalRequirement",
-      "description": "The model includes a control for constant rotary speed.",
+      "description": "The model should include a control for constant rotary speed.",
       "keywords": [
         "control",
-        "constant rotary speed"
+        "constant rotary speed",
+        "Medium risk",
+        "analysis"
       ]
     },
     {
-      "name": "motorIconSignalTransfer",
+      "name": "lagReq",
       "type": "functionalRequirement",
-      "description": "The model includes a motor icon for signal transfer.",
+      "description": "The model should include a first-order lag to prevent torque peaks.",
       "keywords": [
-        "motor icon",
-        "signal transfer"
+        "first-order lag",
+        "torque peaks",
+        "Medium risk",
+        "analysis"
       ]
     },
     {
-      "name": "mechanicalGearSpeedReduction",
+      "name": "gearReq",
       "type": "functionalRequirement",
-      "description": "The model includes a mechanical gear for speed reduction.",
+      "description": "The model should include a speed-reducing gear.",
       "keywords": [
-        "mechanical gear",
-        "speed reduction"
+        "speed-reducing gear",
+        "Low risk",
+        "analysis"
       ]
     },
     {
-      "name": "rotationalSpringDamper",
+      "name": "springDamperReq",
       "type": "functionalRequirement",
-      "description": "The model includes a rotational spring/damper.",
+      "description": "The model should include a rotational spring/damper.",
       "keywords": [
         "rotational spring",
-        "damper"
+        "damper",
+        "Low risk",
+        "analysis"
       ]
     },
     {
-      "name": "frictionElements",
+      "name": "frictionReq",
       "type": "functionalRequirement",
-      "description": "The model includes friction elements.",
+      "description": "The model should include friction elements.",
       "keywords": [
-        "friction elements"
+        "friction elements",
+        "Low risk",
+        "analysis"
       ]
     },
     {
-      "name": "energySensor",
+      "name": "energySensorReq",
       "type": "functionalRequirement",
-      "description": "The model includes an energy sensor.",
+      "description": "The model should include an energy sensor.",
       "keywords": [
-        "energy sensor"
+        "energy sensor",
+        "Low risk",
+        "analysis"
       ]
     },
     {
-      "name": "motorDynamicsHeatGeneration",
+      "name": "motorEnhanceReq",
       "type": "performanceRequirement",
       "description": "Enhancing the model with an electrical motor and speed control can account for motor dynamics and heat generation.",
       "keywords": [
         "electrical motor",
         "speed control",
         "motor dynamics",
-        "heat generation"
+        "heat generation",
+        "Medium risk",
+        "analysis"
       ]
     },
     {
-      "name": "motorTemperatureParameter",
+      "name": "motorTempReq",
       "type": "performanceRequirement",
-      "description": "Motor temperature as a potential process parameter.",
+      "description": "Motor temperature should be a key parameter.",
       "keywords": [
         "motor temperature",
-        "process parameter"
+        "key parameter",
+        "Medium risk",
+        "analysis"
       ]
     }
   ],
   "relationships": [
     {
       "source": "mainReq",
-      "target": "energyConsumptionAnalysis",
+      "target": "modelReq",
       "type": "contains"
     },
     {
       "source": "mainReq",
-      "target": "constantRotarySpeedControl",
+      "target": "controlReq",
       "type": "contains"
     },
     {
       "source": "mainReq",
-      "target": "motorIconSignalTransfer",
+      "target": "lagReq",
       "type": "contains"
     },
     {
       "source": "mainReq",
-      "target": "mechanicalGearSpeedReduction",
+      "target": "gearReq",
       "type": "contains"
     },
     {
       "source": "mainReq",
-      "target": "rotationalSpringDamper",
+      "target": "springDamperReq",
       "type": "contains"
     },
     {
       "source": "mainReq",
-      "target": "frictionElements",
+      "target": "frictionReq",
       "type": "contains"
     },
     {
       "source": "mainReq",
-      "target": "energySensor",
+      "target": "energySensorReq",
       "type": "contains"
     },
     {
       "source": "mainReq",
-      "target": "motorDynamicsHeatGeneration",
+      "target": "motorEnhanceReq",
       "type": "contains"
     },
     {
-      "source": "motorDynamicsHeatGeneration",
-      "target": "motorTemperatureParameter",
+      "source": "motorEnhanceReq",
+      "target": "motorTempReq",
       "type": "contains"
     },
     {
-      "source": "motorDynamicsHeatGeneration",
-      "target": "energyConsumptionAnalysis",
+      "source": "motorEnhanceReq",
+      "target": "modelReq",
       "type": "derives"
     },
     {
-      "source": "motorTemperatureParameter",
-      "target": "motorDynamicsHeatGeneration",
+      "source": "motorEnhanceReq",
+      "target": "controlReq",
       "type": "derives"
     },
     {
-      "source": "motorIconSignalTransfer",
-      "target": "constantRotarySpeedControl",
+      "source": "motorEnhanceReq",
+      "target": "lagReq",
+      "type": "derives"
+    },
+    {
+      "source": "motorEnhanceReq",
+      "target": "gearReq",
+      "type": "derives"
+    },
+    {
+      "source": "motorEnhanceReq",
+      "target": "springDamperReq",
+      "type": "derives"
+    },
+    {
+      "source": "motorEnhanceReq",
+      "target": "frictionReq",
+      "type": "derives"
+    },
+    {
+      "source": "motorEnhanceReq",
+      "target": "energySensorReq",
+      "type": "derives"
+    },
+    {
+      "source": "motorEnhanceReq",
+      "target": "mainReq",
       "type": "satisfies"
     }
   ]

@@ -1,6 +1,7 @@
 import logging
 from typing import Dict, Any
 
+from src.adapters.persistence.neo4j_persistence_adapter import Neo4jPersistenceAdapter
 from src.adapters.web.rag_adapter import RAGAdapter
 from src.adapters.web.document_adapter import DocumentAdapter
 from src.adapters.web.entity_extraction_adapter import EntityExtractionAdapter
@@ -18,7 +19,8 @@ class ProjectProcessingService:
         self.project_manager = project_manager
         config = self.project_manager.get_config()
         self.embedding_service = OpenAIEmbeddingAdapter(config['openai']['api_key'])
-        self.rag_adapter = RAGAdapter(config, self.embedding_service)
+        self.neo4j_adapter = Neo4jPersistenceAdapter(self.project_manager.config)
+        self.rag_adapter = RAGAdapter(config, self.embedding_service, self.neo4j_adapter) #rajout ici à voir si ça ne pose pas des problèmes
         self.document_adapter = DocumentAdapter(config, self.rag_adapter.openai_chat)
         self.entity_extraction_adapter = EntityExtractionAdapter(self.rag_adapter.openai_chat)
         self.rag_service = RAGService(self.rag_adapter)

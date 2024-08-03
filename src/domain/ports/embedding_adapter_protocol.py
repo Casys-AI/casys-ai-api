@@ -1,6 +1,6 @@
 # src/domain/ports/embedding_adapter_protocol.py
 
-from typing import List, Protocol
+from typing import List, Protocol, Dict, Any
 
 
 class EmbeddingAdapterProtocol(Protocol):
@@ -33,8 +33,8 @@ class EmbeddingAdapterProtocol(Protocol):
 
         """
         ...
-
-    def get_embeddings_dict(self, entities, diagram_type):
+    
+    def get_embeddings_dict(self, entities: List[Dict[str, Any]], diagram_type: str) -> Dict[str, List[float]]:
         """Returns a dictionary containing embeddings for entities.
 
         :param entities: List of entities for which embeddings need to be retrieved.

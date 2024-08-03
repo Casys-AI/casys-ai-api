@@ -10,6 +10,8 @@ from src.domain.ports.neo4j_persistence_adapter_protocol import Neo4jPersistence
 logger = logging.getLogger("uvicorn.error")
 
 
+# ajouter des transaction sur les requêtes neo4j,par un rollback
+
 class Neo4jPersistenceAdapter(Neo4jPersistenceAdapterProtocol):
     def __init__(self, config: Dict[str, Any]):
         self.config = config
@@ -96,50 +98,33 @@ class Neo4jPersistenceAdapter(Neo4jPersistenceAdapterProtocol):
         finally:
             session.close()
 
-    def batch_create_or_update_entities(self, project_name: str, diagram_type: str, entities: List[Dict[str, Any]], relationships: List[Dict[str, Any]]) -> None:
-        session = self.get_session()
-        if not session:
-            logger.warning("Unable to create/update entities: Neo4j is not connected")
+
+    def create_or_update_entities_and_keywords(self, project_name: str, diagram_type: str, entities: List[Dict[str, Any]]):
+        if not self.driver:
+            logger.warning("Neo4j driver is not connected. Unable to create or update entities and keywords.")
             return
         
-        try:
-            # Création des entités et des mots-clés
-            entity_query = """
-                MATCH (p:Project {name: $project_name})-[:HAS_DIAGRAM]->(d:Diagram {type: $diagram_type})
-                UNWIND $entities AS entity
-                MERGE (e:Entity {id: $project_name + '_' + $diagram_type + '_' + entity.id})
-                SET e += entity,
-                    e.project_name = $project_name,
-                    e.diagram_type = $diagram_type
-                MERGE (d)-[:CONTAINS_ENTITY]->(e)
-                WITH e, entity
-                UNWIND coalesce(entity.keywords, []) AS keyword
-                MERGE (k:Keyword {name: keyword})
-                MERGE (e)-[:HAS_KEYWORD]->(k)
-                """
-            session.run(entity_query,
-                        project_name=project_name,
-                        diagram_type=diagram_type,
-                        entities=entities)
-            
-            # Création des relations définies dans le JSON
-            for rel in relationships:
-                relationship_query = f"""
-                    MATCH (e1:Entity {{id: $project_name + '_' + $diagram_type + '_' + $source}})
-                    MATCH (e2:Entity {{id: $project_name + '_' + $diagram_type + '_' + $target}})
-                    MERGE (e1)-[r:{rel['type'].upper()}]->(e2)
-                    """
-                session.run(relationship_query,
-                            project_name=project_name,
-                            diagram_type=diagram_type,
-                            source=rel['source'],
-                            target=rel['target'])
-            
-            logger.info(f"Entities, keywords, and JSON-defined relationships created/updated for project {project_name}, diagram {diagram_type}")
-        except Neo4jError as e:
-            logger.error(f"Error during batch create/update for project {project_name}, diagram {diagram_type}: {str(e)}")
-        finally:
-            session.close()
+        query = """
+        MERGE (p:Project {name: $project_name})
+        MERGE (d:Diagram {type: $diagram_type})
+        MERGE (p)-[:HAS_DIAGRAM]->(d)
+        WITH p, d
+        UNWIND $entities AS entity
+        MERGE (e:Entity {id: $project_name + '_' + $diagram_type + '_' + entity.id})
+        SET e += entity,
+            e.project_name = $project_name,
+            e.diagram_type = $diagram_type
+        MERGE (d)-[:CONTAINS_ENTITY]->(e)
+        WITH e, entity
+        UNWIND coalesce(entity.keywords, []) AS keyword
+        MERGE (k:Keyword {name: keyword})
+        MERGE (e)-[:HAS_KEYWORD]->(k)
+        """
+        
+        with self.driver.session() as session:
+            result = session.run(query, project_name=project_name, diagram_type=diagram_type, entities=entities)
+        logger.info(f"Entities and keywords created/updated: {result.consume().counters}")
+
     
     def create_or_update_project(self, project_name: str, project_type: str):
         query = """
@@ -162,46 +147,62 @@ class Neo4jPersistenceAdapter(Neo4jPersistenceAdapterProtocol):
         with self.driver.session() as session:
             session.run(query, project_name=project_name, diagram_id=diagram_id, diagram_type=diagram_type)
     
-    def update_similarity_relationships(self, similarities: List[Dict[str, Any]]) -> None:
-        session = self.get_session()
-        if not session:
-            logger.warning("Unable to update similarity relationships: Neo4j is not connected")
+    def update_embeddings(self, project_name: str, diagram_type: str, embeddings: Dict[str, List[float]]):
+        if not self.driver:
+            logger.warning("Neo4j driver is not connected. Unable to update embeddings.")
             return
-        
-        try:
-            query = """
-            UNWIND $similarities AS sim
-            MATCH (e1:Entity {id: sim.id1})
-            MATCH (e2:Entity {id: sim.id2})
-            MERGE (e1)-[r:SIMILAR_TO]->(e2)
-            SET r.combined_similarity = sim.combined_similarity,
-                r.embedding_similarity = sim.embedding_similarity,
-                r.jaccard_similarity = sim.jaccard_similarity
-            """
-            session.run(query, similarities=similarities)
-            logger.info(f"Updated {len(similarities)} similarity relationships")
-        except Neo4jError as e:
-            logger.error(f"Error updating similarity relationships: {str(e)}")
-        finally:
-            session.close()
+        query = """
+        MATCH (p:Project {name: $project_name})-[:HAS_DIAGRAM]->(d:Diagram {type: $diagram_type})-[:CONTAINS_ENTITY]->(e:Entity)
+        WHERE e.id IN $embedding_ids
+        SET e.embedding = $embeddings[e.id]
+        """
+        with self.driver.session() as session:
+            result = session.run(query,
+                                 project_name=project_name,
+                                 diagram_type=diagram_type,
+                                 embedding_ids=list(embeddings.keys()),
+                                 embeddings=embeddings)
+        logger.info(f"Embeddings updated: {result.consume().counters}")
+    
+    def create_relationships(self, project_name: str, diagram_type: str, relationships: List[Dict[str, Any]]):
+        if not self.driver:
+            logger.warning("Neo4j driver is not connected. Unable to create relationships.")
+            return
+        with self.driver.session() as session:
+            for rel in relationships:
+                query = """
+                MATCH (e1:Entity {name: $source, project_name: $project_name, diagram_type: $diagram_type})
+                MATCH (e2:Entity {name: $target, project_name: $project_name, diagram_type: $diagram_type})
+                MERGE (e1)-[r:`%s`]->(e2)
+                """ % rel['type'].upper()
+                result = session.run(query,
+                                     project_name=project_name,
+                                     diagram_type=diagram_type,
+                                     source=rel['source'],
+                                     target=rel['target'])
+                logger.info(f"Relationship created: {result.consume().counters}")
+    
+    def update_similarity_relationships(self, similarities: List[Dict[str, Any]]):
+        if not self.driver:
+            logger.warning("Neo4j driver is not connected. Unable to update similarity relationships.")
+            return
+        query = """
+        UNWIND $similarities AS sim
+        MATCH (e1:Entity {id: sim.id1})
+        MATCH (e2:Entity {id: sim.id2})
+        MERGE (e1)-[r:SIMILAR_TO]->(e2)
+        SET r.combined_similarity = sim.combined_similarity,
+            r.embedding_similarity = sim.embedding_similarity,
+            r.jaccard_similarity = sim.jaccard_similarity
+        """
+        with self.driver.session() as session:
+            result = session.run(query, similarities=similarities)
+        logger.info(f"Similarity relationships updated: {result.consume().counters}")
     
     def close(self) -> None:
         if self.driver:
             self.driver.close()
             logger.info("Neo4j connection closed")
-    
-    def create_json_defined_relationships(self, session, project_name: str, diagram_type: str, relationships: List[Dict[str, Any]]):
-        for rel in relationships:
-            relationship_query = f"""
-        MATCH (e1:Entity {{id: $project_name + '_' + $diagram_type + '_' + $source}})
-        MATCH (e2:Entity {{id: $project_name + '_' + $diagram_type + '_' + $target}})
-        MERGE (e1)-[r:{rel['type'].upper()}]->(e2)
-        """
-            session.run(relationship_query,
-                        project_name=project_name,
-                        diagram_type=diagram_type,
-                        source=rel['source'],
-                        target=rel['target'])
     
     def get_entities_for_similarity(self, project_name: str = None) -> List[Dict[str, Any]]:
         query = """
@@ -215,17 +216,4 @@ class Neo4jPersistenceAdapter(Neo4jPersistenceAdapterProtocol):
         with self.driver.session() as session:
             result = session.run(query, project_name=project_name)
             return [dict(record) for record in result]
-    
-    # def _format_similarity_result(self, record):
-    #     embedding_weight = self.config['similarity']['embedding_weight']
-    #     keyword_weight = self.config['similarity']['keyword_weight']
-    #     total_weight = embedding_weight + keyword_weight
-    #     return {
-    #         'id1': record['id1'],
-    #         'id2': record['id2'],
-    #         'combined_similarity': (embedding_weight * record['embedding_similarity'] +
-    #                                 keyword_weight * record['keyword_similarity']) / total_weight,
-    #         'embedding_similarity': record['embedding_similarity'],
-    #         'keyword_similarity': record['keyword_similarity']
-    #     }
     

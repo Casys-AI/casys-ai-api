@@ -4,7 +4,7 @@ from typing import List, Tuple, Optional, Protocol
 
 
 class RAGAdapterProtocol(Protocol):
-    def hybrid_search_with_fallback(self, query: str, semantic_top_k: int = 5, graph_depth: int = 2) -> List[Tuple[str, str]]:
+    def hybrid_search_with_fallback(self, query: str, semantic_top_k: int , graph_depth: int ) -> List[Tuple[str, str]]:
         ...
     
     def rag_pipeline(self, content: str, prompt_template: str) -> Tuple[Optional[str], bool]:

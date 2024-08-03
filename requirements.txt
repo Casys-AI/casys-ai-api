@@ -6,7 +6,6 @@ neo4j
 openai
 langchain-openai
 langchain
-tqdm
 logging
 re
 os
@@ -14,7 +13,7 @@ PyPDF2
 python-docx
 tenacity
 docx
-fastapi~=0.111.1
-pydantic~=2.8.2
-uvicorn~=0.30.3
+fastapi
+pydantic
+uvicorn
 tiktoken

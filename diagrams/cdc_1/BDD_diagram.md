@@ -1,104 +1,79 @@
+Sure, let's create a SysML class diagram in Mermaid syntax for the coffee machine based on the provided requirements.
+
 ```mermaid
 classDiagram
-    %% Top-level block
-    class SimcenterAmesim {
-        id: 1
-        description: "System simulation platform used to develop a Digital Twin of a product."
-    }
-
-    %% Coffee Machine block
+    %% Define the main CoffeeMachine block
     class CoffeeMachine {
-        id: 2
-        description: "Digital Twin of a complex mechatronic device, specifically a coffee machine."
+        +ID: int
+        +Description: "A complex mechatronic device to prepare different coffee types"
     }
 
-    %% Component blocks
-    class Reservoir {
-        id: 3
-        description: "Component for storing water or other liquids."
+    %% Define the Component block
+    class Component {
+        +ID: int
+        +Description: String
     }
 
-    class CrushingMill {
-        id: 4
-        description: "Component for grinding coffee beans."
+    %% Define the ControlModule block
+    class ControlModule {
+        +ID: int
+        +Description: "Module to control the coffee machine"
     }
 
-    class Brewer {
-        id: 5
-        description: "Component for brewing coffee."
+    %% Define the InteractiveElements block
+    class InteractiveElements {
+        +ID: int
+        +Description: "Elements to simulate real usage"
     }
 
-    class MilkFrother {
-        id: 6
-        description: "Component for frothing milk."
-    }
-
-    class SugarDispenser {
-        id: 7
-        description: "Component for dispensing sugar."
-    }
-
-    class Heater {
-        id: 8
-        description: "Component for heating water."
-    }
-
-    class ControlDevice {
-        id: 9
-        description: "Component for controlling the coffee machine."
-    }
-
-    %% Library blocks
+    %% Define the libraries
     class SignalAndControl {
-        id: 10
-        description: "Library for signal and control models."
+        +ID: int
+        +Description: "Library for signal and control"
     }
 
     class OneDMechanical {
-        id: 11
-        description: "Library for 1D mechanical models."
+        +ID: int
+        +Description: "Library for 1D mechanical components"
     }
 
     class Thermal {
-        id: 12
-        description: "Library for thermal models."
+        +ID: int
+        +Description: "Library for thermal components"
     }
 
     class ThermalHydraulic {
-        id: 13
-        description: "Library for thermal hydraulic models."
+        +ID: int
+        +Description: "Library for thermal hydraulic components"
     }
 
     class TwoPhaseFlow {
-        id: 14
-        description: "Library for two-phase flow models."
+        +ID: int
+        +Description: "Library for two-phase flow components"
     }
 
     class ElectricalBasics {
-        id: 15
-        description: "Library for basic electrical models."
+        +ID: int
+        +Description: "Library for basic electrical components"
     }
 
     class ElectricalMotorsAndDrives {
-        id: 16
-        description: "Library for electrical motors and drives models."
+        +ID: int
+        +Description: "Library for electrical motors and drives"
     }
 
-    %% Containment relationships
-    SimcenterAmesim --> CoffeeMachine
-    CoffeeMachine --> Reservoir
-    CoffeeMachine --> CrushingMill
-    CoffeeMachine --> Brewer
-    CoffeeMachine --> MilkFrother
-    CoffeeMachine --> SugarDispenser
-    CoffeeMachine --> Heater
-    CoffeeMachine --> ControlDevice
+    %% Define relationships
+    CoffeeMachine --> Component : contains
+    CoffeeMachine --> ControlModule : contains
+    CoffeeMachine --> InteractiveElements : contains
 
-    SimcenterAmesim --> SignalAndControl
-    SimcenterAmesim --> OneDMechanical
-    SimcenterAmesim --> Thermal
-    SimcenterAmesim --> ThermalHydraulic
-    SimcenterAmesim --> TwoPhaseFlow
-    SimcenterAmesim --> ElectricalBasics
-    SimcenterAmesim --> ElectricalMotorsAndDrives
+    CoffeeMachine --> SignalAndControl : uses
+    CoffeeMachine --> OneDMechanical : uses
+    CoffeeMachine --> Thermal : uses
+    CoffeeMachine --> ThermalHydraulic : uses
+    CoffeeMachine --> TwoPhaseFlow : uses
+    CoffeeMachine --> ElectricalBasics : uses
+    CoffeeMachine --> ElectricalMotorsAndDrives : uses
 ```
+
+This diagram represents the hierarchical structure of the coffee machine and its components, as well as the libraries used in the modeling process. Each block has an ID and a description, and the relationships between the blocks are clearly defined.

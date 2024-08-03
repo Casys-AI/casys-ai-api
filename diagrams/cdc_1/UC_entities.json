@@ -1,242 +1,187 @@
 {
   "entities": [
     {
-      "name": "System Engineer",
+      "name": "CoffeeMachine",
       "type": "actor",
       "description": "",
-      "keywords": []
-    },
-    {
-      "name": "Control Engineer",
-      "type": "actor",
-      "description": "",
-      "keywords": []
-    },
-    {
-      "name": "Define Product Architecture",
-      "type": "usecase",
-      "description": "Define the overall architecture of the coffee machine.",
       "keywords": [
-        "architecture",
+        "CoffeeMachine"
+      ]
+    },
+    {
+      "name": "User",
+      "type": "actor",
+      "description": "",
+      "keywords": [
+        "User"
+      ]
+    },
+    {
+      "name": "SimcenterAmesim",
+      "type": "actor",
+      "description": "",
+      "keywords": [
+        "SimcenterAmesim"
+      ]
+    },
+    {
+      "name": "DevelopDigitalTwin",
+      "type": "use case",
+      "description": "Develop a Digital Twin of the coffee machine",
+      "keywords": [
+        "DevelopDigitalTwin",
+        "Digital Twin",
         "coffee machine"
       ]
     },
     {
-      "name": "Size Components",
-      "type": "usecase",
-      "description": "Determine the appropriate sizes for each component.",
+      "name": "ModelComponents",
+      "type": "use case",
+      "description": "Model individual components of the coffee machine",
       "keywords": [
-        "size",
+        "ModelComponents",
+        "components",
+        "coffee machine"
+      ]
+    },
+    {
+      "name": "AssessPhysicalBehavior",
+      "type": "use case",
+      "description": "Assess physical behavior of components",
+      "keywords": [
+        "AssessPhysicalBehavior",
+        "physical behavior",
         "components"
       ]
     },
     {
-      "name": "Develop Physical Plant Models",
-      "type": "usecase",
-      "description": "Develop physical models for control development.",
+      "name": "AssessEnergyConsumption",
+      "type": "use case",
+      "description": "Assess energy consumption of components",
       "keywords": [
-        "physical models",
-        "control development"
+        "AssessEnergyConsumption",
+        "energy consumption",
+        "components"
       ]
     },
     {
-      "name": "Build Component Models",
-      "type": "usecase",
-      "description": "Create intermediate-detail models for each component.",
+      "name": "AssessProductionRates",
+      "type": "use case",
+      "description": "Assess production rates of components",
       "keywords": [
-        "component models",
-        "intermediate-detail"
+        "AssessProductionRates",
+        "production rates",
+        "components"
       ]
     },
     {
-      "name": "Verify Component Models",
-      "type": "usecase",
-      "description": "Verify the operation of each component model.",
+      "name": "BuildControlAlgorithm",
+      "type": "use case",
+      "description": "Build a simple control algorithm",
       "keywords": [
-        "verify",
-        "component models"
+        "BuildControlAlgorithm",
+        "control algorithm"
       ]
     },
     {
-      "name": "Assemble Coffee Machine",
-      "type": "usecase",
-      "description": "Assemble the complete coffee machine model.",
+      "name": "AssembleCompleteMachine",
+      "type": "use case",
+      "description": "Assemble the complete coffee machine",
       "keywords": [
-        "assemble",
-        "coffee machine"
+        "AssembleCompleteMachine",
+        "complete coffee machine"
       ]
     },
     {
-      "name": "Add Control Module",
-      "type": "usecase",
-      "description": "Add a control module to the coffee machine.",
+      "name": "IncorporateControlModule",
+      "type": "use case",
+      "description": "Incorporate a control module",
       "keywords": [
-        "control module",
-        "coffee machine"
+        "IncorporateControlModule",
+        "control module"
       ]
     },
     {
-      "name": "Incorporate Interactive Elements",
-      "type": "usecase",
-      "description": "Incorporate interactive elements into the model.",
+      "name": "AddInteractiveElements",
+      "type": "use case",
+      "description": "Add interactive elements to simulate real usage",
       "keywords": [
+        "AddInteractiveElements",
         "interactive elements",
-        "model"
+        "real usage"
       ]
     },
     {
-      "name": "Program Control Logic",
-      "type": "usecase",
-      "description": "Use a state chart to program the control logic.",
+      "name": "ProgramControlLogic",
+      "type": "use case",
+      "description": "Program control logic using a state chart",
       "keywords": [
-        "state chart",
-        "control logic"
-      ]
-    },
-    {
-      "name": "Model Reservoirs",
-      "type": "usecase",
-      "description": "Model the reservoirs of the coffee machine.",
-      "keywords": [
-        "model",
-        "reservoirs"
-      ]
-    },
-    {
-      "name": "Model Crushing Mill",
-      "type": "usecase",
-      "description": "Model the crushing mill of the coffee machine.",
-      "keywords": [
-        "model",
-        "crushing mill"
-      ]
-    },
-    {
-      "name": "Model Brewer",
-      "type": "usecase",
-      "description": "Model the brewer of the coffee machine.",
-      "keywords": [
-        "model",
-        "brewer"
-      ]
-    },
-    {
-      "name": "Model Milk Frother",
-      "type": "usecase",
-      "description": "Model the milk frother of the coffee machine.",
-      "keywords": [
-        "model",
-        "milk frother"
-      ]
-    },
-    {
-      "name": "Model Sugar Dispenser",
-      "type": "usecase",
-      "description": "Model the sugar dispenser of the coffee machine.",
-      "keywords": [
-        "model",
-        "sugar dispenser"
-      ]
-    },
-    {
-      "name": "Model Heater",
-      "type": "usecase",
-      "description": "Model the heater of the coffee machine.",
-      "keywords": [
-        "model",
-        "heater"
-      ]
-    },
-    {
-      "name": "Model Control Device",
-      "type": "usecase",
-      "description": "Model the control device of the coffee machine.",
-      "keywords": [
-        "model",
-        "control device"
+        "ProgramControlLogic",
+        "control logic",
+        "state chart"
       ]
     }
   ],
   "relationships": [
     {
-      "source": "Build Component Models",
-      "target": "Model Reservoirs",
-      "type": "containment"
+      "source": "CoffeeMachine",
+      "target": "DevelopDigitalTwin",
+      "type": "contains"
     },
     {
-      "source": "Build Component Models",
-      "target": "Model Crushing Mill",
-      "type": "containment"
+      "source": "DevelopDigitalTwin",
+      "target": "ModelComponents",
+      "type": "contains"
     },
     {
-      "source": "Build Component Models",
-      "target": "Model Brewer",
-      "type": "containment"
+      "source": "ModelComponents",
+      "target": "AssessPhysicalBehavior",
+      "type": "contains"
     },
     {
-      "source": "Build Component Models",
-      "target": "Model Milk Frother",
-      "type": "containment"
+      "source": "ModelComponents",
+      "target": "AssessEnergyConsumption",
+      "type": "contains"
     },
     {
-      "source": "Build Component Models",
-      "target": "Model Sugar Dispenser",
-      "type": "containment"
+      "source": "ModelComponents",
+      "target": "AssessProductionRates",
+      "type": "contains"
     },
     {
-      "source": "Build Component Models",
-      "target": "Model Heater",
-      "type": "containment"
+      "source": "DevelopDigitalTwin",
+      "target": "BuildControlAlgorithm",
+      "type": "contains"
     },
     {
-      "source": "Build Component Models",
-      "target": "Model Control Device",
-      "type": "containment"
+      "source": "DevelopDigitalTwin",
+      "target": "AssembleCompleteMachine",
+      "type": "contains"
     },
     {
-      "source": "System Engineer",
-      "target": "Define Product Architecture",
-      "type": "association"
+      "source": "AssembleCompleteMachine",
+      "target": "IncorporateControlModule",
+      "type": "contains"
     },
     {
-      "source": "System Engineer",
-      "target": "Size Components",
-      "type": "association"
+      "source": "DevelopDigitalTwin",
+      "target": "AddInteractiveElements",
+      "type": "contains"
     },
     {
-      "source": "System Engineer",
-      "target": "Develop Physical Plant Models",
-      "type": "association"
+      "source": "AddInteractiveElements",
+      "target": "ProgramControlLogic",
+      "type": "contains"
     },
     {
-      "source": "System Engineer",
-      "target": "Build Component Models",
-      "type": "association"
+      "source": "User",
+      "target": "CoffeeMachine",
+      "type": "interacts with"
     },
     {
-      "source": "System Engineer",
-      "target": "Verify Component Models",
-      "type": "association"
-    },
-    {
-      "source": "System Engineer",
-      "target": "Assemble Coffee Machine",
-      "type": "association"
-    },
-    {
-      "source": "Control Engineer",
-      "target": "Add Control Module",
-      "type": "association"
-    },
-    {
-      "source": "Control Engineer",
-      "target": "Incorporate Interactive Elements",
-      "type": "association"
-    },
-    {
-      "source": "Control Engineer",
-      "target": "Program Control Logic",
-      "type": "association"
+      "source": "SimcenterAmesim",
+      "target": "DevelopDigitalTwin",
+      "type": "interacts with"
     }
   ]
 }

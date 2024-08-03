@@ -1,149 +1,196 @@
 {
   "entities": [
     {
-      "name": "CoffeeMachine",
-      "type": "Main Block",
-      "description": "The coffee machine must efficiently transform coffee beans into powder and manage energy consumption.",
-      "keywords": [
-        "coffee machine",
-        "transform",
-        "coffee beans",
-        "powder",
-        "energy consumption"
-      ]
-    },
-    {
       "name": "CrushingMill",
-      "type": "Sub-block",
-      "description": "Transforms coffee beans into powder.",
+      "type": "class",
+      "description": "Transforms coffee beans into powder",
       "keywords": [
-        "crushing mill",
-        "transform",
-        "coffee beans",
+        "coffee",
+        "beans",
         "powder"
       ]
     },
     {
-      "name": "RotationalInertia",
-      "type": "Sub-block",
-      "description": "Simplified model using rotational inertia with friction driven by a speed source or motor.",
+      "name": "EnergyConsumptionModel",
+      "type": "class",
+      "description": "Simpler model for energy consumption analysis",
       "keywords": [
-        "rotational inertia",
-        "friction",
-        "speed source",
+        "energy",
+        "consumption",
+        "analysis"
+      ]
+    },
+    {
+      "name": "RotationalInertia",
+      "type": "class",
+      "description": "Represents rotational inertia with friction",
+      "keywords": [
+        "rotational",
+        "inertia",
+        "friction"
+      ]
+    },
+    {
+      "name": "SpeedSource",
+      "type": "class",
+      "description": "Drives the system with a speed source or motor",
+      "keywords": [
+        "speed",
+        "source",
         "motor"
       ]
     },
     {
-      "name": "Control",
-      "type": "Sub-block",
-      "description": "Control for constant rotary speed.",
+      "name": "ConstantRotarySpeedControl",
+      "type": "class",
+      "description": "Controls for constant rotary speed",
       "keywords": [
-        "control",
-        "constant rotary speed"
+        "constant",
+        "rotary",
+        "speed",
+        "control"
       ]
     },
     {
-      "name": "Motor",
-      "type": "Sub-block",
-      "description": "Motor icon for signal transfer.",
+      "name": "FirstOrderLag",
+      "type": "class",
+      "description": "Prevents torque peaks",
       "keywords": [
-        "motor",
-        "signal transfer"
+        "torque",
+        "peaks",
+        "prevention"
       ]
     },
     {
-      "name": "Gear",
-      "type": "Sub-block",
-      "description": "Gear for speed reduction.",
+      "name": "SpeedReducingGear",
+      "type": "class",
+      "description": "Reduces speed",
       "keywords": [
-        "gear",
-        "speed reduction"
+        "speed",
+        "reduction",
+        "gear"
       ]
     },
     {
       "name": "RotationalSpringDamper",
-      "type": "Sub-block",
-      "description": "Rotational spring/damper for causality.",
+      "type": "class",
+      "description": "Represents rotational spring and damper",
       "keywords": [
-        "rotational spring",
-        "damper",
-        "causality"
+        "rotational",
+        "spring",
+        "damper"
       ]
     },
     {
       "name": "FrictionElements",
-      "type": "Sub-block",
-      "description": "Friction elements.",
+      "type": "class",
+      "description": "Represents friction elements",
       "keywords": [
-        "friction elements"
+        "friction",
+        "elements"
       ]
     },
     {
       "name": "EnergySensor",
-      "type": "Sub-block",
-      "description": "Energy sensor.",
+      "type": "class",
+      "description": "Measures energy consumption",
       "keywords": [
-        "energy sensor"
+        "energy",
+        "sensor",
+        "measurement"
       ]
     },
     {
       "name": "ElectricalMotor",
-      "type": "Sub-block",
-      "description": "Electrical motor with voltage supply and speed control to monitor motor dynamics and heat generation.",
+      "type": "class",
+      "description": "Enhances model with motor dynamics and heat generation",
       "keywords": [
-        "electrical motor",
-        "voltage supply",
-        "speed control",
-        "motor dynamics",
-        "heat generation"
+        "motor",
+        "dynamics",
+        "heat",
+        "generation"
+      ]
+    },
+    {
+      "name": "SpeedControl",
+      "type": "class",
+      "description": "Controls motor speed",
+      "keywords": [
+        "motor",
+        "speed",
+        "control"
+      ]
+    },
+    {
+      "name": "MotorTemperature",
+      "type": "class",
+      "description": "Key parameter for motor temperature",
+      "keywords": [
+        "motor",
+        "temperature",
+        "parameter"
       ]
     }
   ],
   "relationships": [
     {
-      "source": "CoffeeMachine",
-      "target": "CrushingMill",
+      "source": "CrushingMill",
+      "target": "EnergyConsumptionModel",
       "type": "contains"
     },
     {
-      "source": "CoffeeMachine",
+      "source": "EnergyConsumptionModel",
       "target": "RotationalInertia",
       "type": "contains"
     },
     {
-      "source": "CoffeeMachine",
-      "target": "Control",
+      "source": "EnergyConsumptionModel",
+      "target": "SpeedSource",
       "type": "contains"
     },
     {
-      "source": "CoffeeMachine",
-      "target": "Motor",
+      "source": "EnergyConsumptionModel",
+      "target": "ConstantRotarySpeedControl",
       "type": "contains"
     },
     {
-      "source": "CoffeeMachine",
-      "target": "Gear",
+      "source": "EnergyConsumptionModel",
+      "target": "FirstOrderLag",
       "type": "contains"
     },
     {
-      "source": "CoffeeMachine",
+      "source": "EnergyConsumptionModel",
+      "target": "SpeedReducingGear",
+      "type": "contains"
+    },
+    {
+      "source": "EnergyConsumptionModel",
       "target": "RotationalSpringDamper",
       "type": "contains"
     },
     {
-      "source": "CoffeeMachine",
+      "source": "EnergyConsumptionModel",
       "target": "FrictionElements",
       "type": "contains"
     },
     {
-      "source": "CoffeeMachine",
+      "source": "EnergyConsumptionModel",
       "target": "EnergySensor",
       "type": "contains"
     },
     {
-      "source": "CoffeeMachine",
+      "source": "EnergyConsumptionModel",
       "target": "ElectricalMotor",
+      "type": "contains"
+    },
+    {
+      "source": "ElectricalMotor",
+      "target": "SpeedControl",
+      "type": "contains"
+    },
+    {
+      "source": "ElectricalMotor",
+      "target": "MotorTemperature",
       "type": "contains"
     }
   ]
