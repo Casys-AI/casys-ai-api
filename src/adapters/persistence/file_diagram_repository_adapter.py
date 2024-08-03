@@ -2,9 +2,10 @@
 import json
 import os
 from src.domain.models.diagram import Diagram
+from src.domain.ports.diagram_repository_adapter_protocol import DiagramRepositoryProtocol
 
 
-class FileDiagramRepositoryAdapter:
+class FileDiagramRepositoryAdapter(DiagramRepositoryProtocol):
     def __init__(self, directory: str):
         self.directory = directory
         os.makedirs(directory, exist_ok=True)

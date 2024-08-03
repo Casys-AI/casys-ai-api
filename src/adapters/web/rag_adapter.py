@@ -9,11 +9,12 @@ from tenacity import retry, stop_after_attempt, wait_random_exponential
 
 from src.adapters.web.openai_embedding_adapter import OpenAIEmbeddingAdapter
 from src.domain.ports.embedding_adapter_protocol import EmbeddingAdapterProtocol
+from src.domain.ports.rag_adapter_protocol import RAGAdapterProtocol
 
 logger = logging.getLogger("uvicorn.error")
 
 
-class RAGAdapter:
+class RAGAdapter(RAGAdapterProtocol):
     def __init__(self, config: Dict, embedding_adapter: OpenAIEmbeddingAdapter):
         self.config = config
         self.embedding_adapter = embedding_adapter

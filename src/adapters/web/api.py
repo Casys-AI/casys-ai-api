@@ -40,9 +40,8 @@ async def lifespan(app: FastAPI):
 
         file_repository = FileDiagramRepositoryAdapter(directory="diagrams")
         app_state.diagram_service = CreateDiagramService(repository_adapter=file_repository)
-
+        
         app_state.neo4j_adapter = Neo4jPersistenceAdapter(config)
-
         if not app_state.neo4j_adapter.is_connected():
             logger.warning("Unable to connect to Neo4j. Some features may be limited.")
         else:
@@ -61,10 +60,10 @@ async def lifespan(app: FastAPI):
         logger.info("Services initialized successfully.")
     except Exception as e:
         logger.error(f"Error during startup: {str(e)}")
-        raise
-
+        # Ne pas lever d'exception ici, permettre à l'application de démarrer même en cas d'erreur
+    
     yield
-
+    
     logger.info("Shutting down...")
     if app_state.neo4j_adapter:
         app_state.neo4j_adapter.close()
@@ -160,8 +159,8 @@ async def process_neo4j_data(
         diagram_type: str,
         project_manager: ProjectManagementService = Depends(get_project_manager)
 ) -> Dict[str, Any]:
-    if not app_state.neo4j_processing_service:
-        raise HTTPException(status_code=500, detail="Neo4j processing service not initialized")
+    if not app_state.neo4j_adapter.is_connected():
+        return {"status": "error", "message": "Neo4j is not available. Please try again later."}
     if diagram_type not in project_manager.get_diagram_types():
         raise HTTPException(status_code=400, detail=f"Invalid diagram type: {diagram_type}")
     try:

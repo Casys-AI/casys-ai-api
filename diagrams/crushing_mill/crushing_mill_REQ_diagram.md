@@ -1,92 +1,87 @@
 ```mermaid
 requirementDiagram
     requirement mainReq {
-        id: 1
-        text: The coffee machine must efficiently transform coffee beans into powder and manage energy consumption.
+        id: RQ-001
+        text: The crushing mill transforms coffee beans into coffee powder.
         risk: High
-        verifyMethod: analysis
+        verification: analysis
     }
 
-    functionalRequirement crushingMill {
-        id: 1.1
-        text: The crushing mill must transform coffee beans into powder.
-        risk: High
-        verifyMethod: analysis
-    }
-
-    performanceRequirement energyConsumption {
-        id: 1.2
-        text: The energy consumption of the coffee machine must be minimized.
+    functionalRequirement energyConsumptionAnalysis {
+        id: RQ-002
+        text: For energy consumption analysis, a simpler model using rotational inertia with friction driven by a speed source or motor is sufficient.
         risk: Medium
-        verifyMethod: analysis
+        verification: analysis
+    }
+
+    functionalRequirement constantRotarySpeedControl {
+        id: RQ-003
+        text: The model includes a control for constant rotary speed.
+        risk: Medium
+        verification: test
+    }
+
+    functionalRequirement motorIconSignalTransfer {
+        id: RQ-004
+        text: The model includes a motor icon for signal transfer.
+        risk: Low
+        verification: inspection
+    }
+
+    functionalRequirement mechanicalGearSpeedReduction {
+        id: RQ-005
+        text: The model includes a mechanical gear for speed reduction.
+        risk: Medium
+        verification: test
     }
 
     functionalRequirement rotationalSpringDamper {
-        id: 1.3
-        text: The model must include a rotational spring/damper for causality.
+        id: RQ-006
+        text: The model includes a rotational spring/damper.
         risk: Medium
-        verifyMethod: analysis
+        verification: test
     }
 
     functionalRequirement frictionElements {
-        id: 1.4
-        text: The model must include friction elements.
+        id: RQ-007
+        text: The model includes friction elements.
         risk: Medium
-        verifyMethod: analysis
-    }
-
-    functionalRequirement controlRotarySpeed {
-        id: 1.5
-        text: The model must include a control for constant rotary speed.
-        risk: Low
-        verifyMethod: analysis
-    }
-
-    functionalRequirement motorIcon {
-        id: 1.6
-        text: The model must include a motor icon for signal transfer.
-        risk: Low
-        verifyMethod: analysis
-    }
-
-    functionalRequirement gearSpeedReduction {
-        id: 1.7
-        text: The model must include a gear for speed reduction.
-        risk: Low
-        verifyMethod: analysis
+        verification: test
     }
 
     functionalRequirement energySensor {
-        id: 1.8
-        text: The model must include an energy sensor.
+        id: RQ-008
+        text: The model includes an energy sensor.
         risk: Low
-        verifyMethod: analysis
+        verification: inspection
     }
 
-    functionalRequirement electricalMotor {
-        id: 1.9
-        text: The model can include an electrical motor with voltage supply and speed control.
+    performanceRequirement motorDynamicsHeatGeneration {
+        id: RQ-009
+        text: Enhancing the model with an electrical motor and speed control can account for motor dynamics and heat generation.
+        risk: High
+        verification: analysis
+    }
+
+    performanceRequirement motorTemperatureParameter {
+        id: RQ-010
+        text: Motor temperature as a potential process parameter.
         risk: Medium
-        verifyMethod: analysis
+        verification: analysis
     }
 
-    mainReq contains crushingMill
-    mainReq contains energyConsumption
+    mainReq contains energyConsumptionAnalysis
+    mainReq contains constantRotarySpeedControl
+    mainReq contains motorIconSignalTransfer
+    mainReq contains mechanicalGearSpeedReduction
     mainReq contains rotationalSpringDamper
     mainReq contains frictionElements
-    mainReq contains controlRotarySpeed
-    mainReq contains motorIcon
-    mainReq contains gearSpeedReduction
     mainReq contains energySensor
-    mainReq contains electricalMotor
+    mainReq contains motorDynamicsHeatGeneration
+    motorDynamicsHeatGeneration contains motorTemperatureParameter
 
-    crushingMill derives rotationalSpringDamper
-    crushingMill derives frictionElements
-    crushingMill derives controlRotarySpeed
-    crushingMill derives motorIcon
-    crushingMill derives gearSpeedReduction
-    crushingMill derives energySensor
-    crushingMill derives electricalMotor
+    motorDynamicsHeatGeneration derives energyConsumptionAnalysis
+    motorTemperatureParameter derives motorDynamicsHeatGeneration
 
-    energyConsumption satisfies mainReq
+    motorIconSignalTransfer satisfies constantRotarySpeedControl
 ```

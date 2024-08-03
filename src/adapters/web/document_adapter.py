@@ -6,10 +6,12 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.docstore.document import Document
 from langchain.chains.summarize import load_summarize_chain
 
+from src.domain.ports.document_adapter_protocol import DocumentAdapterProtocol
+
 logger = logging.getLogger("uvicorn.error")
 
 
-class DocumentAdapter:
+class DocumentAdapter(DocumentAdapterProtocol):
     def __init__(self, config: Dict[str, Any], openai_chat: Any):
         self.config = config
         self.openai_chat = openai_chat

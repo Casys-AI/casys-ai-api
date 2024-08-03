@@ -4,11 +4,12 @@ import logging
 from typing import List,Dict, Any
 from langchain_openai import OpenAIEmbeddings
 
+from src.domain.ports.embedding_adapter_protocol import EmbeddingAdapterProtocol
 
 logger = logging.getLogger("uvicorn.error")
 
 
-class OpenAIEmbeddingAdapter:
+class OpenAIEmbeddingAdapter(EmbeddingAdapterProtocol):
     def __init__(self, api_key: str):
         self.embeddings_model = OpenAIEmbeddings(openai_api_key=api_key)
 

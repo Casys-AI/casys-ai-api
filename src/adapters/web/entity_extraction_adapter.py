@@ -5,10 +5,12 @@ import re
 from typing import Dict, Any, Optional
 from langchain.prompts import ChatPromptTemplate
 
+from src.domain.ports.entity_extraction_adapter_protocol import EntityExtractionAdapterProtocol
+
 logger = logging.getLogger("uvicorn.error")
 
 
-class EntityExtractionAdapter:
+class EntityExtractionAdapter(EntityExtractionAdapterProtocol):
     def __init__(self, openai_chat):
         self.openai_chat = openai_chat
 

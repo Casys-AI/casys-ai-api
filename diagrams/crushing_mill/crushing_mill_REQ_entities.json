@@ -3,109 +3,117 @@
     {
       "name": "mainReq",
       "type": "requirement",
-      "description": "The coffee machine must efficiently transform coffee beans into powder and manage energy consumption.",
-      "keywords": [
-        "coffee machine",
-        "transform",
-        "coffee beans",
-        "powder",
-        "energy consumption"
-      ]
-    },
-    {
-      "name": "crushingMill",
-      "type": "functionalRequirement",
-      "description": "The crushing mill must transform coffee beans into powder.",
+      "description": "The crushing mill transforms coffee beans into coffee powder.",
       "keywords": [
         "crushing mill",
-        "transform",
         "coffee beans",
-        "powder"
+        "coffee powder"
       ]
     },
     {
-      "name": "energyConsumption",
-      "type": "performanceRequirement",
-      "description": "The energy consumption of the coffee machine must be minimized.",
+      "name": "energyConsumptionAnalysis",
+      "type": "functionalRequirement",
+      "description": "For energy consumption analysis, a simpler model using rotational inertia with friction driven by a speed source or motor is sufficient.",
       "keywords": [
         "energy consumption",
-        "minimized",
-        "coffee machine"
+        "rotational inertia",
+        "friction",
+        "speed source",
+        "motor"
       ]
     },
     {
-      "name": "rotationalSpringDamper",
+      "name": "constantRotarySpeedControl",
       "type": "functionalRequirement",
-      "description": "The model must include a rotational spring/damper for causality.",
-      "keywords": [
-        "rotational spring",
-        "damper",
-        "causality"
-      ]
-    },
-    {
-      "name": "frictionElements",
-      "type": "functionalRequirement",
-      "description": "The model must include friction elements.",
-      "keywords": [
-        "friction elements"
-      ]
-    },
-    {
-      "name": "controlRotarySpeed",
-      "type": "functionalRequirement",
-      "description": "The model must include a control for constant rotary speed.",
+      "description": "The model includes a control for constant rotary speed.",
       "keywords": [
         "control",
         "constant rotary speed"
       ]
     },
     {
-      "name": "motorIcon",
+      "name": "motorIconSignalTransfer",
       "type": "functionalRequirement",
-      "description": "The model must include a motor icon for signal transfer.",
+      "description": "The model includes a motor icon for signal transfer.",
       "keywords": [
         "motor icon",
         "signal transfer"
       ]
     },
     {
-      "name": "gearSpeedReduction",
+      "name": "mechanicalGearSpeedReduction",
       "type": "functionalRequirement",
-      "description": "The model must include a gear for speed reduction.",
+      "description": "The model includes a mechanical gear for speed reduction.",
       "keywords": [
-        "gear",
+        "mechanical gear",
         "speed reduction"
+      ]
+    },
+    {
+      "name": "rotationalSpringDamper",
+      "type": "functionalRequirement",
+      "description": "The model includes a rotational spring/damper.",
+      "keywords": [
+        "rotational spring",
+        "damper"
+      ]
+    },
+    {
+      "name": "frictionElements",
+      "type": "functionalRequirement",
+      "description": "The model includes friction elements.",
+      "keywords": [
+        "friction elements"
       ]
     },
     {
       "name": "energySensor",
       "type": "functionalRequirement",
-      "description": "The model must include an energy sensor.",
+      "description": "The model includes an energy sensor.",
       "keywords": [
         "energy sensor"
       ]
     },
     {
-      "name": "electricalMotor",
-      "type": "functionalRequirement",
-      "description": "The model can include an electrical motor with voltage supply and speed control.",
+      "name": "motorDynamicsHeatGeneration",
+      "type": "performanceRequirement",
+      "description": "Enhancing the model with an electrical motor and speed control can account for motor dynamics and heat generation.",
       "keywords": [
         "electrical motor",
-        "voltage supply",
-        "speed control"
+        "speed control",
+        "motor dynamics",
+        "heat generation"
+      ]
+    },
+    {
+      "name": "motorTemperatureParameter",
+      "type": "performanceRequirement",
+      "description": "Motor temperature as a potential process parameter.",
+      "keywords": [
+        "motor temperature",
+        "process parameter"
       ]
     }
   ],
   "relationships": [
     {
       "source": "mainReq",
-      "target": "crushingMill",
+      "target": "energyConsumptionAnalysis",
       "type": "contains"
     },
     {
       "source": "mainReq",
-      "target": "energyConsumption",
+      "target": "constantRotarySpeedControl",
+      "type": "contains"
+    },
+    {
+      "source": "mainReq",
+      "target": "motorIconSignalTransfer",
+      "type": "contains"
+    },
+    {
+      "source": "mainReq",
+      "target": "mechanicalGearSpeedReduction",
       "type": "contains"
     },
     {
@@ -120,67 +128,32 @@
     },
     {
       "source": "mainReq",
-      "target": "controlRotarySpeed",
-      "type": "contains"
-    },
-    {
-      "source": "mainReq",
-      "target": "motorIcon",
-      "type": "contains"
-    },
-    {
-      "source": "mainReq",
-      "target": "gearSpeedReduction",
-      "type": "contains"
-    },
-    {
-      "source": "mainReq",
       "target": "energySensor",
       "type": "contains"
     },
     {
       "source": "mainReq",
-      "target": "electricalMotor",
+      "target": "motorDynamicsHeatGeneration",
       "type": "contains"
     },
     {
-      "source": "crushingMill",
-      "target": "rotationalSpringDamper",
+      "source": "motorDynamicsHeatGeneration",
+      "target": "motorTemperatureParameter",
+      "type": "contains"
+    },
+    {
+      "source": "motorDynamicsHeatGeneration",
+      "target": "energyConsumptionAnalysis",
       "type": "derives"
     },
     {
-      "source": "crushingMill",
-      "target": "frictionElements",
+      "source": "motorTemperatureParameter",
+      "target": "motorDynamicsHeatGeneration",
       "type": "derives"
     },
     {
-      "source": "crushingMill",
-      "target": "controlRotarySpeed",
-      "type": "derives"
-    },
-    {
-      "source": "crushingMill",
-      "target": "motorIcon",
-      "type": "derives"
-    },
-    {
-      "source": "crushingMill",
-      "target": "gearSpeedReduction",
-      "type": "derives"
-    },
-    {
-      "source": "crushingMill",
-      "target": "energySensor",
-      "type": "derives"
-    },
-    {
-      "source": "crushingMill",
-      "target": "electricalMotor",
-      "type": "derives"
-    },
-    {
-      "source": "energyConsumption",
-      "target": "mainReq",
+      "source": "motorIconSignalTransfer",
+      "target": "constantRotarySpeedControl",
       "type": "satisfies"
     }
   ]
