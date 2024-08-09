@@ -8,7 +8,7 @@ from contextlib import contextmanager
 
 logger = logging.getLogger("uvicorn.error")
 
-
+#TODO ici configurer la gestion des fichiers / diagrammes par utilisateurs et séparer de la config globale
 class ProjectManagementService:
     def __init__(self, config_path: str):
         self.config_path = config_path
@@ -31,15 +31,15 @@ class ProjectManagementService:
             logger.exception(f"Error occurred while loading the configuration file: {str(e)}")
             raise
 
-    @contextmanager
-    def log_project_processing(self, project_name: str):
-        logger.info(f"Début du traitement du projet : {project_name}")
-        try:
-            yield
-        except Exception as e:
-            logger.exception(f"Erreur lors du traitement du projet {project_name}")
-        finally:
-            logger.info(f"Fin du traitement du projet : {project_name}")
+    # @contextmanager
+    # def log_project_processing(self, project_name: str):
+    #     logger.info(f"Début du traitement du projet : {project_name}")
+    #     try:
+    #         yield
+    #     except Exception as e:
+    #         logger.exception(f"Erreur lors du traitement du projet {project_name}")
+    #     finally:
+    #         logger.info(f"Fin du traitement du projet : {project_name}")
 
     def find_project(self, project_name: str) -> Dict[str, Any]:
         for project in self.config['projects']:
@@ -112,7 +112,15 @@ class ProjectManagementService:
             logger.debug(f"Contenu du {file_type.lower()} : {content[:100]}...")
         except Exception as e:
             logger.exception(f"Erreur lors de la sauvegarde du {file_type.lower()} {file_path}")
-
+            
+    def save_json(self, data: Dict[str, Any], file_path: str) -> None:
+        try:
+            with open(file_path, 'w', encoding='utf-8') as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+            logger.info(f"JSON sauvegardé : {file_path}")
+        except Exception as e:
+            logger.exception(f"Erreur lors de la sauvegarde du JSON {file_path}")
+            
     def get_project_type(self, project_name: str) -> str:
         project = self.find_project(project_name)
         return project['type']

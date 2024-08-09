@@ -4,14 +4,13 @@ from typing import Dict, List, Any, Optional
 
 from neo4j import GraphDatabase, Driver, Session
 from neo4j.exceptions import Neo4jError, ServiceUnavailable
-
 from src.domain.ports.neo4j_persistence_adapter_protocol import Neo4jPersistenceAdapterProtocol
 
 logger = logging.getLogger("uvicorn.error")
 
 
 # ajouter des transaction sur les requêtes neo4j,par un rollback
-
+#TODO ne pas avoir la config chargée par project manager ici
 class Neo4jPersistenceAdapter(Neo4jPersistenceAdapterProtocol):
     def __init__(self, config: Dict[str, Any]):
         self.config = config
@@ -199,7 +198,7 @@ class Neo4jPersistenceAdapter(Neo4jPersistenceAdapterProtocol):
             result = session.run(query, similarities=similarities)
         logger.info(f"Similarity relationships updated: {result.consume().counters}")
     
-    def close(self) -> None:
+    def close_neo4j(self) -> None:
         if self.driver:
             self.driver.close()
             logger.info("Neo4j connection closed")

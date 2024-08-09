@@ -3,7 +3,7 @@ import uvicorn
 import os
 import logging
 from logging.handlers import RotatingFileHandler
-
+from src.utils.config import GLOBAL_CONFIG
 
 def setup_logging(config_log_level: str):
     # Configuration of the main logger
@@ -39,8 +39,8 @@ if __name__ == "__main__":
     try:
         uvicorn.run(
             "src.adapters.web.api:app",
-            host="0.0.0.0",
-            port=8000,
+            host=GLOBAL_CONFIG['server']['host'],
+            port=GLOBAL_CONFIG['server']['port'],
             log_level=log_level.lower(),
             reload=True
         )

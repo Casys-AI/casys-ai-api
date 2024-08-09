@@ -1,39 +1,48 @@
+
+# src/adapters/web/api.py
+
 from fastapi import FastAPI, HTTPException, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 import logging
 from typing import Any, Dict
 
-from src.adapters.web.dependencies import get_project_manager, get_project_processing_service, get_neo4j_processing_service, \
-    get_neo4j_adapter
-from app_state import app_state
+from src.adapters.web.dependencies import (
+    get_project_manager,
+    get_project_processing_service,
+    get_neo4j_processing_service,
+    get_neo4j_adapter,
+    get_async_task_adapter
+)
+from src.app_state import app_state
+from src.utils.config import GLOBAL_CONFIG
 
 logger = logging.getLogger("uvicorn.error")
+
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     logger.info("Initializing application state...")
     try:
-        # Trigger the loading of config and minimal initialization
-        app_state.project_manager  # This will trigger the loading of config
+        app_state.project_manager
         logger.info("Application state initialized successfully.")
     except Exception as e:
         logger.error(f"Error during startup: {str(e)}")
     
     yield
     
-    # Cleanup resources
-    app_state.close()
+    app_state.close_neo4j()
     logger.info("Application state cleaned up.")
+
 
 app = FastAPI(title="SysML PLM API", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=GLOBAL_CONFIG['cors']['allowed_origins'],
+    allow_credentials=GLOBAL_CONFIG['cors']['allow_credentials'],
+    allow_methods=GLOBAL_CONFIG['cors']['allow_methods'],
+    allow_headers=GLOBAL_CONFIG['cors']['allow_headers'],
 )
 
 
@@ -52,12 +61,9 @@ async def process_project(
         project_processing_service=Depends(get_project_processing_service)
 ) -> Dict[str, Any]:
     try:
-        result = await project_processing_service.process_project(project_name)
-        app_state.processing_status = result
-        return {"status": "success", "message": result['message']}
+        return await project_processing_service.process_project(project_name)
     except Exception as e:
-        logger.exception(f"Error during project processing: {str(e)}")
-        app_state.processing_status = {"status": "error", "message": f"Error during processing {project_name}: {str(e)}"}
+        logger.exception(f"Error starting project processing: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
@@ -71,13 +77,9 @@ async def process_project_diagram(
     if diagram_type not in project_manager.get_diagram_types():
         raise HTTPException(status_code=400, detail=f"Invalid diagram type: {diagram_type}")
     try:
-        result = await project_processing_service.process_project_diagram(project_name, diagram_type)
-        app_state.processing_status = result
-        return {"status": "success", "message": result['message']}
+        return await project_processing_service.process_project_diagram(project_name, diagram_type)
     except Exception as e:
-        logger.exception(f"Error during project diagram processing: {str(e)}")
-        app_state.processing_status = {"status": "error",
-                                       "message": f"Error during processing {project_name}, {diagram_type}: {str(e)}"}
+        logger.exception(f"Error starting diagram processing: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
@@ -91,12 +93,9 @@ async def extract_json(
     if diagram_type not in project_manager.get_diagram_types():
         raise HTTPException(status_code=400, detail=f"Invalid diagram type: {diagram_type}")
     try:
-        result = await project_processing_service.extract_json(project_name, diagram_type)
-        app_state.processing_status = result
-        return {"status": "success", "message": result['message']}
+        return await project_processing_service.extract_json(project_name, diagram_type)
     except Exception as e:
-        logger.exception(f"Error during JSON extraction: {str(e)}")
-        app_state.processing_status = {"status": "error", "message": f"Error during JSON extraction: {str(e)}"}
+        logger.exception(f"Error starting JSON extraction: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
@@ -113,14 +112,9 @@ async def process_neo4j_data(
     if diagram_type not in project_manager.get_diagram_types():
         raise HTTPException(status_code=400, detail=f"Invalid diagram type: {diagram_type}")
     try:
-        logger.info(f"Processing Neo4j data for project: {project_name}, diagram: {diagram_type}")
-        result = await neo4j_processing_service.process_neo4j_data(project_name, diagram_type)
-        app_state.processing_status = result
-        logger.info(f"Neo4j data processing completed: {result}")
-        return {"status": "success", "message": result['message']}
+        return await neo4j_processing_service.process_neo4j_data(project_name, diagram_type)
     except Exception as e:
-        logger.exception(f"Error during Neo4j data processing: {str(e)}")
-        app_state.processing_status = {"status": "error", "message": f"Error during Neo4j data processing: {str(e)}"}
+        logger.exception(f"Error starting Neo4j data processing: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
@@ -130,15 +124,21 @@ async def process_entire_project(
         neo4j_processing_service=Depends(get_neo4j_processing_service)
 ) -> Dict[str, Any]:
     try:
-        logger.info(f"Processing entire project: {project_name}")
-        result = await neo4j_processing_service.process_entire_project(project_name)
-        app_state.processing_status = result
-        logger.info(f"Entire project processing completed: {result}")
-        return {"status": "success", "message": result['message']}
+        return await neo4j_processing_service.process_entire_project(project_name)
     except Exception as e:
-        logger.exception(f"Error during entire project processing: {str(e)}")
-        app_state.processing_status = {"status": "error",
-                                       "message": f"Error during entire project processing: {str(e)}"}
+        logger.exception(f"Error starting entire project processing: {str(e)}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/status/{task_id}")
+async def get_task_status(
+        task_id: str,
+        async_task_adapter=Depends(get_async_task_adapter)
+) -> Dict[str, Any]:
+    try:
+        return await async_task_adapter.get_task_status(task_id)
+    except Exception as e:
+        logger.exception(f"Error getting task status: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
@@ -154,3 +154,4 @@ async def get_processing_status() -> Dict[str, Any]:
 async def root() -> Dict[str, str]:
     logger.info("Root endpoint accessed")
     return {"message": "Welcome to the SysML PLM API"}
+

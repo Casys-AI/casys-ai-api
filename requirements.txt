@@ -1,14 +1,9 @@
-json
 pyyaml
 numpy
-concurrent
 neo4j
 openai
 langchain-openai
 langchain
-logging
-re
-os
 PyPDF2
 python-docx
 tenacity
@@ -17,3 +12,6 @@ fastapi
 pydantic
 uvicorn
 tiktoken
+redis
+celery
+flower

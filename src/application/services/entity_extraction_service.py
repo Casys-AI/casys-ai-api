@@ -9,7 +9,6 @@ class EntityExtractionService:
     def __init__(self, entity_extraction_adapter: EntityExtractionAdapterProtocol):
         self.entity_extraction_adapter = entity_extraction_adapter
 
-    # Dans entity_extraction_service.py
     def extract_entities_and_relationships(self, diagram_content):
         if not diagram_content:
             logger.warning("Le contenu du diagramme est vide")

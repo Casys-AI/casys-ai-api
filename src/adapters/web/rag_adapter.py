@@ -11,7 +11,7 @@ from src.adapters.persistence.neo4j_persistence_adapter import Neo4jPersistenceA
 
 logger = logging.getLogger("uvicorn.error")
 
-
+#TODO charger la config depuis global config, vérifier si on est bon pour préparer un adapter
 class RAGAdapter(RAGAdapterProtocol):
     def __init__(self, config: Dict, embedding_adapter: OpenAIEmbeddingAdapter, neo4j_adapter: Neo4jPersistenceAdapter):
         self.config = config
