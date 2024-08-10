@@ -49,49 +49,52 @@
     </treeState>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4765a1e-5880-4c04-84f6-ac25e5637da8" name="Logs, instanciation, performance traitement documents" comment="ajout du script graph et modif des logs pour niveau debug">
-      <change afterPath="$PROJECT_DIR$/diagrams/cdcs/cdc_1/REQ_diagram.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diagrams/cdcs/cdc_1/REQ_entities.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T184115.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T184117.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T184252.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T184346.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T184815.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T184951.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T184956.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T185117.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T185154.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T185345.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T185525.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T185923.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T185928.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T190114.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T192758.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T193147.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T193149.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T193202.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T193204.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T193335.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T221027.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T221027.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T221032.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T221036.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T221038.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-07-26T224533.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+    <list default="true" id="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" name="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press." comment="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/adapters/persistence/neo4j_persistence_adapter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapters/persistence/neo4j_persistence_adapter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/adapters/web/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapters/web/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/adapters/web/process_projects.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapters/web/deprecated_process_projects.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/services/neo4j_processing_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/services/neo4j_processing_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/services/project_management_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/services/project_management_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/services/project_processing_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/services/project_processing_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_main.http" beforeDir="false" afterPath="$PROJECT_DIR$/test_main.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagrams/cdc_1/BDD_diagram.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagrams/cdc_1/BDD_entities.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagrams/cdc_1/REQ_diagram.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagrams/cdc_1/REQ_entities.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagrams/cdc_1/UC_diagram.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagrams/cdc_1/UC_entities.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagrams/crushing_mill/crushing_mill_BDD_diagram.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagrams/crushing_mill/crushing_mill_BDD_entities.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagrams/crushing_mill/crushing_mill_REQ_diagram.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagrams/crushing_mill/crushing_mill_REQ_entities.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagrams/crushing_mill/crushing_mill_UC_diagram.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagrams/crushing_mill/crushing_mill_UC_entities.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/qodana.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/qodana.yaml" afterDir="false" />
+    </list>
+    <list id="dc2b9e54-c5dc-433d-bb02-2849f5cdb327" name="Changes" comment="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration.">
+      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/adapters/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/adapters/persistence/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/adapters/web/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/application/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/application/services/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/ports/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_07_2024_16_06_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_07_2024_16_33_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_07_2024_16_33_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.log" beforeDir="false" />
+    </list>
+    <list id="253ac8a8-24f6-4dea-8103-ff2eb466a1cd" name="correct graph creation" comment="correct graph creation" />
+    <list id="a4765a1e-5880-4c04-84f6-ac25e5637da8" name="Logs, instanciation, performance traitement documents" comment="ajout du script graph et modif des logs pour niveau debug">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="1" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OPEN_IN_BROWSER" value="true" />
+    <option name="OUTPUT_DIRECTORY" value="C:\Users\erpes\PycharmProjects\SysML_PLM\htmlReport" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -102,6 +105,7 @@
         <option value="Jupyter Notebook" />
         <option value="HTTP Public Environment File" />
         <option value="HTTP Private Environment File" />
+        <option value="Dockerfile" />
         <option value="Python Script" />
       </list>
     </option>
@@ -120,17 +124,16 @@
   <component name="Git.Settings">
     <option name="PUSH_TAGS">
       <GitPushTagMode>
-        <option name="argument" value="--tags" />
-        <option name="title" value="All" />
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
       </GitPushTagMode>
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Logs-instanciation" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -144,6 +147,9 @@
     &quot;accountId&quot;: &quot;94bd6f70-f7ce-411a-aa81-6bac7234dd56&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/venv/Lib/site-packages/langchain_openai/embeddings/base.py" root0="SKIP_INSPECTION" />
+  </component>
   <component name="HttpClientSelectedEnvironments">
     <file url="file://$PROJECT_DIR$/test_main.http" environment="cdc_1" />
     <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http" environment="test" />
@@ -151,109 +157,231 @@
     <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/different-responses.http" environment="test" />
     <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" environment="test" />
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/.idea/workspace.xml">
+      <ranges>
+        <range start1="8" end1="9" start2="8" end2="8" changelist="a4765a1e-5880-4c04-84f6-ac25e5637da8" />
+        <range start1="10" end1="16" start2="9" end2="9" changelist="a4765a1e-5880-4c04-84f6-ac25e5637da8" />
+        <range start1="18" end1="20" start2="11" end2="13" changelist="a4765a1e-5880-4c04-84f6-ac25e5637da8" />
+        <range start1="24" end1="30" start2="17" end2="17" changelist="a4765a1e-5880-4c04-84f6-ac25e5637da8" />
+        <range start1="35" end1="39" start2="22" end2="22" changelist="a4765a1e-5880-4c04-84f6-ac25e5637da8" />
+        <range start1="51" end1="81" start2="34" end2="66" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="82" end1="89" start2="67" end2="67" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="95" end1="95" start2="73" end2="80" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="104" end1="104" start2="89" end2="90" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="122" end1="124" start2="108" end2="110" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="128" end1="129" start2="114" end2="115" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="132" end1="133" start2="118" end2="118" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="146" end1="146" start2="131" end2="134" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="152" end1="152" start2="140" end2="210" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="157" end1="158" start2="215" end2="216" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="160" end1="161" start2="218" end2="219" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="167" end1="167" start2="225" end2="226" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="173" end1="174" start2="232" end2="238" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="175" end1="175" start2="239" end2="241" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="180" end1="181" start2="246" end2="247" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="182" end1="182" start2="248" end2="250" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="186" end1="186" start2="254" end2="255" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="187" end1="187" start2="256" end2="258" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="190" end1="190" start2="261" end2="262" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="191" end1="192" start2="263" end2="264" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="193" end1="194" start2="265" end2="266" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="200" end1="201" start2="272" end2="274" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="202" end1="203" start2="275" end2="277" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="206" end1="207" start2="280" end2="281" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="210" end1="213" start2="284" end2="287" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="214" end1="217" start2="288" end2="291" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="218" end1="219" start2="292" end2="293" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="220" end1="221" start2="294" end2="295" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="223" end1="225" start2="297" end2="303" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="227" end1="227" start2="305" end2="309" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="228" end1="230" start2="310" end2="312" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="234" end1="237" start2="316" end2="322" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="238" end1="238" start2="323" end2="329" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="241" end1="241" start2="332" end2="333" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="244" end1="249" start2="336" end2="341" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="251" end1="256" start2="343" end2="366" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="264" end1="265" start2="374" end2="375" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="278" end1="290" start2="388" end2="390" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="292" end1="293" start2="392" end2="393" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="297" end1="297" start2="397" end2="411" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="298" end1="300" start2="412" end2="414" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="302" end1="303" start2="416" end2="417" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="306" end1="308" start2="420" end2="420" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="309" end1="309" start2="421" end2="423" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="310" end1="311" start2="424" end2="425" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="317" end1="319" start2="431" end2="433" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="331" end1="332" start2="445" end2="447" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="335" end1="336" start2="450" end2="451" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="348" end1="348" start2="463" end2="472" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="349" end1="350" start2="473" end2="474" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="357" end1="358" start2="481" end2="482" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="363" end1="364" start2="487" end2="488" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="375" end1="376" start2="499" end2="668" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="378" end1="378" start2="670" end2="673" changelist="a4765a1e-5880-4c04-84f6-ac25e5637da8" />
+        <range start1="396" end1="397" start2="691" end2="692" changelist="a4765a1e-5880-4c04-84f6-ac25e5637da8" />
+        <range start1="413" end1="413" start2="708" end2="711" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="414" end1="426" start2="712" end2="716" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
+        <range start1="428" end1="429" start2="718" end2="721" changelist="a4765a1e-5880-4c04-84f6-ac25e5637da8" />
+        <range start1="430" end1="431" start2="722" end2="726" changelist="a4765a1e-5880-4c04-84f6-ac25e5637da8" />
+      </ranges>
+    </file>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 6
+  &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2jlegyPWCp3nVAJ1ApLAdbAPaLm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Docker.docker-compose.yml.flower: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.neo4j: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.redis: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "FastAPI.FastApi.executor": "Debug",
     "FastAPI.SysML_PLM.executor": "Run",
+    "FastAPI.Unnamed.executor": "Run",
+    "HTTP Request.All in test_main.executor": "Run",
     "HTTP Request.SysML_PLM-endpoints | #1.executor": "Run",
     "HTTP Request.test_main | #1.executor": "Run",
     "HTTP Request.test_main | #2.executor": "Run",
     "HTTP Request.test_main | #3.executor": "Run",
     "HTTP Request.test_main | #4.executor": "Run",
-    "HTTP Request.test_main | #5.executor": "Run",
+    "HTTP Request.test_main | Co Neo4j.executor": "Run",
     "HTTP Request.test_main | Full project.executor": "Run",
+    "HTTP Request.test_main | Neo4j 1 diagrame.executor": "Run",
+    "HTTP Request.test_main | Neo4j full project.executor": "Run",
     "HTTP Request.test_main | Neo4j.executor": "Run",
     "HTTP Request.test_main | Only json.executor": "Run",
     "HTTP Request.test_main | Project diagramme MD et json.executor": "Run",
     "HTTP Request.test_main | statuts.executor": "Run",
+    "Python.main (1).executor": "Run",
     "Python.main.executor": "Run",
+    "Python.reflex.executor": "Run",
+    "Python.smaas_api.executor": "Run",
     "Python.uvicorn.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Logs-instanciation",
+    "git-widget-placeholder": "SMA-11",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/erpes/PycharmProjects/SysML_PLM/src/interface",
+    "last_opened_file_path": "C:/Users/erpes/PycharmProjects/SysML_PLM/src/adapters/celery",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "rest.client.default.execution.environment": "cdc_1",
-    "settings.editor.selected.configurable": "editor.preferences.tabs",
+    "run.code.analysis.last.selected.profile": "aDefault",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "spentTimePerTaskStorage.store": "{}",
-    "timeTracker.activityTracker": "null",
+    "tasks.open.task.update.state.enabled": "true",
+    "timeTracker.activityTracker": "com.github.jk1.ytplugin.timeTracker.ActivityTracker@1b40ced",
     "timeTracker.comment": "",
     "timeTracker.inactivityPeriodInMills": "600000",
     "timeTracker.isAutoTrackingEnable": "true",
-    "timeTracker.isAutoTrackingTemporaryDisabled": "true",
+    "timeTracker.isAutoTrackingTemporaryDisabled": "false",
     "timeTracker.isManualTrackingEnable": "false",
     "timeTracker.isPaused": "false",
     "timeTracker.isPostAfterCommitEnabled": "true",
-    "timeTracker.isPostedScheduled": "true",
-    "timeTracker.isRunning": "false",
-    "timeTracker.isScheduledEnabled": "false",
+    "timeTracker.isPostedScheduled": "false",
+    "timeTracker.isRunning": "true",
+    "timeTracker.isScheduledEnabled": "true",
     "timeTracker.isWhenProjectClosedEnabled": "true",
-    "timeTracker.issueId": "Default",
-    "timeTracker.issueIdReadable": "Default",
-    "timeTracker.pausedTime": "0",
+    "timeTracker.issueId": "SMA-11",
+    "timeTracker.issueIdReadable": "SMA-11",
+    "timeTracker.pausedTime": "37491",
     "timeTracker.query": "admin",
-    "timeTracker.recordedTime": "0",
+    "timeTracker.recordedTime": "11",
     "timeTracker.scheduledPeriod": "19:00:0",
-    "timeTracker.startTime": "1722305697331",
-    "timeTracker.timeInMills": "0",
+    "timeTracker.startTime": "1723268740161",
+    "timeTracker.timeInMills": "719062",
     "timeTracker.type": "Développement",
-    "vue.rearranger.settings.migration": "true",
-    "ytplugin.issueListCompactView": "true"
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "redis"
+    ]
   }
 }]]></component>
+  <component name="PyCoverageOptionsProvider">
+    <option name="myUseBundledCoveragePy" value="true" />
+    <option name="myBranchCoverage" value="true" />
+  </component>
   <component name="QodanaCloudProjectLink">
-    <option name="lastReportId" value="9b2nM" />
-    <option name="linkedProjectId" value="3e9lD" />
+    <option name="lastReportId" value="76mmo" />
+    <option name="linkedProjectId" value="AND51" />
     <option name="linkedProjectName" value="SMaaS_API" />
     <option name="organizationId" value="AmqNE" />
     <option name="userId" value="zELlx" />
   </component>
-  <component name="QodanaReportsService">
-    <option name="descriptions">
-      <ReportDescription localRun="true" path="C:\Users\erpes\AppData\Local\Temp\qodana_output\qodana.sarif.json" publishedReportLink="https://qodana.cloud/projects/3e9lD/reports/9b2nM" reportGuid="c890653e-4cf6-456c-92cf-ea5d7abfa7e6" reportId="SysML_PLM/qodana/2024-07-28" />
+  <component name="QodanaHighlightedReportService">
+    <option name="cloudReportPersistedInfo">
+      <CloudReportPersistedInfo>
+        <option name="projectId" value="AND51" />
+        <option name="reportId" value="76mmo" />
+      </CloudReportPersistedInfo>
     </option>
+  </component>
+  <component name="QodanaIsSelectedPersistenceService">
+    <option name="selectedOrLoading" value="true" />
+  </component>
+  <component name="QodanaSettings">
+    <option name="autoLoadCloudReport" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\erpes\PycharmProjects\SysML_PLM\src\adapters\celery" />
       <recent name="C:\Users\erpes\PycharmProjects\SysML_PLM\src\interface" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\erpes\PycharmProjects\SysML_PLM\src\adapters\web" />
-      <recent name="C:\Users\erpes\PycharmProjects\SysML_PLM\src\adapters\web\api" />
-      <recent name="C:\Users\erpes\PycharmProjects\SysML_PLM\src\adapters\persistence" />
-      <recent name="C:\Users\erpes\PycharmProjects\SysML_PLM\src\domain\models" />
-      <recent name="C:\Users\erpes\PycharmProjects\SysML_PLM\src\application\services" />
+      <recent name="C:\Users\erpes\PycharmProjects\SysML_PLM\src\adapters\celery" />
+      <recent name="C:\Users\erpes\PycharmProjects\SysML_PLM\src\application\factories" />
+      <recent name="C:\Users\erpes\PycharmProjects\SysML_PLM\src\application\processing" />
+      <recent name="C:\Users\erpes\PycharmProjects\SysML_PLM\src\infrastructure" />
+      <recent name="C:\Users\erpes\PycharmProjects\SysML_PLM" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.uvicorn">
-    <configuration name="test_main | Full project" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/test_main.http" index="3" requestIdentifier="Full project" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="test_main | Neo4j" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/test_main.http" index="6" requestIdentifier="Neo4j" runType="Run single request">
+  <component name="RedisClientHelper">
+    <option name="connections">
+      <list>
+        <ConnectionInfo>
+          <option name="id" value="2c742aed-2195-4320-8c89-df283aec489f" />
+          <option name="name" value="Redis smaas" />
+          <option name="separator" value=":" />
+          <option name="sslPublicKeyPath" value="" />
+          <option name="url" value="0.0.0.0:6379" />
+        </ConnectionInfo>
+        <ConnectionInfo>
+          <option name="dbCount" value="16" />
+          <option name="id" value="018c7a13-b4d4-485f-8c12-837e434f4d06" />
+          <option name="name" value="Redis smaas copy" />
+          <option name="separator" value=":" />
+          <option name="sslPublicKeyPath" value="" />
+          <option name="url" value="127.0.0.7:6379" />
+        </ConnectionInfo>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="test_main | Neo4j 1 diagrame" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/test_main.http" index="6" requestIdentifier="Neo4j 1 diagrame" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="test_main | Only json" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/test_main.http" index="5" requestIdentifier="Only json" runType="Run single request">
@@ -262,7 +390,7 @@
     <configuration name="test_main | Project diagramme MD et json" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/test_main.http" index="4" requestIdentifier="Project diagramme MD et json" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="uvicorn" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SysML_PLM" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -276,47 +404,51 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <EXTENSION ID="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
-        <option name="IS_SUBST" value="false" />
-        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
-        <option name="IS_IGNORE_MISSING_FILES" value="false" />
-        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
-        </ENTRIES>
-      </EXTENSION>
-      <option name="SCRIPT_NAME" value="uvicorn" />
-      <option name="PARAMETERS" value="main:app --reload --log-level debug" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="true" />
+      <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="HTTP Request.test_main | Neo4j" />
-      <item itemvalue="HTTP Request.test_main | Full project" />
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="HTTP Request.test_main | Neo4j 1 diagrame" />
       <item itemvalue="HTTP Request.test_main | Only json" />
       <item itemvalue="HTTP Request.test_main | Project diagramme MD et json" />
-      <item itemvalue="Python.uvicorn" />
+      <item itemvalue="Python.main" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.uvicorn" />
-        <item itemvalue="HTTP Request.test_main | Neo4j" />
         <item itemvalue="HTTP Request.test_main | Project diagramme MD et json" />
+        <item itemvalue="HTTP Request.test_main | Neo4j 1 diagrame" />
+        <item itemvalue="Python.main" />
         <item itemvalue="HTTP Request.test_main | Only json" />
-        <item itemvalue="HTTP Request.test_main | Full project" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.18034.82" />
-        <option value="bundled-python-sdk-975db3bf15a3-2767605e8bc2-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.18034.82" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.19072.16" />
+        <option value="bundled-python-sdk-8336bb23522e-2767605e8bc2-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.19072.16" />
       </set>
     </attachedChunks>
   </component>
@@ -329,11 +461,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task id="Default" summary="Default task">
-      <changelist id="" name="Changes" comment="" />
+      <branch name="main" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" />
+      <changelist id="dc2b9e54-c5dc-433d-bb02-2849f5cdb327" name="Changes" comment="" />
       <created>1721966206277</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1722225235745</updated>
+      <updated>1723017952792</updated>
       <workItem from="1721966265929" duration="7320000" />
       <workItem from="1721973822748" duration="14273000" />
       <workItem from="1721988691672" duration="366000" />
@@ -346,8 +479,17 @@
       <workItem from="1722061392865" duration="380000" />
       <workItem from="1722061797598" duration="6086000" />
       <workItem from="1722225225289" duration="11000" />
+      <workItem from="1722315782893" duration="404000" />
+      <workItem from="1722507880122" duration="231000" />
+      <workItem from="1722682403653" duration="549000" />
+      <workItem from="1722686933959" duration="335000" />
+      <workItem from="1722838770053" duration="56000" />
+      <workItem from="1722919606286" duration="26000" />
+      <workItem from="1722919741057" duration="233000" />
+      <workItem from="1722997581513" duration="3737000" />
+      <workItem from="1723017912915" duration="38000" />
     </task>
-    <task active="true" id="LOCAL-00006" summary="Logs, instanciation, performance traitement documents">
+    <task id="LOCAL-00006" summary="Logs, instanciation, performance traitement documents">
       <branch name="main" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" original="true" />
       <branch name="Logs-instanciation" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" />
       <changelist id="a4765a1e-5880-4c04-84f6-ac25e5637da8" name="Logs, instanciation, performance traitement documents" comment="" />
@@ -355,13 +497,13 @@
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1722306446159</updated>
+      <updated>1722315782297</updated>
       <workItem from="1722224984567" duration="237000" />
       <workItem from="1722225236322" duration="9970000" />
       <workItem from="1722244599447" duration="6318000" />
       <workItem from="1722305716375" duration="494000" />
       <workItem from="1722306241567" duration="25000" />
-      <workItem from="1722306446641" duration="8447000" />
+      <workItem from="1722306446641" duration="9105000" />
     </task>
     <task id="LOCAL-00007" summary="ajout du script graph et modif des logs pour niveau debug">
       <changelist id="a4765a1e-5880-4c04-84f6-ac25e5637da8" name="Logs, instanciation, performance traitement documents" comment="ajout du script graph et modif des logs pour niveau debug" />
@@ -373,7 +515,175 @@
       <updated>1722306446159</updated>
       <workItem from="1722306323381" duration="122000" />
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="ajout du script graph et modif des logs pour niveau debug">
+      <option name="closed" value="true" />
+      <created>1722315560062</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1722315560062</updated>
+    </task>
+    <task id="SMA-1" summary="integrate create graph script">
+      <branch name="main" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" original="true" />
+      <branch name="SMA-1" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" />
+      <changelist id="253ac8a8-24f6-4dea-8103-ff2eb466a1cd" name="correct graph creation" comment="correct graph creation" />
+      <created>1722305980638</created>
+      <option name="issue" value="true" />
+      <url>https://thenocodeguy.youtrack.cloud/issue/SMA-1</url>
+      <option name="number" value="1" />
+      <option name="presentableId" value="SMA-1" />
+      <option name="project" value="SMA" />
+      <updated>1722507804801</updated>
+      <workItem from="1722316197176" duration="455000" />
+      <workItem from="1722321023563" duration="13554000" />
+      <workItem from="1722336551416" duration="6723000" />
+      <workItem from="1722390767093" duration="8109000" />
+      <workItem from="1722399583601" duration="137000" />
+      <workItem from="1722399744365" duration="9736000" />
+      <workItem from="1722417404306" duration="3195000" />
+      <workItem from="1722480187396" duration="1283000" />
+      <workItem from="1722481505155" duration="475000" />
+      <workItem from="1722481997998" duration="161000" />
+      <workItem from="1722482179476" duration="9215000" />
+      <workItem from="1722491694325" duration="11058000" />
+      <workItem from="1722507661167" duration="143000" />
+    </task>
+    <task id="LOCAL-00010" summary="correct graph creation">
+      <branch name="SMA-1" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" original="true" />
+      <branch name="correct-graph" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" />
+      <changelist id="253ac8a8-24f6-4dea-8103-ff2eb466a1cd" name="correct graph creation" comment="" />
+      <created>1722504282285</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1722507879927</updated>
+      <workItem from="1722504292708" duration="1799000" />
+      <workItem from="1722506631001" duration="1018000" />
+      <workItem from="1722507805478" duration="74000" />
+    </task>
+    <task id="LOCAL-00011" summary="correct graph creation">
+      <option name="closed" value="true" />
+      <created>1722505872840</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1722505872840</updated>
+    </task>
+    <task id="LOCAL-00012" summary="correct graph creation">
+      <option name="closed" value="true" />
+      <created>1722506810007</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1722506810007</updated>
+    </task>
+    <task id="LOCAL-00013" summary="correct graph creation">
+      <option name="closed" value="true" />
+      <created>1722507541679</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1722507541679</updated>
+    </task>
+    <task id="SMA-2" summary="Graph Rag, Rag Adapter + EMbedding">
+      <branch name="main" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" original="true" />
+      <branch name="SMA-2" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" />
+      <created>1722508075117</created>
+      <option name="issue" value="true" />
+      <url>https://thenocodeguy.youtrack.cloud/issue/SMA-2</url>
+      <option name="number" value="2" />
+      <option name="presentableId" value="SMA-2" />
+      <option name="project" value="SMA" />
+      <updated>1722682403367</updated>
+      <workItem from="1722508113466" duration="332000" />
+      <workItem from="1722523881544" duration="42000" />
+      <workItem from="1722572572629" duration="138000" />
+      <workItem from="1722572727592" duration="8912000" />
+      <workItem from="1722590139487" duration="3806000" />
+      <workItem from="1722648605034" duration="11963000" />
+      <workItem from="1722663394316" duration="17340000" />
+    </task>
+    <task id="LOCAL-00014" summary="similarity_processing_service.py is working well">
+      <option name="closed" value="true" />
+      <created>1722581764239</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1722581764297</updated>
+    </task>
+    <task id="LOCAL-00015" summary="similarity_processing_service.py is working well">
+      <option name="closed" value="true" />
+      <created>1722655871705</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1722655871772</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Seems to work but the graph model and similarity needs to been question">
+      <option name="closed" value="true" />
+      <created>1722682130882</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1722682130920</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Reflex integration">
+      <branch name="main" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" original="true" />
+      <branch name="Reflex-integration" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" />
+      <branch name="Reflex-integration" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" original="true" />
+      <created>1722838804892</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1722839821599</updated>
+      <workItem from="1722838826351" duration="972000" />
+    </task>
+    <task id="SMA-7" summary="add reflex to projet">
+      <branch name="Reflex-integration" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" />
+      <created>1722839730316</created>
+      <option name="issue" value="true" />
+      <url>https://thenocodeguy.youtrack.cloud/issue/SMA-7</url>
+      <option name="number" value="7" />
+      <option name="presentableId" value="SMA-7" />
+      <option name="project" value="SMA" />
+      <updated>1722919605726</updated>
+      <workItem from="1722839822076" duration="4595000" />
+      <workItem from="1722845342303" duration="7629000" />
+      <workItem from="1722919450713" duration="138000" />
+    </task>
+    <task active="true" id="SMA-11" summary="File uploading, processing, diagram retrieval, JSON processing with button press.">
+      <branch name="main" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" original="true" />
+      <branch name="SMA-11" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" />
+      <changelist id="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" name="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press." comment="" />
+      <created>1723010677087</created>
+      <option name="issue" value="true" />
+      <url>https://thenocodeguy.youtrack.cloud/issue/SMA-11</url>
+      <option name="number" value="11" />
+      <option name="presentableId" value="SMA-11" />
+      <option name="project" value="SMA" />
+      <updated>1723268681267</updated>
+      <workItem from="1723017953054" duration="7659000" />
+      <workItem from="1723025976904" duration="127000" />
+      <workItem from="1723033391963" duration="3370000" />
+      <workItem from="1723037119590" duration="1241000" />
+      <workItem from="1723039357852" duration="272000" />
+      <workItem from="1723040024015" duration="3566000" />
+      <workItem from="1723077754253" duration="38602000" />
+      <workItem from="1723167305691" duration="110000" />
+      <workItem from="1723167431347" duration="426000" />
+      <workItem from="1723167926912" duration="918000" />
+      <workItem from="1723168873639" duration="42000" />
+      <workItem from="1723168929068" duration="546000" />
+      <workItem from="1723169502928" duration="1975000" />
+      <workItem from="1723171523649" duration="3872000" />
+      <workItem from="1723175494652" duration="2441000" />
+      <workItem from="1723178132894" duration="20770000" />
+      <workItem from="1723257276745" duration="57000" />
+      <workItem from="1723257349057" duration="3899000" />
+      <workItem from="1723268052141" duration="1406000" />
+    </task>
+    <option name="localTasksCounter" value="18" />
+    <option name="clearContext" value="false" />
     <servers>
       <YouTrack url="https://thenocodeguy.youtrack.cloud">
         <username>random</username>
@@ -411,19 +721,14 @@
     <MESSAGE value="app working" />
     <MESSAGE value="Logs, instanciation, performance traitement documents" />
     <MESSAGE value="added qodana" />
+    <MESSAGE value="correct graph creation" />
+    <MESSAGE value="similarity_processing_service.py is working well" />
+    <MESSAGE value="Seems to work but the graph model and similarity needs to been question" />
     <MESSAGE value="ajout du script graph et modif des logs pour niveau debug" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout du script graph et modif des logs pour niveau debug" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <default-breakpoints>
-        <breakpoint type="python-exception">
-          <properties notifyOnTerminate="true" exception="BaseException">
-            <option name="notifyOnTerminate" value="true" />
-          </properties>
-        </breakpoint>
-      </default-breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="SMA-1 integrate create graph script" />
+    <MESSAGE value="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration." />
+    <MESSAGE value="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press." />
+    <option name="LAST_COMMIT_MESSAGE" value="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SysML_PLM$main.coverage" NAME="main Coverage Results" MODIFIED="1722229112541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
