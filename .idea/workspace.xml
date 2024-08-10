@@ -32,39 +32,10 @@
     </treeState>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" name="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press." comment="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press.">
-      <change beforePath="$PROJECT_DIR$/diagrams/cdc_1/BDD_diagram.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagrams/cdc_1/BDD_entities.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagrams/cdc_1/REQ_diagram.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagrams/cdc_1/REQ_entities.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagrams/cdc_1/UC_diagram.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagrams/cdc_1/UC_entities.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagrams/crushing_mill/crushing_mill_BDD_diagram.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagrams/crushing_mill/crushing_mill_BDD_entities.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagrams/crushing_mill/crushing_mill_REQ_diagram.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagrams/crushing_mill/crushing_mill_REQ_entities.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagrams/crushing_mill/crushing_mill_UC_diagram.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagrams/crushing_mill/crushing_mill_UC_entities.json" beforeDir="false" />
-    </list>
-    <list id="dc2b9e54-c5dc-433d-bb02-2849f5cdb327" name="Changes" comment="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration.">
-      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/adapters/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/adapters/persistence/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/adapters/web/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/services/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/ports/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_07_2024_16_06_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_07_2024_16_33_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_07_2024_16_33_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.log" beforeDir="false" />
-    </list>
+    <list default="true" id="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" name="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press." comment="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press." />
+    <list id="dc2b9e54-c5dc-433d-bb02-2849f5cdb327" name="Changes" comment="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration." />
     <list id="253ac8a8-24f6-4dea-8103-ff2eb466a1cd" name="correct graph creation" comment="correct graph creation" />
-    <list id="a4765a1e-5880-4c04-84f6-ac25e5637da8" name="Logs, instanciation, performance traitement documents" comment="ajout du script graph et modif des logs pour niveau debug">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list id="a4765a1e-5880-4c04-84f6-ac25e5637da8" name="Logs, instanciation, performance traitement documents" comment="ajout du script graph et modif des logs pour niveau debug" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -203,7 +174,7 @@
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "spentTimePerTaskStorage.store": "{}",
     "tasks.open.task.update.state.enabled": "true",
-    "timeTracker.activityTracker": "com.github.jk1.ytplugin.timeTracker.ActivityTracker@1b9e24c0",
+    "timeTracker.activityTracker": "com.github.jk1.ytplugin.timeTracker.ActivityTracker@2a78b629",
     "timeTracker.comment": "",
     "timeTracker.inactivityPeriodInMills": "600000",
     "timeTracker.isAutoTrackingEnable": "true",
@@ -217,11 +188,11 @@
     "timeTracker.isWhenProjectClosedEnabled": "true",
     "timeTracker.issueId": "SMA-11",
     "timeTracker.issueIdReadable": "SMA-11",
-    "timeTracker.pausedTime": "2",
+    "timeTracker.pausedTime": "343131",
     "timeTracker.query": "admin",
-    "timeTracker.recordedTime": "13",
+    "timeTracker.recordedTime": "0",
     "timeTracker.scheduledPeriod": "19:00:0",
-    "timeTracker.startTime": "1723269590526",
+    "timeTracker.startTime": "1723270282825",
     "timeTracker.timeInMills": "0",
     "timeTracker.type": "Développement",
     "vue.rearranger.settings.migration": "true"
@@ -292,13 +263,16 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.main">
-    <configuration name="test_main | Neo4j 1 diagrame" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/test_main.http" index="6" requestIdentifier="Neo4j 1 diagrame" runType="Run single request">
+    <configuration name="test_main | Neo4j full project" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" editBeforeRun="true" temporary="true" nameIsGenerated="true" environment="cdc_1" path="$PROJECT_DIR$/test_main.http" index="7" requestIdentifier="Neo4j full project" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="test_main | Only json" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/test_main.http" index="5" requestIdentifier="Only json" runType="Run single request">
+    <configuration name="test_main | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/test_main.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="test_main | Project diagramme MD et json" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/test_main.http" index="4" requestIdentifier="Project diagramme MD et json" runType="Run single request">
+    <configuration name="test_main | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/test_main.http" index="3" requestIdentifier="#3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="test_main | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/test_main.http" index="4" requestIdentifier="#4" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -330,28 +304,20 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-      <item itemvalue="HTTP Request.test_main | Neo4j 1 diagrame" />
-      <item itemvalue="HTTP Request.test_main | Only json" />
-      <item itemvalue="HTTP Request.test_main | Project diagramme MD et json" />
+      <item itemvalue="HTTP Request.test_main | #1" />
+      <item itemvalue="HTTP Request.test_main | #3" />
+      <item itemvalue="HTTP Request.test_main | #4" />
+      <item itemvalue="HTTP Request.test_main | Neo4j full project" />
       <item itemvalue="Python.main" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.test_main | Project diagramme MD et json" />
-        <item itemvalue="HTTP Request.test_main | Neo4j 1 diagrame" />
         <item itemvalue="Python.main" />
-        <item itemvalue="HTTP Request.test_main | Only json" />
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="HTTP Request.test_main | Neo4j full project" />
+        <item itemvalue="HTTP Request.test_main | #4" />
+        <item itemvalue="HTTP Request.test_main | #3" />
+        <item itemvalue="HTTP Request.test_main | #1" />
       </list>
     </recent_temporary>
   </component>
@@ -572,7 +538,7 @@
       <option name="number" value="11" />
       <option name="presentableId" value="SMA-11" />
       <option name="project" value="SMA" />
-      <updated>1723269590481</updated>
+      <updated>1723269949547</updated>
       <workItem from="1723017953054" duration="7659000" />
       <workItem from="1723025976904" duration="127000" />
       <workItem from="1723033391963" duration="3370000" />
