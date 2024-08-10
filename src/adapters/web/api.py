@@ -7,15 +7,16 @@ from contextlib import asynccontextmanager
 import logging
 from typing import Any, Dict
 
-from src.adapters.web.dependencies import (
+from src.infrastructure.celery_app_state import CeleryAppState, celery_app_state
+from src.infrastructure.dependencies import (
     get_project_manager,
     get_project_processing_service,
     get_neo4j_processing_service,
     get_neo4j_adapter,
     get_async_task_adapter
 )
-from src.app_state import app_state
-from src.utils.config import GLOBAL_CONFIG
+from src.infrastructure.app_state import app_state, AppState
+from src.infrastructure.config import config
 
 logger = logging.getLogger("uvicorn.error")
 
@@ -24,10 +25,18 @@ logger = logging.getLogger("uvicorn.error")
 async def lifespan(app: FastAPI):
     logger.info("Initializing application state...")
     try:
-        app_state.project_manager
+        # Initialisation des propriétés cached si nécessaire
+        _ = app_state.project_manager
+        _ = app_state.neo4j_adapter
+        
+        # Initialisation de CeleryAppState
+        _ = celery_app_state.project_processing_service
+        _ = celery_app_state.neo4j_processing_service
+        
         logger.info("Application state initialized successfully.")
     except Exception as e:
         logger.error(f"Error during startup: {str(e)}")
+        logger.exception("Detailed error:")  # Ajoutez cette ligne pour plus de détails
     
     yield
     
@@ -36,13 +45,13 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(title="SysML PLM API", lifespan=lifespan)
-
+cors_config = config.get_cors_config()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=GLOBAL_CONFIG['cors']['allowed_origins'],
-    allow_credentials=GLOBAL_CONFIG['cors']['allow_credentials'],
-    allow_methods=GLOBAL_CONFIG['cors']['allow_methods'],
-    allow_headers=GLOBAL_CONFIG['cors']['allow_headers'],
+    allow_origins=cors_config['allowed_origins'],
+    allow_credentials=cors_config['allow_credentials'],
+    allow_methods=cors_config['allow_methods'],
+    allow_headers=cors_config['allow_headers'],
 )
 
 

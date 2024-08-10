@@ -5,23 +5,22 @@ from langchain_openai import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from tenacity import retry, stop_after_attempt, wait_random_exponential
 
-from src.adapters.web.openai_embedding_adapter import OpenAIEmbeddingAdapter
-from src.domain.ports.rag_adapter_protocol import RAGAdapterProtocol
-from src.adapters.persistence.neo4j_persistence_adapter import Neo4jPersistenceAdapter
+from src.infrastructure.config import config
 
 logger = logging.getLogger("uvicorn.error")
 
-#TODO charger la config depuis global config, vérifier si on est bon pour préparer un adapter
-class RAGAdapter(RAGAdapterProtocol):
-    def __init__(self, config: Dict, embedding_adapter: OpenAIEmbeddingAdapter, neo4j_adapter: Neo4jPersistenceAdapter):
-        self.config = config
+
+class RAGAdapter:
+    def __init__(self, embedding_adapter, neo4j_adapter):
+        self.openai_model = config.global_config.OPENAI_MODEL
+        self.openai_temperature = config.global_config.OPENAI_TEMPERATURE
         self.embedding_adapter = embedding_adapter
-        self.openai_chat = ChatOpenAI(
-            model_name=config["openai"]["model"],
-            temperature=config["openai"]["temperature"],
-            openai_api_key=config["openai"]["api_key"]
-        )
         self.neo4j_adapter = neo4j_adapter
+        self.openai_chat = ChatOpenAI(
+            model_name=self.openai_model,
+            temperature=self.openai_temperature,
+            openai_api_key=config.global_config.OPENAI_API_KEY
+        )
     
     def fallback_generation(self, prompt_template: str, content: str) -> str:
         prompt = PromptTemplate.from_template(prompt_template)

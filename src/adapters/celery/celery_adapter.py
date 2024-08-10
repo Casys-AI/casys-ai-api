@@ -1,11 +1,12 @@
 # src/adapters/celery/celery_adapter.py
 from typing import Callable, List, Dict, Any
-from src.domain.ports.async_task_port import AsyncTaskPort
+from src.domain.ports.async_task_protocol import AsyncTaskProtocol
 from celery import Celery
 from celery.result import AsyncResult
 import asyncio
 
-class CeleryAdapter(AsyncTaskPort):
+
+class CeleryAdapter(AsyncTaskProtocol):
     def __init__(self, app: Celery):
         self.app = app
     

@@ -2,7 +2,6 @@
 openai:
   model: "gpt-4o"
   temperature: 0
-  api_key: "sk-proj-Qfza5YLxdd9cBnJN9ZGRT3BlbkFJmB1Oaq2KCwobafvbQJnj"
 
 text_splitter:
   chunk_size: 4000
@@ -12,32 +11,20 @@ similarity:
   embedding_weight: 0.7
   keyword_weight: 0.3
   threshold: 0.8
-neo4j:
-  uri: "bolt://127.0.0.1:7687"
-  user: "neo4j"
-  password: "password"
 
-server:
-  host: "0.0.0.0"
-  port: 8000
-#il ne veut pas marcher en enlever le 127
 celery:
-  broker: "redis://127.0.0.1:6379/0"
-  backend: "redis://127.0.0.1:6379/0"
   include:
-      - src.adapters.celery.tasks
+    - src.adapters.celery.tasks
   config:
     result_expires: 3600
     task_track_started: true
-
-
 
 # Configuration CORS
 cors:
   allowed_origins:
     - "http://localhost:3000"  # Pour le développement Svelte
     - "http://localhost:5000"  # Pour le serveur de production Svelte
-    - "http://localhost:6379" # Redis
+    - "http://localhost:6379"  # Redis
   allow_credentials: true
   allow_methods: ["*"]
   allow_headers: ["*"]

@@ -1,51 +1,25 @@
 import json
 import logging
 import os
-import yaml
 from typing import Dict, Any, List
-from contextlib import contextmanager
+from pathlib import Path
+
+from src.infrastructure.config import config
 
 logger = logging.getLogger("uvicorn.error")
 
 
-#TODO ici configurer la gestion des fichiers / diagrammes par utilisateurs et séparer de la config globale
 class ProjectManagementService:
-    def __init__(self, config_path: str):
-        self.config_path = config_path
-        # Assuming load_config() loads the configuration
-        self.config = self.load_config(self.config_path)
-        if self.config is None:
-            logger.error(f"Failed to load config from {self.config_path}")
-        logger.debug(f"Loaded config in ProjectManagementService: {self.config}")
-    
-    def load_config(self, config_path):
-        return self.handle_file(self.config_path)  # use the instance variable self.config_path
-    
-    @staticmethod
-    def handle_file(file_path: str) -> Dict[str, Any]:
-        try:
-            with open(file_path, "r") as config_file:
-                content = yaml.safe_load(config_file)
-            return content
-        except Exception as e:
-            logger.exception(f"Error occurred while loading the configuration file: {str(e)}")
-            raise
-    
-    # @contextmanager
-    # def log_project_processing(self, project_name: str):
-    #     logger.info(f"Début du traitement du projet : {project_name}")
-    #     try:
-    #         yield
-    #     except Exception as e:
-    #         logger.exception(f"Erreur lors du traitement du projet {project_name}")
-    #     finally:
-    #         logger.info(f"Fin du traitement du projet : {project_name}")
+    def __init__(self):
+        self.config = config
+        logger.debug(f"Initialized ProjectManagementService with config: {self.config}")
     
     def find_project(self, project_name: str) -> Dict[str, Any]:
-        for project in self.config['projects']:
-            if project['name'] == project_name:
-                return project
-        raise ValueError(f"Project not found: {project_name}")
+        try:
+            return self.config.get_project_config(project_name)
+        except ValueError as e:
+            logger.error(f"Project not found: {project_name}")
+            raise
     
     def get_project_file_paths(self, project_name: str) -> Dict[str, Any]:
         project = self.find_project(project_name)
@@ -69,7 +43,7 @@ class ProjectManagementService:
         }
     
     def get_diagram_types(self) -> List[str]:
-        return self.config['diagram_types']
+        return self.config.get_diagram_types()
     
     def get_project_input_path(self, project_name: str) -> str:
         return self.get_project_file_paths(project_name)['input']
@@ -87,50 +61,49 @@ class ProjectManagementService:
         try:
             with open(prompt_path, 'r', encoding='utf-8') as file:
                 content = file.read()
-                logger.debug(f"Contenu du prompt lu : {content[:100]}...")
+                logger.debug(f"Prompt content read: {content[:100]}...")
                 return content
         except FileNotFoundError:
-            logger.error(f"Le fichier de prompt n'a pas été trouvé : {prompt_path}")
+            logger.error(f"Prompt file not found: {prompt_path}")
         except Exception as e:
-            logger.exception(f"Erreur lors de la lecture du fichier de prompt {prompt_path}")
+            logger.exception(f"Error reading prompt file {prompt_path}")
         return ""
     
     def save_diagram(self, diagram: str, file_path: str) -> None:
-        self._save_file(file_path, diagram, "Diagramme")
+        self._save_file(file_path, diagram, "Diagram")
     
     def save_entities_and_relationships(self, data: Dict[str, Any], file_path: str) -> None:
-        self._save_file(file_path, json.dumps(data, ensure_ascii=False, indent=2), "Entités et relations")
+        self._save_file(file_path, json.dumps(data, ensure_ascii=False, indent=2), "Entities and relationships")
         logger.debug(
-            f"Nombre d'entités : {len(data.get('entities', []))}, Nombre de relations : {len(data.get('relationships', []))}")
+            f"Number of entities: {len(data.get('entities', []))}, Number of relationships: {len(data.get('relationships', []))}")
     
     def _save_file(self, file_path: str, content: str, file_type: str) -> None:
         try:
             os.makedirs(os.path.dirname(file_path), exist_ok=True)
             with open(file_path, 'w', encoding='utf-8') as file:
                 file.write(content)
-            logger.info(f"{file_type} sauvegardé : {file_path}")
-            logger.debug(f"Contenu du {file_type.lower()} : {content[:100]}...")
+            logger.info(f"{file_type} saved: {file_path}")
+            logger.debug(f"{file_type} content: {content[:100]}...")
         except Exception as e:
-            logger.exception(f"Erreur lors de la sauvegarde du {file_type.lower()} {file_path}")
+            logger.exception(f"Error saving {file_type.lower()} {file_path}")
     
     def save_json(self, data: Dict[str, Any], file_path: str) -> None:
         try:
             with open(file_path, 'w', encoding='utf-8') as f:
                 json.dump(data, f, ensure_ascii=False, indent=2)
-            logger.info(f"JSON sauvegardé : {file_path}")
+            logger.info(f"JSON saved: {file_path}")
         except Exception as e:
-            logger.exception(f"Erreur lors de la sauvegarde du JSON {file_path}")
+            logger.exception(f"Error saving JSON {file_path}")
     
     def get_project_type(self, project_name: str) -> str:
         project = self.find_project(project_name)
         return project['type']
     
     def get_project_names(self) -> List[str]:
-        return [project['name'] for project in self.config['projects']]
+        return [project['name'] for project in self.config.yaml_config['projects']]
     
     def get_project_names_by_type(self, project_type: str) -> List[str]:
-        return [project['name'] for project in self.config['projects'] if project['type'] == project_type]
+        return [project['name'] for project in self.config.yaml_config['projects'] if project['type'] == project_type]
     
     def get_config(self):
-        logger.debug(f"get_config() called. Current config: {self.config}")
         return self.config

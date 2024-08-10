@@ -1,5 +1,3 @@
-# src/application/services/neo4j_processing_service.py
-
 import logging
 import json
 from typing import Dict, Any, List
@@ -8,7 +6,9 @@ from src.application.services.project_management_service import ProjectManagemen
 from src.application.services.similarity_processing_service import SimilarityService
 from src.domain.ports.embedding_adapter_protocol import EmbeddingAdapterProtocol
 from src.domain.ports.neo4j_persistence_adapter_protocol import Neo4jPersistenceAdapterProtocol
-from src.domain.ports.async_task_port import AsyncTaskPort
+from src.domain.ports.async_task_protocol import AsyncTaskProtocol
+from src.application.factories.embedding_service_factory import EmbeddingServiceFactory
+from src.infrastructure.config import config
 
 logger = logging.getLogger("uvicorn.error")
 
@@ -33,12 +33,11 @@ def _process_json_file(file_path: str) -> Dict[str, Any]:
 
 class Neo4jProcessingService:
     def __init__(self, project_manager: ProjectManagementService,
-                 embedding_adapter: EmbeddingAdapterProtocol,
                  neo4j_adapter: Neo4jPersistenceAdapterProtocol,
                  similarity_service: SimilarityService,
-                 async_task_adapter: AsyncTaskPort):
+                 async_task_adapter: AsyncTaskProtocol):
         self.project_manager = project_manager
-        self.embedding_adapter = embedding_adapter
+        self.embedding_adapter = EmbeddingServiceFactory.create_embedding_service(config.global_config.OPENAI_API_KEY)
         self.neo4j_adapter = neo4j_adapter
         self.similarity_service = similarity_service
         self.async_task_adapter = async_task_adapter
@@ -145,6 +144,6 @@ class Neo4jProcessingService:
             return {"status": "error", "message": f"Error monitoring task: {str(e)}"}
     
     async def update_processing_status(self, status: Dict[str, Any]):
-        from src.app_state import app_state
+        from src.infrastructure.app_state import app_state
         app_state.processing_status = status
         logger.info(f"Task status updated: {status['status']}")

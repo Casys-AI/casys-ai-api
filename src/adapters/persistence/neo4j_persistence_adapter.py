@@ -5,24 +5,25 @@ from typing import Dict, List, Any, Optional
 from neo4j import GraphDatabase, Driver, Session
 from neo4j.exceptions import Neo4jError, ServiceUnavailable
 from src.domain.ports.neo4j_persistence_adapter_protocol import Neo4jPersistenceAdapterProtocol
-
+from src.infrastructure.config import config
 logger = logging.getLogger("uvicorn.error")
 
 
 # ajouter des transaction sur les requêtes neo4j,par un rollback
-#TODO ne pas avoir la config chargée par project manager ici
+
 class Neo4jPersistenceAdapter(Neo4jPersistenceAdapterProtocol):
-    def __init__(self, config: Dict[str, Any]):
-        self.config = config
+    def __init__(self):
+        self.uri = config.global_config.NEO4J_URI
+        self.user = config.global_config.NEO4J_USER
+        self.password = config.global_config.NEO4J_PASSWORD
         self.driver: Optional[Driver] = None
         self.connect()
     
     def connect(self) -> None:
         try:
             self.driver = GraphDatabase.driver(
-                self.config["neo4j"]["uri"],
-                auth=(self.config["neo4j"]["user"], self.config["neo4j"]["password"])
-            )
+                self.uri,
+                auth=(self.user, self.password))
             with self.driver.session() as session:
                 session.run("RETURN 1")
             logger.info("Neo4j connection established successfully")
