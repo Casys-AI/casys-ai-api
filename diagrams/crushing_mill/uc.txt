@@ -1,0 +1,14 @@
+Based on the following requirements, create a SysML Use Case Diagram in Mermaid 
+
+Requirements:
+{content}
+
+Follow these guidelines:
+1. Identify the main use cases for the crushing mill.
+2. Use a hierarchical structure with containment relationships.
+3. Include IDs and text descriptions for each use case.
+
+
+
+
+

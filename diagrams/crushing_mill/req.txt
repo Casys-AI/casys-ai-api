@@ -1,0 +1,18 @@
+Create a SysML Requirements Diagram in Mermaid syntax based the following crushing mill content
+
+Content to analyze:
+{content}
+
+Follow these guidelines:
+1. Identify the main system requirement and sub-requirements 
+2. Use a hierarchical structure with containment relationships.
+3. Include IDs, text descriptions, and risk levels for each requirement.
+4. Use 'contains' relationships to show hierarchy.
+5. Use 'derives' relationships where appropriate.
+6. Include at least one 'satisfies' relationship if there's a clear satisfaction of a requirement by a system component.
+8. Use Mermaid's 'requirementDiagram' syntax.
+9. Avoid using hyphens (-) in requirement names or text.
+10. Use only 'requirement', 'functionalRequirement', and 'performanceRequirement' as requirement types.
+11. Use only 'test, analysis, inspection or demonstration' as verification methods.
+
+Provide the Mermaid code for the requirements diagram, ensuring it's detailed and accurately reflects a coffee machine system.

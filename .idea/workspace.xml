@@ -6,36 +6,19 @@
   <component name="BuildServerSettings">
     <option name="LOGIN" value="erpesle" />
     <option name="SERVER_URL" value="http://localhost:8111" />
-    <option name="TOOL_WINDOW_SELECTED_CONTENT_INDEX" value="1" />
     <treeState key="changes">
-      <expandedPath>
-        <pathElement>
-          <option name="myNodeId" value="2" />
-          <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.ChangesGroupDescriptor" />
-        </pathElement>
-      </expandedPath>
       <selectedPath>
         <pathElement>
-          <option name="myNodeId" value="2" />
-          <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.ChangesGroupDescriptor" />
+          <option name="myNodeId" value="helperText" />
+          <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.LinkedTextDescriptor" />
         </pathElement>
       </selectedPath>
     </treeState>
     <treeState key="project">
-      <expandedPath>
-        <pathElement>
-          <option name="myNodeId" value="project11" />
-          <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.ProjectDescriptor" />
-        </pathElement>
-      </expandedPath>
       <selectedPath>
         <pathElement>
           <option name="myNodeId" value="project11" />
           <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.ProjectDescriptor" />
-        </pathElement>
-        <pathElement>
-          <option name="myNodeId" value="bt11" />
-          <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.BuildTypeDescriptor" />
         </pathElement>
       </selectedPath>
     </treeState>
@@ -50,7 +33,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" name="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press." comment="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diagrams/cdc_1/BDD_diagram.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/diagrams/cdc_1/BDD_entities.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/diagrams/cdc_1/REQ_diagram.md" beforeDir="false" />
@@ -63,7 +45,6 @@
       <change beforePath="$PROJECT_DIR$/diagrams/crushing_mill/crushing_mill_REQ_entities.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/diagrams/crushing_mill/crushing_mill_UC_diagram.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/diagrams/crushing_mill/crushing_mill_UC_entities.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/qodana.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/qodana.yaml" afterDir="false" />
     </list>
     <list id="dc2b9e54-c5dc-433d-bb02-2849f5cdb327" name="Changes" comment="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration.">
       <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
@@ -157,76 +138,6 @@
     <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/different-responses.http" environment="test" />
     <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" environment="test" />
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/.idea/workspace.xml">
-      <ranges>
-        <range start1="8" end1="9" start2="8" end2="8" changelist="a4765a1e-5880-4c04-84f6-ac25e5637da8" />
-        <range start1="10" end1="16" start2="9" end2="9" changelist="a4765a1e-5880-4c04-84f6-ac25e5637da8" />
-        <range start1="18" end1="20" start2="11" end2="13" changelist="a4765a1e-5880-4c04-84f6-ac25e5637da8" />
-        <range start1="24" end1="30" start2="17" end2="17" changelist="a4765a1e-5880-4c04-84f6-ac25e5637da8" />
-        <range start1="35" end1="39" start2="22" end2="22" changelist="a4765a1e-5880-4c04-84f6-ac25e5637da8" />
-        <range start1="51" end1="81" start2="34" end2="66" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="82" end1="89" start2="67" end2="67" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="95" end1="95" start2="73" end2="80" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="104" end1="104" start2="89" end2="90" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="122" end1="124" start2="108" end2="110" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="128" end1="129" start2="114" end2="115" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="132" end1="133" start2="118" end2="118" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="146" end1="146" start2="131" end2="134" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="152" end1="152" start2="140" end2="210" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="157" end1="158" start2="215" end2="216" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="160" end1="161" start2="218" end2="219" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="167" end1="167" start2="225" end2="226" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="173" end1="174" start2="232" end2="238" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="175" end1="175" start2="239" end2="241" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="180" end1="181" start2="246" end2="247" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="182" end1="182" start2="248" end2="250" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="186" end1="186" start2="254" end2="255" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="187" end1="187" start2="256" end2="258" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="190" end1="190" start2="261" end2="262" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="191" end1="192" start2="263" end2="264" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="193" end1="194" start2="265" end2="266" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="200" end1="201" start2="272" end2="274" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="202" end1="203" start2="275" end2="277" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="206" end1="207" start2="280" end2="281" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="210" end1="213" start2="284" end2="287" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="214" end1="217" start2="288" end2="291" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="218" end1="219" start2="292" end2="293" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="220" end1="221" start2="294" end2="295" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="223" end1="225" start2="297" end2="303" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="227" end1="227" start2="305" end2="309" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="228" end1="230" start2="310" end2="312" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="234" end1="237" start2="316" end2="322" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="238" end1="238" start2="323" end2="329" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="241" end1="241" start2="332" end2="333" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="244" end1="249" start2="336" end2="341" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="251" end1="256" start2="343" end2="366" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="264" end1="265" start2="374" end2="375" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="278" end1="290" start2="388" end2="390" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="292" end1="293" start2="392" end2="393" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="297" end1="297" start2="397" end2="411" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="298" end1="300" start2="412" end2="414" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="302" end1="303" start2="416" end2="417" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="306" end1="308" start2="420" end2="420" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="309" end1="309" start2="421" end2="423" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="310" end1="311" start2="424" end2="425" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="317" end1="319" start2="431" end2="433" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="331" end1="332" start2="445" end2="447" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="335" end1="336" start2="450" end2="451" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="348" end1="348" start2="463" end2="472" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="349" end1="350" start2="473" end2="474" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="357" end1="358" start2="481" end2="482" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="363" end1="364" start2="487" end2="488" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="375" end1="376" start2="499" end2="668" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="378" end1="378" start2="670" end2="673" changelist="a4765a1e-5880-4c04-84f6-ac25e5637da8" />
-        <range start1="396" end1="397" start2="691" end2="692" changelist="a4765a1e-5880-4c04-84f6-ac25e5637da8" />
-        <range start1="413" end1="413" start2="708" end2="711" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="414" end1="426" start2="712" end2="716" changelist="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" />
-        <range start1="428" end1="429" start2="718" end2="721" changelist="a4765a1e-5880-4c04-84f6-ac25e5637da8" />
-        <range start1="430" end1="431" start2="722" end2="726" changelist="a4765a1e-5880-4c04-84f6-ac25e5637da8" />
-      </ranges>
-    </file>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -292,7 +203,7 @@
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "spentTimePerTaskStorage.store": "{}",
     "tasks.open.task.update.state.enabled": "true",
-    "timeTracker.activityTracker": "com.github.jk1.ytplugin.timeTracker.ActivityTracker@1b40ced",
+    "timeTracker.activityTracker": "com.github.jk1.ytplugin.timeTracker.ActivityTracker@1b9e24c0",
     "timeTracker.comment": "",
     "timeTracker.inactivityPeriodInMills": "600000",
     "timeTracker.isAutoTrackingEnable": "true",
@@ -306,12 +217,12 @@
     "timeTracker.isWhenProjectClosedEnabled": "true",
     "timeTracker.issueId": "SMA-11",
     "timeTracker.issueIdReadable": "SMA-11",
-    "timeTracker.pausedTime": "37491",
+    "timeTracker.pausedTime": "2",
     "timeTracker.query": "admin",
-    "timeTracker.recordedTime": "11",
+    "timeTracker.recordedTime": "13",
     "timeTracker.scheduledPeriod": "19:00:0",
-    "timeTracker.startTime": "1723268740161",
-    "timeTracker.timeInMills": "719062",
+    "timeTracker.startTime": "1723269590526",
+    "timeTracker.timeInMills": "0",
     "timeTracker.type": "Développement",
     "vue.rearranger.settings.migration": "true"
   },
@@ -661,7 +572,7 @@
       <option name="number" value="11" />
       <option name="presentableId" value="SMA-11" />
       <option name="project" value="SMA" />
-      <updated>1723268681267</updated>
+      <updated>1723269590481</updated>
       <workItem from="1723017953054" duration="7659000" />
       <workItem from="1723025976904" duration="127000" />
       <workItem from="1723033391963" duration="3370000" />
@@ -680,12 +591,15 @@
       <workItem from="1723178132894" duration="20770000" />
       <workItem from="1723257276745" duration="57000" />
       <workItem from="1723257349057" duration="3899000" />
-      <workItem from="1723268052141" duration="1406000" />
+      <workItem from="1723268052141" duration="1780000" />
     </task>
     <option name="localTasksCounter" value="18" />
     <option name="clearContext" value="false" />
     <servers>
       <YouTrack url="https://thenocodeguy.youtrack.cloud">
+        <option name="preferredOpenTaskState">
+          <CustomTaskState id="En cours" name="En cours" />
+        </option>
         <username>random</username>
       </YouTrack>
     </servers>
@@ -704,7 +618,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="SMA-1" />
                       </list>
                     </value>
                   </entry>
@@ -731,8 +645,13 @@
     <option name="LAST_COMMIT_MESSAGE" value="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SysML_PLM$main.coverage" NAME="main Coverage Results" MODIFIED="1722229112541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SysML_PLM$process_projects.coverage" NAME="process_projects Coverage Results" MODIFIED="1722315822945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/adapters/web" />
+    <SUITE FILE_PATH="coverage/SysML_PLM$Unnamed.coverage" NAME="SysML_PLM Coverage Results" MODIFIED="1722322093460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SysML_PLM$main.coverage" NAME="main Coverage Results" MODIFIED="1723263212280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SysML_PLM$SysML_PLM.coverage" NAME="SysML_PLM Coverage Results" MODIFIED="1722100904076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/SysML_PLM$uvicorn.coverage" NAME="uvicorn Coverage Results" MODIFIED="1722314961658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SysML_PLM$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1722331409785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/SysML_PLM$reflex.coverage" NAME="reflex Coverage Results" MODIFIED="1722853003495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/smaas_app" />
+    <SUITE FILE_PATH="coverage/SysML_PLM$FastApi.coverage" NAME="FastApi Coverage Results" MODIFIED="1722331121646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SysML_PLM$uvicorn.coverage" NAME="uvicorn Coverage Results" MODIFIED="1722321267678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
