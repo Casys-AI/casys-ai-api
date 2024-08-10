@@ -1,6 +1,5 @@
 # src/application/services/rag_service.py
 from src.domain.ports.rag_adapter_protocol import RAGAdapterProtocol
-from langchain.prompts import PromptTemplate
 
 
 class RAGService:
