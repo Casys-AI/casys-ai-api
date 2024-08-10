@@ -32,7 +32,9 @@
     </treeState>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" name="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press." comment="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press." />
+    <list default="true" id="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" name="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press." comment="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <list id="dc2b9e54-c5dc-433d-bb02-2849f5cdb327" name="Changes" comment="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration." />
     <list id="253ac8a8-24f6-4dea-8103-ff2eb466a1cd" name="correct graph creation" comment="correct graph creation" />
     <list id="a4765a1e-5880-4c04-84f6-ac25e5637da8" name="Logs, instanciation, performance traitement documents" comment="ajout du script graph et modif des logs pour niveau debug" />
@@ -161,7 +163,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;SMA-11&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/erpes/PycharmProjects/SysML_PLM/src/adapters/celery&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -174,7 +176,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;spentTimePerTaskStorage.store&quot;: &quot;{}&quot;,
     &quot;tasks.open.task.update.state.enabled&quot;: &quot;true&quot;,
-    &quot;timeTracker.activityTracker&quot;: &quot;com.github.jk1.ytplugin.timeTracker.ActivityTracker@2a78b629&quot;,
+    &quot;timeTracker.activityTracker&quot;: &quot;com.github.jk1.ytplugin.timeTracker.ActivityTracker@6bf03d8c&quot;,
     &quot;timeTracker.comment&quot;: &quot;&quot;,
     &quot;timeTracker.inactivityPeriodInMills&quot;: &quot;600000&quot;,
     &quot;timeTracker.isAutoTrackingEnable&quot;: &quot;true&quot;,
@@ -183,16 +185,16 @@
     &quot;timeTracker.isPaused&quot;: &quot;false&quot;,
     &quot;timeTracker.isPostAfterCommitEnabled&quot;: &quot;true&quot;,
     &quot;timeTracker.isPostedScheduled&quot;: &quot;false&quot;,
-    &quot;timeTracker.isRunning&quot;: &quot;true&quot;,
+    &quot;timeTracker.isRunning&quot;: &quot;false&quot;,
     &quot;timeTracker.isScheduledEnabled&quot;: &quot;true&quot;,
     &quot;timeTracker.isWhenProjectClosedEnabled&quot;: &quot;true&quot;,
     &quot;timeTracker.issueId&quot;: &quot;SMA-11&quot;,
     &quot;timeTracker.issueIdReadable&quot;: &quot;SMA-11&quot;,
-    &quot;timeTracker.pausedTime&quot;: &quot;343131&quot;,
+    &quot;timeTracker.pausedTime&quot;: &quot;0&quot;,
     &quot;timeTracker.query&quot;: &quot;admin&quot;,
     &quot;timeTracker.recordedTime&quot;: &quot;0&quot;,
     &quot;timeTracker.scheduledPeriod&quot;: &quot;19:00:0&quot;,
-    &quot;timeTracker.startTime&quot;: &quot;1723270282825&quot;,
+    &quot;timeTracker.startTime&quot;: &quot;1723285140926&quot;,
     &quot;timeTracker.timeInMills&quot;: &quot;0&quot;,
     &quot;timeTracker.type&quot;: &quot;Développement&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -206,6 +208,10 @@
   <component name="PyCoverageOptionsProvider">
     <option name="myUseBundledCoveragePy" value="true" />
     <option name="myBranchCoverage" value="true" />
+  </component>
+  <component name="QodanaCIConfigService">
+    <option name="ciType" value="SPACE" />
+    <option name="path" value="C:\Users\erpes\PycharmProjects\SysML_PLM\.space.kts" />
   </component>
   <component name="QodanaCloudProjectLink">
     <option name="lastReportId" value="76mmo" />
@@ -234,11 +240,11 @@
       <recent name="C:\Users\erpes\PycharmProjects\SysML_PLM\src\interface" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\erpes\PycharmProjects\SysML_PLM" />
       <recent name="C:\Users\erpes\PycharmProjects\SysML_PLM\src\adapters\celery" />
       <recent name="C:\Users\erpes\PycharmProjects\SysML_PLM\src\application\factories" />
       <recent name="C:\Users\erpes\PycharmProjects\SysML_PLM\src\application\processing" />
       <recent name="C:\Users\erpes\PycharmProjects\SysML_PLM\src\infrastructure" />
-      <recent name="C:\Users\erpes\PycharmProjects\SysML_PLM" />
     </key>
   </component>
   <component name="RedisClientHelper">
@@ -538,7 +544,7 @@
       <option name="number" value="11" />
       <option name="presentableId" value="SMA-11" />
       <option name="project" value="SMA" />
-      <updated>1723269949547</updated>
+      <updated>1723286541130</updated>
       <workItem from="1723017953054" duration="7659000" />
       <workItem from="1723025976904" duration="127000" />
       <workItem from="1723033391963" duration="3370000" />
