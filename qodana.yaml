@@ -10,6 +10,7 @@ profile:
 
 python:
   environment: venv
+  project-root: .
 #Enable inspections
 #include:
 #  - name: <SomeEnabledInspectionId>
