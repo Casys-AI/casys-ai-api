@@ -9,7 +9,7 @@ profile:
   name: qodana.starter
 
 python:
-  project-root: .
+  environment: venv
 #Enable inspections
 #include:
 #  - name: <SomeEnabledInspectionId>
