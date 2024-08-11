@@ -35,7 +35,6 @@
     <list default="true" id="dc2b9e54-c5dc-433d-bb02-2849f5cdb327" name="Changes" comment="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qodana.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/qodana.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/infrastructure/dependencies.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/dependencies.py" afterDir="false" />
     </list>
     <list id="253ac8a8-24f6-4dea-8103-ff2eb466a1cd" name="correct graph creation" comment="correct graph creation" />
     <list id="a4765a1e-5880-4c04-84f6-ac25e5637da8" name="Logs, instanciation, performance traitement documents" comment="ajout du script graph et modif des logs pour niveau debug" />
@@ -388,7 +387,7 @@
       <workItem from="1723017912915" duration="38000" />
       <workItem from="1723351950621" duration="22000" />
       <workItem from="1723352901939" duration="738000" />
-      <workItem from="1723356387985" duration="2919000" />
+      <workItem from="1723356387985" duration="3328000" />
     </task>
     <task id="LOCAL-00006" summary="Logs, instanciation, performance traitement documents">
       <branch name="main" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" original="true" />
@@ -639,7 +638,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723358724380</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration.">
+      <option name="closed" value="true" />
+      <created>1723359361027</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1723359361027</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <option name="clearContext" value="false" />
     <servers>
       <YouTrack url="https://thenocodeguy.youtrack.cloud">
