@@ -8,7 +8,7 @@ job("Qodana") {
     }
     codeReviewOpened{}
   }
-  container("jetbrains/qodana-python") {
+  container("jetbrains/qodana-python-community") {
     env["QODANA_TOKEN"] = "{{ project:qodana-token }}"
     shellScript {
       content = "qodana"
