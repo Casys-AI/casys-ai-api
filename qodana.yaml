@@ -25,4 +25,7 @@ bootstrap: pip install -r requirements.txt
 #plugins:
 
 linter: jetbrains/qodana-python-community:latest
+
+include:
+  - name: LicenseAudit
 fixesStrategy: cleanup
