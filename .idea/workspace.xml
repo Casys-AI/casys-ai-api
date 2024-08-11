@@ -9,16 +9,16 @@
     <treeState key="changes">
       <selectedPath>
         <pathElement>
-          <option name="myNodeId" value="helperText" />
-          <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.LinkedTextDescriptor" />
+          <option name="myNodeId" value="2" />
+          <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.ChangesGroupDescriptor" />
         </pathElement>
       </selectedPath>
     </treeState>
     <treeState key="project">
       <selectedPath>
         <pathElement>
-          <option name="myNodeId" value="project11" />
-          <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.ProjectDescriptor" />
+          <option name="myNodeId" value="helperText" />
+          <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.LinkedTextDescriptor" />
         </pathElement>
       </selectedPath>
     </treeState>
@@ -32,10 +32,14 @@
     </treeState>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" name="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press." comment="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press." />
-    <list id="dc2b9e54-c5dc-433d-bb02-2849f5cdb327" name="Changes" comment="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration." />
+    <list default="true" id="dc2b9e54-c5dc-433d-bb02-2849f5cdb327" name="Changes" comment="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qodana.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/qodana.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/infrastructure/dependencies.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/dependencies.py" afterDir="false" />
+    </list>
     <list id="253ac8a8-24f6-4dea-8103-ff2eb466a1cd" name="correct graph creation" comment="correct graph creation" />
     <list id="a4765a1e-5880-4c04-84f6-ac25e5637da8" name="Logs, instanciation, performance traitement documents" comment="ajout du script graph et modif des logs pour niveau debug" />
+    <list id="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" name="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press." comment="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,10 +86,11 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="SMA-11-b" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -174,7 +179,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;spentTimePerTaskStorage.store&quot;: &quot;{}&quot;,
     &quot;tasks.open.task.update.state.enabled&quot;: &quot;true&quot;,
-    &quot;timeTracker.activityTracker&quot;: &quot;com.github.jk1.ytplugin.timeTracker.ActivityTracker@770773ca&quot;,
+    &quot;timeTracker.activityTracker&quot;: &quot;com.github.jk1.ytplugin.timeTracker.ActivityTracker@4692b329&quot;,
     &quot;timeTracker.comment&quot;: &quot;&quot;,
     &quot;timeTracker.inactivityPeriodInMills&quot;: &quot;600000&quot;,
     &quot;timeTracker.isAutoTrackingEnable&quot;: &quot;true&quot;,
@@ -183,16 +188,16 @@
     &quot;timeTracker.isPaused&quot;: &quot;false&quot;,
     &quot;timeTracker.isPostAfterCommitEnabled&quot;: &quot;true&quot;,
     &quot;timeTracker.isPostedScheduled&quot;: &quot;false&quot;,
-    &quot;timeTracker.isRunning&quot;: &quot;true&quot;,
+    &quot;timeTracker.isRunning&quot;: &quot;false&quot;,
     &quot;timeTracker.isScheduledEnabled&quot;: &quot;true&quot;,
     &quot;timeTracker.isWhenProjectClosedEnabled&quot;: &quot;true&quot;,
     &quot;timeTracker.issueId&quot;: &quot;SMA-11&quot;,
     &quot;timeTracker.issueIdReadable&quot;: &quot;SMA-11&quot;,
-    &quot;timeTracker.pausedTime&quot;: &quot;2&quot;,
+    &quot;timeTracker.pausedTime&quot;: &quot;0&quot;,
     &quot;timeTracker.query&quot;: &quot;admin&quot;,
-    &quot;timeTracker.recordedTime&quot;: &quot;9&quot;,
+    &quot;timeTracker.recordedTime&quot;: &quot;0&quot;,
     &quot;timeTracker.scheduledPeriod&quot;: &quot;19:00:0&quot;,
-    &quot;timeTracker.startTime&quot;: &quot;1723296923733&quot;,
+    &quot;timeTracker.startTime&quot;: &quot;1723351950034&quot;,
     &quot;timeTracker.timeInMills&quot;: &quot;0&quot;,
     &quot;timeTracker.type&quot;: &quot;Développement&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -212,22 +217,34 @@
     <option name="path" value="C:\Users\erpes\PycharmProjects\SysML_PLM\.space.kts" />
   </component>
   <component name="QodanaCloudProjectLink">
-    <option name="lastReportId" value="76mmo" />
+    <option name="lastReportId" value="eQGOa" />
     <option name="linkedProjectId" value="AND51" />
     <option name="linkedProjectName" value="SMaaS_API" />
     <option name="organizationId" value="AmqNE" />
     <option name="userId" value="zELlx" />
   </component>
   <component name="QodanaHighlightedReportService">
-    <option name="cloudReportPersistedInfo">
-      <CloudReportPersistedInfo>
-        <option name="projectId" value="AND51" />
-        <option name="reportId" value="76mmo" />
-      </CloudReportPersistedInfo>
+    <option name="localRunPublishedPersistedInfo">
+      <LocalRunPublishedPersistedInfo>
+        <option name="fileReportPersistedInfo">
+          <LocalReportPersistedInfo>
+            <option name="path" value="C:\Users\erpes\AppData\Local\Temp\qodana_output\qodana.sarif.json" />
+            <option name="reportGuid" value="143aa91a-5e3e-4771-83eb-57155221f68b" />
+            <option name="reportName" value="SysML_PLM/qodana/2024-08-11" />
+          </LocalReportPersistedInfo>
+        </option>
+        <option name="reportLink" value="https://qodana.cloud/projects/AND51/reports/22JjW" />
+      </LocalRunPublishedPersistedInfo>
     </option>
   </component>
   <component name="QodanaIsSelectedPersistenceService">
     <option name="selectedOrLoading" value="true" />
+  </component>
+  <component name="QodanaReportsService">
+    <option name="descriptions">
+      <ReportDescription localRun="true" path="C:\Users\erpes\AppData\Local\Temp\qodana_output\qodana.sarif.json" publishedReportLink="https://qodana.cloud/projects/AND51/reports/22JjW" reportGuid="143aa91a-5e3e-4771-83eb-57155221f68b" reportId="SysML_PLM/qodana/2024-08-11" />
+      <ReportDescription path="C:\Users\erpes\PycharmProjects\SysML_PLM\qodana.sarif.json" reportGuid="537e54f9-c03f-4931-87ea-0c0009d0a270" reportId="SysML_PLM/qodana/2024-08-09" />
+    </option>
   </component>
   <component name="QodanaSettings">
     <option name="autoLoadCloudReport" value="true" />
@@ -238,11 +255,11 @@
       <recent name="C:\Users\erpes\PycharmProjects\SysML_PLM\src\interface" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\erpes\PycharmProjects\SysML_PLM" />
       <recent name="C:\Users\erpes\PycharmProjects\SysML_PLM\src\adapters\celery" />
       <recent name="C:\Users\erpes\PycharmProjects\SysML_PLM\src\application\factories" />
       <recent name="C:\Users\erpes\PycharmProjects\SysML_PLM\src\application\processing" />
       <recent name="C:\Users\erpes\PycharmProjects\SysML_PLM\src\infrastructure" />
-      <recent name="C:\Users\erpes\PycharmProjects\SysML_PLM" />
     </key>
   </component>
   <component name="RedisClientHelper">
@@ -341,13 +358,13 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task id="Default" summary="Default task">
+    <task active="true" id="Default" summary="Default task">
       <branch name="main" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" />
       <changelist id="dc2b9e54-c5dc-433d-bb02-2849f5cdb327" name="Changes" comment="" />
       <created>1721966206277</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1723017952792</updated>
+      <updated>1723351949977</updated>
       <workItem from="1721966265929" duration="7320000" />
       <workItem from="1721973822748" duration="14273000" />
       <workItem from="1721988691672" duration="366000" />
@@ -369,6 +386,9 @@
       <workItem from="1722919741057" duration="233000" />
       <workItem from="1722997581513" duration="3737000" />
       <workItem from="1723017912915" duration="38000" />
+      <workItem from="1723351950621" duration="22000" />
+      <workItem from="1723352901939" duration="738000" />
+      <workItem from="1723356387985" duration="2919000" />
     </task>
     <task id="LOCAL-00006" summary="Logs, instanciation, performance traitement documents">
       <branch name="main" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" original="true" />
@@ -532,7 +552,7 @@
       <workItem from="1722845342303" duration="7629000" />
       <workItem from="1722919450713" duration="138000" />
     </task>
-    <task active="true" id="SMA-11" summary="File uploading, processing, diagram retrieval, JSON processing with button press.">
+    <task id="SMA-11" summary="File uploading, processing, diagram retrieval, JSON processing with button press.">
       <branch name="main" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" original="true" />
       <branch name="SMA-11" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" />
       <changelist id="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" name="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press." comment="" />
@@ -542,7 +562,7 @@
       <option name="number" value="11" />
       <option name="presentableId" value="SMA-11" />
       <option name="project" value="SMA" />
-      <updated>1723296886973</updated>
+      <updated>1723351762792</updated>
       <workItem from="1723017953054" duration="7659000" />
       <workItem from="1723025976904" duration="127000" />
       <workItem from="1723033391963" duration="3370000" />
@@ -563,7 +583,63 @@
       <workItem from="1723257349057" duration="3899000" />
       <workItem from="1723268052141" duration="1780000" />
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration.">
+      <option name="closed" value="true" />
+      <created>1723353149438</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1723353149439</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration.">
+      <option name="closed" value="true" />
+      <created>1723357018841</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1723357018841</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration.">
+      <option name="closed" value="true" />
+      <created>1723357274783</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1723357274783</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration.">
+      <option name="closed" value="true" />
+      <created>1723357550158</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1723357550158</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration.">
+      <option name="closed" value="true" />
+      <created>1723357898914</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1723357898914</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration.">
+      <option name="closed" value="true" />
+      <created>1723358377856</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1723358377856</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration.">
+      <option name="closed" value="true" />
+      <created>1723358724379</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1723358724380</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <option name="clearContext" value="false" />
     <servers>
       <YouTrack url="https://thenocodeguy.youtrack.cloud">
@@ -597,10 +673,10 @@
     <MESSAGE value="similarity_processing_service.py is working well" />
     <MESSAGE value="Seems to work but the graph model and similarity needs to been question" />
     <MESSAGE value="SMA-1 integrate create graph script" />
-    <MESSAGE value="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration." />
     <MESSAGE value="ajout du script graph et modif des logs pour niveau debug" />
     <MESSAGE value="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press." />
-    <option name="LAST_COMMIT_MESSAGE" value="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press." />
+    <MESSAGE value="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SysML_PLM$process_projects.coverage" NAME="process_projects Coverage Results" MODIFIED="1722315822945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/adapters/web" />

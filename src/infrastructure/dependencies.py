@@ -6,6 +6,7 @@ from src.application.processing.neo4j_processing_service import Neo4jProcessingS
 from src.adapters.celery.celery_adapter import CeleryAdapter
 from src.adapters.celery.celery_config import celery_app
 
+
 #découpler les dépendances de celery et de l'app
 def get_config():
     return app_state.config

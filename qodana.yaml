@@ -8,6 +8,8 @@ version: "1.0"
 profile:
   name: qodana.starter
 
+python:
+  project-root: .
 #Enable inspections
 #include:
 #  - name: <SomeEnabledInspectionId>
