@@ -3,7 +3,6 @@ job("Qodana") {
     gitPush {
       anyBranchMatching {
         +"main"
-        +"SMA-11"
       }
     }
     codeReviewOpened{}
@@ -11,7 +10,7 @@ job("Qodana") {
   container("jetbrains/qodana-python-community") {
     env["QODANA_TOKEN"] = "{{ project:qodana-token }}"
     shellScript {
-      content = "qodana"
+      content = "qodana --baseline qodana.sarif.json"
     }
   }
 }

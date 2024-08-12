@@ -34,6 +34,9 @@
   <component name="ChangeListManager">
     <list default="true" id="dc2b9e54-c5dc-433d-bb02-2849f5cdb327" name="Changes" comment="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.space.kts" beforeDir="false" afterPath="$PROJECT_DIR$/.space.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qodana.sarif.json" beforeDir="false" afterPath="$PROJECT_DIR$/qodana.sarif.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qodana.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/qodana.yaml" afterDir="false" />
     </list>
     <list id="253ac8a8-24f6-4dea-8103-ff2eb466a1cd" name="correct graph creation" comment="correct graph creation" />
     <list id="a4765a1e-5880-4c04-84f6-ac25e5637da8" name="Logs, instanciation, performance traitement documents" comment="ajout du script graph et modif des logs pour niveau debug" />
@@ -217,11 +220,22 @@
     <option name="path" value="C:\Users\erpes\PycharmProjects\SysML_PLM\.space.kts" />
   </component>
   <component name="QodanaCloudProjectLink">
-    <option name="lastReportId" value="eQGOa" />
+    <option name="lastReportId" value="M4D5J" />
     <option name="linkedProjectId" value="AND51" />
     <option name="linkedProjectName" value="SMaaS_API" />
     <option name="organizationId" value="AmqNE" />
     <option name="userId" value="zELlx" />
+  </component>
+  <component name="QodanaHighlightedReportService">
+    <option name="cloudReportPersistedInfo">
+      <CloudReportPersistedInfo>
+        <option name="projectId" value="AND51" />
+        <option name="reportId" value="M4D5J" />
+      </CloudReportPersistedInfo>
+    </option>
+  </component>
+  <component name="QodanaIsSelectedPersistenceService">
+    <option name="selectedOrLoading" value="true" />
   </component>
   <component name="QodanaReportsService">
     <option name="descriptions">
@@ -371,7 +385,7 @@
       <workItem from="1723351950621" duration="22000" />
       <workItem from="1723352901939" duration="738000" />
       <workItem from="1723356387985" duration="4316000" />
-      <workItem from="1723429979847" duration="688000" />
+      <workItem from="1723429979847" duration="1929000" />
     </task>
     <task id="LOCAL-00006" summary="Logs, instanciation, performance traitement documents">
       <branch name="main" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" original="true" />
@@ -678,7 +692,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723430190891</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration.">
+      <option name="closed" value="true" />
+      <created>1723430702550</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1723430702550</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <option name="clearContext" value="false" />
     <servers>
       <YouTrack url="https://thenocodeguy.youtrack.cloud">
@@ -719,9 +741,9 @@
     <MESSAGE value="Seems to work but the graph model and similarity needs to been question" />
     <MESSAGE value="SMA-1 integrate create graph script" />
     <MESSAGE value="ajout du script graph et modif des logs pour niveau debug" />
-    <MESSAGE value="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration." />
     <MESSAGE value="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press." />
-    <option name="LAST_COMMIT_MESSAGE" value="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press." />
+    <MESSAGE value="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
