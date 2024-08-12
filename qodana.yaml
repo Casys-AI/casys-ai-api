@@ -2,15 +2,7 @@ version: "1.0"
 profile:
   name: qodana.recommended
 
-python:
-  version: "3.9"  # Ajustez selon votre version
-  environment: venv
-  venvPath: ./venv
-
-projectDir: .
-
 bootstrap: |
-  source venv/bin/activate
   pip install -r requirements.txt
 
 plugins:
