@@ -33,8 +33,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc2b9e54-c5dc-433d-bb02-2849f5cdb327" name="Changes" comment="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration.">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_07_2024_16_06__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_07_2024_16_06__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_07_2024_16_34__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_07_2024_16_34__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qodana.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/qodana.yaml" afterDir="false" />
     </list>
@@ -322,10 +320,10 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="HTTP Request.test_main | Neo4j full project" />
       <item itemvalue="HTTP Request.test_main | #1" />
       <item itemvalue="HTTP Request.test_main | #3" />
       <item itemvalue="HTTP Request.test_main | #4" />
+      <item itemvalue="HTTP Request.test_main | Neo4j full project" />
       <item itemvalue="Python.main" />
     </list>
     <recent_temporary>
@@ -360,7 +358,7 @@
       <created>1721966206277</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1723351949977</updated>
+      <updated>1723435980475</updated>
       <workItem from="1721966265929" duration="7320000" />
       <workItem from="1721973822748" duration="14273000" />
       <workItem from="1721988691672" duration="366000" />
@@ -386,7 +384,8 @@
       <workItem from="1723352901939" duration="738000" />
       <workItem from="1723356387985" duration="4316000" />
       <workItem from="1723429979847" duration="3960000" />
-      <workItem from="1723435873073" duration="55000" />
+      <workItem from="1723435873073" duration="103000" />
+      <workItem from="1723435981223" duration="267000" />
     </task>
     <task id="LOCAL-00006" summary="Logs, instanciation, performance traitement documents">
       <branch name="main" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" original="true" />
@@ -745,14 +744,24 @@
       <updated>1723433497770</updated>
     </task>
     <task id="LOCAL-00039" summary="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration.">
+      <changelist id="dc2b9e54-c5dc-433d-bb02-2849f5cdb327" name="Changes" comment="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration." />
       <option name="closed" value="true" />
       <created>1723433839335</created>
       <option name="number" value="00039" />
       <option name="presentableId" value="LOCAL-00039" />
       <option name="project" value="LOCAL" />
-      <updated>1723433839335</updated>
+      <updated>1723435980475</updated>
+      <workItem from="1723435977186" duration="4000" />
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration.">
+      <option name="closed" value="true" />
+      <created>1723435933563</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1723435933563</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <option name="clearContext" value="false" />
     <servers>
       <YouTrack url="https://thenocodeguy.youtrack.cloud">
