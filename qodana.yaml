@@ -1,29 +1,18 @@
-#-------------------------------------------------------------------------------#
-#               Qodana analysis is configured by qodana.yaml file               #
-#             https://www.jetbrains.com/help/qodana/qodana-yaml.html            #
-#-------------------------------------------------------------------------------#
 version: "1.0"
-
-#Specify inspection profile for code analysis
 profile:
   name: qodana.recommended
 
-#Enable inspections
-#include:
-#  - name: <SomeEnabledInspectionId>
+python:
+  version: "3.9"  # Ajustez selon votre version
+  environment: venv
+  venvPath: ./venv
 
-#Disable inspections
-#exclude:
-#  - name: <SomeDisabledInspectionId>
-#    paths:
-#      - <path/where/not/run/inspection>
+projectDir: .
 
-#Execute shell command before Qodana execution (Applied in CI/CD pipeline)
-#bootstrap: sh ./prepare-qodana.sh
+bootstrap: |
+  source venv/bin/activate
+  pip install -r requirements.txt
 
-bootstrap: pip install -r requirements.txt
-
-#Install IDE plugins before Qodana execution (Applied in CI/CD pipeline)
 plugins:
   - id: com.intellij.grazie.pro
 
@@ -31,5 +20,10 @@ linter: jetbrains/qodana-python-community:latest
 
 include:
   - name: LicenseAudit
+
+exclude:
+  - name: All
+    paths:
+      - venv/**
 
 fixesStrategy: cleanup
