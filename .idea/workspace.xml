@@ -34,7 +34,6 @@
   <component name="ChangeListManager">
     <list default="true" id="dc2b9e54-c5dc-433d-bb02-2849f5cdb327" name="Changes" comment="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qodana.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/qodana.yaml" afterDir="false" />
     </list>
     <list id="253ac8a8-24f6-4dea-8103-ff2eb466a1cd" name="correct graph creation" comment="correct graph creation" />
     <list id="a4765a1e-5880-4c04-84f6-ac25e5637da8" name="Logs, instanciation, performance traitement documents" comment="ajout du script graph et modif des logs pour niveau debug" />
@@ -132,83 +131,83 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;Docker.docker-compose.yml.flower: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yml.neo4j: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yml.redis: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;FastAPI.FastApi.executor&quot;: &quot;Debug&quot;,
-    &quot;FastAPI.SysML_PLM.executor&quot;: &quot;Run&quot;,
-    &quot;FastAPI.Unnamed.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.All in test_main.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.SysML_PLM-endpoints | #1.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.test_main | #1.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.test_main | #2.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.test_main | #3.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.test_main | #4.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.test_main | Co Neo4j.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.test_main | Full project.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.test_main | Neo4j 1 diagrame.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.test_main | Neo4j full project.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.test_main | Neo4j.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.test_main | Only json.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.test_main | Project diagramme MD et json.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.test_main | statuts.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.reflex.executor&quot;: &quot;Run&quot;,
-    &quot;Python.smaas_api.executor&quot;: &quot;Run&quot;,
-    &quot;Python.uvicorn.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/erpes/PycharmProjects/SysML_PLM/src/adapters/celery&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;rest.client.default.execution.environment&quot;: &quot;cdc_1&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
-    &quot;spentTimePerTaskStorage.store&quot;: &quot;{}&quot;,
-    &quot;tasks.open.task.update.state.enabled&quot;: &quot;true&quot;,
-    &quot;timeTracker.activityTracker&quot;: &quot;com.github.jk1.ytplugin.timeTracker.ActivityTracker@4692b329&quot;,
-    &quot;timeTracker.comment&quot;: &quot;&quot;,
-    &quot;timeTracker.inactivityPeriodInMills&quot;: &quot;600000&quot;,
-    &quot;timeTracker.isAutoTrackingEnable&quot;: &quot;true&quot;,
-    &quot;timeTracker.isAutoTrackingTemporaryDisabled&quot;: &quot;false&quot;,
-    &quot;timeTracker.isManualTrackingEnable&quot;: &quot;false&quot;,
-    &quot;timeTracker.isPaused&quot;: &quot;false&quot;,
-    &quot;timeTracker.isPostAfterCommitEnabled&quot;: &quot;true&quot;,
-    &quot;timeTracker.isPostedScheduled&quot;: &quot;false&quot;,
-    &quot;timeTracker.isRunning&quot;: &quot;false&quot;,
-    &quot;timeTracker.isScheduledEnabled&quot;: &quot;true&quot;,
-    &quot;timeTracker.isWhenProjectClosedEnabled&quot;: &quot;true&quot;,
-    &quot;timeTracker.issueId&quot;: &quot;SMA-11&quot;,
-    &quot;timeTracker.issueIdReadable&quot;: &quot;SMA-11&quot;,
-    &quot;timeTracker.pausedTime&quot;: &quot;0&quot;,
-    &quot;timeTracker.query&quot;: &quot;admin&quot;,
-    &quot;timeTracker.recordedTime&quot;: &quot;0&quot;,
-    &quot;timeTracker.scheduledPeriod&quot;: &quot;19:00:0&quot;,
-    &quot;timeTracker.startTime&quot;: &quot;1723351950034&quot;,
-    &quot;timeTracker.timeInMills&quot;: &quot;0&quot;,
-    &quot;timeTracker.type&quot;: &quot;Développement&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Docker.docker-compose.yml.flower: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.neo4j: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.redis: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "FastAPI.FastApi.executor": "Debug",
+    "FastAPI.SysML_PLM.executor": "Run",
+    "FastAPI.Unnamed.executor": "Run",
+    "HTTP Request.All in test_main.executor": "Run",
+    "HTTP Request.SysML_PLM-endpoints | #1.executor": "Run",
+    "HTTP Request.test_main | #1.executor": "Run",
+    "HTTP Request.test_main | #2.executor": "Run",
+    "HTTP Request.test_main | #3.executor": "Run",
+    "HTTP Request.test_main | #4.executor": "Run",
+    "HTTP Request.test_main | Co Neo4j.executor": "Run",
+    "HTTP Request.test_main | Full project.executor": "Run",
+    "HTTP Request.test_main | Neo4j 1 diagrame.executor": "Run",
+    "HTTP Request.test_main | Neo4j full project.executor": "Run",
+    "HTTP Request.test_main | Neo4j.executor": "Run",
+    "HTTP Request.test_main | Only json.executor": "Run",
+    "HTTP Request.test_main | Project diagramme MD et json.executor": "Run",
+    "HTTP Request.test_main | statuts.executor": "Run",
+    "Python.main (1).executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.reflex.executor": "Run",
+    "Python.smaas_api.executor": "Run",
+    "Python.uvicorn.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/erpes/PycharmProjects/SysML_PLM/src/adapters/celery",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.stylelint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "rest.client.default.execution.environment": "cdc_1",
+    "run.code.analysis.last.selected.profile": "aDefault",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "spentTimePerTaskStorage.store": "{}",
+    "tasks.open.task.update.state.enabled": "true",
+    "timeTracker.activityTracker": "com.github.jk1.ytplugin.timeTracker.ActivityTracker@4692b329",
+    "timeTracker.comment": "",
+    "timeTracker.inactivityPeriodInMills": "600000",
+    "timeTracker.isAutoTrackingEnable": "true",
+    "timeTracker.isAutoTrackingTemporaryDisabled": "false",
+    "timeTracker.isManualTrackingEnable": "false",
+    "timeTracker.isPaused": "false",
+    "timeTracker.isPostAfterCommitEnabled": "true",
+    "timeTracker.isPostedScheduled": "false",
+    "timeTracker.isRunning": "false",
+    "timeTracker.isScheduledEnabled": "true",
+    "timeTracker.isWhenProjectClosedEnabled": "true",
+    "timeTracker.issueId": "SMA-11",
+    "timeTracker.issueIdReadable": "SMA-11",
+    "timeTracker.pausedTime": "0",
+    "timeTracker.query": "admin",
+    "timeTracker.recordedTime": "0",
+    "timeTracker.scheduledPeriod": "19:00:0",
+    "timeTracker.startTime": "1723351950034",
+    "timeTracker.timeInMills": "0",
+    "timeTracker.type": "Développement",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;redis&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "redis"
     ]
   }
-}</component>
+}]]></component>
   <component name="PyCoverageOptionsProvider">
     <option name="myUseBundledCoveragePy" value="true" />
     <option name="myBranchCoverage" value="true" />
@@ -226,7 +225,6 @@
   </component>
   <component name="QodanaReportsService">
     <option name="descriptions">
-      <ReportDescription localRun="true" path="C:\Users\erpes\AppData\Local\Temp\qodana_output\qodana.sarif.json" publishedReportLink="https://qodana.cloud/projects/AND51/reports/22JjW" reportGuid="143aa91a-5e3e-4771-83eb-57155221f68b" reportId="SysML_PLM/qodana/2024-08-11" />
       <ReportDescription path="C:\Users\erpes\PycharmProjects\SysML_PLM\qodana.sarif.json" reportGuid="537e54f9-c03f-4931-87ea-0c0009d0a270" reportId="SysML_PLM/qodana/2024-08-09" />
     </option>
   </component>
@@ -310,10 +308,10 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="HTTP Request.test_main | Neo4j full project" />
       <item itemvalue="HTTP Request.test_main | #1" />
       <item itemvalue="HTTP Request.test_main | #3" />
       <item itemvalue="HTTP Request.test_main | #4" />
+      <item itemvalue="HTTP Request.test_main | Neo4j full project" />
       <item itemvalue="Python.main" />
     </list>
     <recent_temporary>
@@ -373,7 +371,7 @@
       <workItem from="1723351950621" duration="22000" />
       <workItem from="1723352901939" duration="738000" />
       <workItem from="1723356387985" duration="4316000" />
-      <workItem from="1723429979847" duration="186000" />
+      <workItem from="1723429979847" duration="688000" />
     </task>
     <task id="LOCAL-00006" summary="Logs, instanciation, performance traitement documents">
       <branch name="main" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" original="true" />
@@ -672,7 +670,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723360629066</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration.">
+      <option name="closed" value="true" />
+      <created>1723430190890</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1723430190891</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <option name="clearContext" value="false" />
     <servers>
       <YouTrack url="https://thenocodeguy.youtrack.cloud">
@@ -713,9 +719,9 @@
     <MESSAGE value="Seems to work but the graph model and similarity needs to been question" />
     <MESSAGE value="SMA-1 integrate create graph script" />
     <MESSAGE value="ajout du script graph et modif des logs pour niveau debug" />
-    <MESSAGE value="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press." />
     <MESSAGE value="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration." />
+    <MESSAGE value="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press." />
+    <option name="LAST_COMMIT_MESSAGE" value="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
