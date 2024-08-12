@@ -74,6 +74,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
     <option name="PUSH_TAGS">
       <GitPushTagMode>
         <option name="argument" value="--follow-tags" />
@@ -114,7 +115,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -222,11 +223,12 @@
     <option name="userId" value="zELlx" />
   </component>
   <component name="QodanaHighlightedReportService">
-    <option name="cloudReportPersistedInfo">
-      <CloudReportPersistedInfo>
-        <option name="projectId" value="AND51" />
-        <option name="reportId" value="M4D5J" />
-      </CloudReportPersistedInfo>
+    <option name="localReportPersistedInfo">
+      <LocalReportPersistedInfo>
+        <option name="path" value="C:\Users\erpes\PycharmProjects\SysML_PLM\qodana.sarif.json" />
+        <option name="reportGuid" value="eed6d9e8-c859-4f85-b8f6-a092c03d25e6" />
+        <option name="reportName" value="SMaaS_API/qodana/2024-08-12" />
+      </LocalReportPersistedInfo>
     </option>
   </component>
   <component name="QodanaIsSelectedPersistenceService">
@@ -235,6 +237,7 @@
   <component name="QodanaReportsService">
     <option name="descriptions">
       <ReportDescription path="C:\Users\erpes\PycharmProjects\SysML_PLM\qodana.sarif.json" reportGuid="537e54f9-c03f-4931-87ea-0c0009d0a270" reportId="SysML_PLM/qodana/2024-08-09" />
+      <ReportDescription path="C:\Users\erpes\PycharmProjects\SysML_PLM\qodana.sarif.json" reportGuid="eed6d9e8-c859-4f85-b8f6-a092c03d25e6" reportId="SMaaS_API/qodana/2024-08-12" />
     </option>
   </component>
   <component name="QodanaSettings">
@@ -380,7 +383,7 @@
       <workItem from="1723351950621" duration="22000" />
       <workItem from="1723352901939" duration="738000" />
       <workItem from="1723356387985" duration="4316000" />
-      <workItem from="1723429979847" duration="2326000" />
+      <workItem from="1723429979847" duration="2713000" />
     </task>
     <task id="LOCAL-00006" summary="Logs, instanciation, performance traitement documents">
       <branch name="main" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" original="true" />
@@ -711,7 +714,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723432003102</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration.">
+      <option name="closed" value="true" />
+      <created>1723432690818</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1723432690818</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <option name="clearContext" value="false" />
     <servers>
       <YouTrack url="https://thenocodeguy.youtrack.cloud">
