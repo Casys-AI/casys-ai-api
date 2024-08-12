@@ -33,9 +33,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc2b9e54-c5dc-433d-bb02-2849f5cdb327" name="Changes" comment="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration." />
-    <list id="253ac8a8-24f6-4dea-8103-ff2eb466a1cd" name="correct graph creation" comment="correct graph creation" />
-    <list id="a4765a1e-5880-4c04-84f6-ac25e5637da8" name="Logs, instanciation, performance traitement documents" comment="ajout du script graph et modif des logs pour niveau debug" />
-    <list id="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" name="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press." comment="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -383,12 +380,12 @@
       <workItem from="1723351950621" duration="22000" />
       <workItem from="1723352901939" duration="738000" />
       <workItem from="1723356387985" duration="4316000" />
-      <workItem from="1723429979847" duration="2713000" />
+      <workItem from="1723429979847" duration="3092000" />
     </task>
     <task id="LOCAL-00006" summary="Logs, instanciation, performance traitement documents">
       <branch name="main" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" original="true" />
       <branch name="Logs-instanciation" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" />
-      <changelist id="a4765a1e-5880-4c04-84f6-ac25e5637da8" name="Logs, instanciation, performance traitement documents" comment="" />
+      <changelist id="" name="Logs, instanciation, performance traitement documents" comment="" />
       <created>1722224937336</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
@@ -402,7 +399,7 @@
       <workItem from="1722306446641" duration="9105000" />
     </task>
     <task id="LOCAL-00007" summary="ajout du script graph et modif des logs pour niveau debug">
-      <changelist id="a4765a1e-5880-4c04-84f6-ac25e5637da8" name="Logs, instanciation, performance traitement documents" comment="ajout du script graph et modif des logs pour niveau debug" />
+      <changelist id="" name="Logs, instanciation, performance traitement documents" comment="ajout du script graph et modif des logs pour niveau debug" />
       <option name="closed" value="true" />
       <created>1722236494324</created>
       <option name="number" value="00007" />
@@ -422,7 +419,7 @@
     <task id="SMA-1" summary="integrate create graph script">
       <branch name="main" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" original="true" />
       <branch name="SMA-1" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" />
-      <changelist id="253ac8a8-24f6-4dea-8103-ff2eb466a1cd" name="correct graph creation" comment="correct graph creation" />
+      <changelist id="" name="correct graph creation" comment="correct graph creation" />
       <created>1722305980638</created>
       <option name="issue" value="true" />
       <url>https://thenocodeguy.youtrack.cloud/issue/SMA-1</url>
@@ -447,7 +444,7 @@
     <task id="LOCAL-00010" summary="correct graph creation">
       <branch name="SMA-1" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" original="true" />
       <branch name="correct-graph" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" />
-      <changelist id="253ac8a8-24f6-4dea-8103-ff2eb466a1cd" name="correct graph creation" comment="" />
+      <changelist id="" name="correct graph creation" comment="" />
       <created>1722504282285</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
@@ -550,7 +547,7 @@
     <task id="SMA-11" summary="File uploading, processing, diagram retrieval, JSON processing with button press.">
       <branch name="main" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" original="true" />
       <branch name="SMA-11" repository="C:\Users\erpes\PycharmProjects\SysML_PLM" />
-      <changelist id="6cf50724-cc96-4a1b-a6a0-9b99c74a58d3" name="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press." comment="" />
+      <changelist id="" name="SMA-11 File uploading, processing, diagram retrieval, JSON processing with button press." comment="" />
       <created>1723010677087</created>
       <option name="issue" value="true" />
       <url>https://thenocodeguy.youtrack.cloud/issue/SMA-11</url>
@@ -722,7 +719,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723432690818</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Update .gitignore and .idea settings&#10;&#10;Add create_graph.ipynb and .env to .gitignore. Remove uncommitted shelved patches and update .idea workspace with Qodana configuration.">
+      <option name="closed" value="true" />
+      <created>1723432946201</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1723432946201</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <option name="clearContext" value="false" />
     <servers>
       <YouTrack url="https://thenocodeguy.youtrack.cloud">
