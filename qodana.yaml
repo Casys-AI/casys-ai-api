@@ -21,7 +21,7 @@ profile:
 #Execute shell command before Qodana execution (Applied in CI/CD pipeline)
 #bootstrap: sh ./prepare-qodana.sh
 
-bootstrap: "python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt"
+bootstrap: "python3 -m venv venv && . venv/bin/activate && pip install -r requirements.txt"
 
 #Install IDE plugins before Qodana execution (Applied in CI/CD pipeline)
 plugins:
