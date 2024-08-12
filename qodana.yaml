@@ -2,9 +2,6 @@ version: "1.0"
 profile:
   name: qodana.recommended
 
-bootstrap: |
-  pip install -r requirements.txt
-
 plugins:
   - id: com.intellij.grazie.pro
 
