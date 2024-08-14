@@ -52,6 +52,11 @@ coverage.xml
 *.py,cover
 .hypothesis/
 
+#utils
+requete_dico.md
+test_main.http
+http-client.private.env.json
+
 # Translations
 *.mo
 *.pot
