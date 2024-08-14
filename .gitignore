@@ -1,0 +1,6 @@
+# created by virtualenv automatically
+.env
+test_main.http
+requete_dico.md
+http-client.private.env.json
+
