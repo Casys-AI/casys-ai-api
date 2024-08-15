@@ -47,20 +47,48 @@ This will start all necessary services including the API, Neo4j database, and Re
 
 ## Usage
 
-Once the Docker containers are up and running, the API will be accessible at `http://localhost:8000`.
+Once the Docker containers are up and running, the API will be accessible at `http://localhost:8000/docs`.
 
-To interact with the API, you can use tools like curl or Postman, or integrate it into your application.
+You can simple interact with it as it's fastAPI
+
+Congigure first the config.yaml where you have to enter the informations of the files that you want to process
+Set up the files path
+
+Create the folder
+add a new doc or PDF
+
+adjust the prompts for
+req.txt = requirements
+bdd.txt = Structure
+ux.txt = use cases (behavior)
+
+try to extract the entities with project name
+if you want to can use the example projects (cdc_1 & crushing_mill), it's better when you have multiple systems
+POST http://127.0.0.1:8000/process/{{project_name}}
+POST http://127.0.0.1:8000/neo4j-process-project/{{project_name}}
+
+Monitor the task execution with flower
+http://localhost:5555/
+
+You can try to render the project that you want :
+Acess the BDD
+http://localhost:7474/browser/
+
+# sort le graph complet d'un projet
+
+MATCH (p:Project {name: 'your_project'})-[:HAS_DIAGRAM]->(d:Diagram)-[:CONTAINS_ENTITY]->(e:Entity)
+RETURN p,d,e
 
 ## Features
 
-- Advanced modeling of complex systems
-- Knowledge graph analysis
-- AI integration for optimization
-- Real-time collaboration
-- Multi-scale knowledge representation
-- Adaptive artificial intelligence layer
-- Topological and spectral graph analysis
-- Non-linear simulation and optimization
+- Advanced modeling of complex systems _WIP_
+- Knowledge graph analysis _WIP_
+- AI integration for optimization _WIP_
+- Real-time collaboration _TODO_
+- Multi-scale knowledge representation _WIP_
+- Adaptive artificial intelligence layer _TODO_
+- Topological and spectral graph analysis _WIP_
+- Non-linear simulation and optimization _TODO_
 
 ## Architecture
 

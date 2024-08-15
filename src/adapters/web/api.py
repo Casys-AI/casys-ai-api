@@ -127,8 +127,8 @@ async def process_neo4j_data(
         raise HTTPException(status_code=500, detail=str(e))
 
 
-@app.post("/process-entire-project/{project_name}")
-async def process_entire_project(
+@app.post("/neo4j-process-project/{project_name}")
+async def neo4j_process_project(
         project_name: str,
         neo4j_processing_service=Depends(get_neo4j_processing_service)
 ) -> Dict[str, Any]:
